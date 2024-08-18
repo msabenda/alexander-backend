@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- ----------------------------Our Css Styles------------------------ -->
- <!-- Include compiled CSS -->
- @vite('resources/css/app.css')
-
+    @vite('resources/css/app.css')
     <!-- ---------------------------------Favicon Image--------------------------- -->
-    <link rel="shortcut icon" href="images/gold-logo.png" type="image/x-icon">
-  
+    <link rel="shortcut icon" href="{{ url('images/gold-logo.jpg') }}" type="image/x-icon">
+    <!-- ------------------------------Script for Display effect home-------------------------------- -->
     
     <!-- -------Swipper CSS----- -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
@@ -20,22 +18,22 @@
     </head>
     <!-- -------------------------------------Heads End Here----------------------------------- -->
 
-  <body class="active">
+  <body>
 
   <!-- -----------------------------PRELOADING THE PAGE------------------------- -->
   
     <!-- -------------------------------------------HEADING SECTION PART-------------------------------------- -->
   
-    <header class="header">
+    <header class="header" id="home">
       <nav class="nav-bar">
         <div class="nav__header">
           <div class="nav__logo">
             <a href="#">
-              <img src="{{ asset('images/gold-logo.png') }}" alt="logo" />
+              <img src="{{ url('/images/gold-logo.png') }}" alt="logo" />
             </a>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
         <ul class="nav__links" id="nav-links">
@@ -44,7 +42,7 @@
           <li><a href="#servi" id="service-nav">SERVICES</a></li>
           <li class="nav__logo">
             <a href="#">
-              <img src="{{ asset('images/gold-logo.png') }}" alt="logo" />
+              <img src="{{ url('images/gold-logo.png') }}" alt="logo" />
             </a>
           </li>
           <li><a href="#blog" id="blog-nav">BLOG</a></li>
@@ -77,7 +75,7 @@
     <!-- -------------------------------------ABOUT SECTION----------------------------------------- -->
    
     <section id="about">
-        <h2 class="section-heading">ABOUT <span style="color: rgba(255,215,0);">ME</span></h2>
+        <h2 class="section-heading">ABOUT ME</h2>
         <div class="row">
       <div class="about-left">
         <h2 class="section__header">TRANSFORMING YOUR IDEAS INTO STUNNING VISUALS</h2>
@@ -91,11 +89,11 @@
         <blockquote cite="https://www.huxley.net/bnw/four.html" class="quote">
           <p> Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever… It remembers little things, long after you have forgotten everything</p>
         </blockquote>
-        <p>Alexander, <cite>Creatives</cite></p>
+        <p>Alexander, <cite>Matovelo</cite></p>
       </div>
   
       <div class="about-right">
-        <img src="{{ asset('images/black-logo.png') }}" alt="alex-image" class="alex-img scroll-reveal from-right">
+        <img src="{{ url('images/black-logo.png') }}" alt="alex-image" class="alex-img scroll-reveal from-right">
       </div>
 
         </div>
@@ -184,11 +182,11 @@
   </div>
    </div>
 
-   <!-- Button for download CV and Contact Me -->
+   <!-- Button for download CV and Contact Me
    <div class="btn-container">
-    <button class="btn btn-color-1" onclick="window.open('{{ asset('cv/uandishi_wa_kitabu_kinachouzika_22062022_03_47.pdf') }}">DOWNLOAD CV <i class="fa-solid fa-download"></i></button>
+    <button class="btn btn-color-1" onclick="window.open('./cv/uandishi_wa_kitabu_kinachouzika_22062022_03_47.pdf')">DOWNLOAD CV <i class="fa-solid fa-download"></i></button>
     <button class="btn btn-color-2" onclick="location.href='./#contact'"> Contact Me</button>
-  </div>
+  </div> -->
 </section>     
 <!-- ----------------------------------------EDUCATION AND EXPERIENCE ENDS------------------------------------ -->
 
@@ -196,27 +194,27 @@
 
    <section class="section1" id="section1-id">
 
-    <div class="section__container service__container">
-      <div class="service__grid">
-        <div class="service__card">
+    <div class="section-cont service__container">
+      <div class="service-grid">
+        <div class="service-card">
           <h4>MISSION</h4>
-          <img src="{{ asset('images/mission-icon.png') }}" alt="mission-logo" class="mission">
+          <img src="{{ url('images/mission-icon.png') }}" alt="mission-logo" class="mission">
           <p>
             Our portrait sessions are designed to showcase your personality
             and style in stunning imagery.
           </p>
         </div>
-        <div class="service__card">
+        <div class="service-card">
           <h4>VISION</h4>
-          <img src="{{ asset('images/vision-icon.png') }}" alt="vision-logo" class="vision">
+          <img src="{{ url('images/vision-icon.png') }}" alt="vision-logo" class="vision">
           <p>
             Embrace the beauty and miracle of new life with our maternity and
             newborn photography sessions.
           </p>
         </div>
-        <div class="service__card">
+        <div class="service-card">
           <h4>TEAM</h4>
-          <img src="{{ asset('images/team-icon.png') }}" alt="team-logo" class="team">
+          <img src="{{ url('images/team-icon.png') }}" alt="team-logo" class="team">
           <p>
             Cherish the bond of family with our custom-designed playful candid
             moments and portrait sessions.
@@ -231,7 +229,7 @@
 <!-- --------------------------------------------------------MY SERVICES------------------------------------------>
 <section class="services-section" id="servi">
   
-  <h2 class="section-heading">My <span style="color: rgba(255,215,0);">Services</span></h2>
+  <h2 class="section-heading">MY SERVICES</h2>
   <div class="service-card">
     <div class="icon">
       <i class="fa-solid fa-paintbrush"></i>
@@ -274,7 +272,8 @@
        
       <div class="container1">
        
-        <h1 class="heading1">Technical Skills</h1>
+       
+        <h1 class="section-heading" style="color: rgb(255,255,255);">MY SKILLS</h1>
         <div class="technical-bar">
           <div class="bar" ><i class="fa-solid fa-marker" style="margin-bottom: 5px;"></i>
             <div class="info">
@@ -314,60 +313,6 @@
              <!-- // Add more div for skills here -->
         </div>
       </div>   
-   
-
-      <!-- Div for container1 on Right -->
-        <div class="container1">
-         <h1 class="heading1">Professional Skills</h1>
-
-         <div class="radial-bars">
-          <div class="radial-bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">80%</div>
-            <div class="text">Creativity</div>
-           </div>
-          </div>
-          
-
-         <div class="radial-bars">
-          <div class="radial-bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">90%</div>
-            <div class="text">Designing</div>
-          </div>
-          </div>
-          
-  
-         <div class="radial-bars">
-          <div class="radial-bar">
-            <svg x="0px" y="0px" viewBox="0 0 200 200">
-              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-            </svg>
-            <div class="percentage">85%</div>
-            <div class="text">Digital Marketing</div>
-           </div>
-          </div>
-
-          <div class="radial-bars">
-            <div class="radial-bar">
-              <svg x="0px" y="0px" viewBox="0 0 200 200">
-                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-              </svg>
-              <div class="percentage">85%</div>
-              <div class="text">Problem Solving</div>
-             </div>
-            </div>
-          <!-- // Add more div for more skills here -->
-          </div>
-      <!-- Anything to add continue here...! -->
       </section>
 <!----------------------------------------------------------PROFESSIONAL SKILLS ENDS HERE------------------------------------------------->
 
@@ -375,49 +320,43 @@
 <!-- ------------------------------------***************BLOG/PROJECTS***********************----------------------------- -->
 <section class="blog-section">
   <div id="blog">
-    <div class="main-text">
-      <h2> Latest <span>BLOG</span></h2>
+      <div class="main-text">
+          <h2 class="section-heading">Latest BLOG</h2>
+          <div class="blog-content">
+              <div class="row-blog">
+                  <img src="{{ url('images/image-1.jpg') }}" alt="image-here">
+                  <div class="layer">
+                      <h3>USCF MLIMANI</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <a href="#" class="read-more">READ MORE</a>
+                  </div>
+              </div>
 
-      <div class="blog-content">
-        <div class="row-blog">
-          <img src="{{ asset('images/image-1.png') }}" alt="image-here">
+              <div class="row-blog">
+                  <img src="{{ url('images/image-2.jpg') }}" alt="image-here">
+                  <div class="layer">
+                      <h3>USCF MLIMANI</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <a href="#" class="read-more">READ MORE</a>
+                  </div>
+              </div>
 
-          <div class="layer">
-            <h3>USCF MLIMANI</h>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
-
-            <i class="fa-solid fa-link"></i><a href="#" style="color: rgba(255,215,0);"><strong>READ MORE</strong></a>
+              <div class="row-blog">
+                  <img src="{{ url('images/image-3.jpg') }}" alt="image-here">
+                  <div class="layer">
+                      <h3>USCF MLIMANI</h3>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <a href="#" class="read-more">READ MORE</a>
+                  </div>
+              </div>
           </div>
-        </div>
-
-        <div class="row-blog">
-          <img src="{{ asset('images/image-2.png') }}" alt="image-here">
-          <div class="layer">
-            <h3>USCF MLIMANI</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
-
-            <i class="fa-solid fa-link"></i><a href="#" style="color: rgba(255,215,0);"><strong>READ MORE</strong></a>
-          </div>
-        </div>
-
-        <div class="row-blog">
-          <img src="{{ asset('images/image-3.png') }}" alt="image-here">
-          <div class="layer">
-            <h3>USCF MLIMANI</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
-
-            <i class="fa-solid fa-link"></i><a href="#" style="color: rgba(255,215,0);"><strong>READ MORE</strong></a>
-          </div>
-        </div>
-
-
       </div>
-    </div>
   </div>
-  
+
   <a href="#blog" class="blog-btn">SEE MORE</a>
-        
+      
 </section>
+
 <!-- ------------------------------------***************BLOG/PROJECTS***********************----------------------------- -->
 
 <!-- --------------------------------------TESTIMONIALS------------------------------------------- -->
@@ -428,220 +367,218 @@
 
 
 
-<section class="testi-container">
+
+<a href="#top" class="top-btn" aria-label="back to top" data-back-top-btn>
+  <strong><i class="fa-solid fa-arrow-up"></i>Up</strong>
+</a>
+
+<!-- --------My Projects----------- -->
+
+<!-- --------Pictures-------- -->
+<section class="project-container content-container">
+  <h2 class="project-header">PICTURES PROJECTS</h2>
+  <div class="picture-flex">
+    <img src="{{ url('images/image-1.jpg') }}" alt="image-1" />
+    <img src="{{ url('images/image-2.jpg') }}" alt="image-2" />
+    <img src="{{ url('images/image-3.jpg') }}" alt="image-3" />
+    <img src="{{ url('images/image-4.jpg') }}" alt="image-4" />
+    <img src="{{ url('images/image-5.jpg') }}" alt="image-5" />
+    <img src="{{ url('images/image-6.jpg') }}" alt="image-6" />
+    <img src="{{ url('images/image-7.jpg') }}" alt="image-7" />
+    <img src="{{ url('images/image-8.jpg') }}" alt="image-8" />
+  </div>
+</section>
+
+<!-- --------------Videos-------------------- -->
+<section class="video-container content-container">
+  <h2 class="project-header">VIDEOS PROJECT</h2>
+  <div class="video-slider">
+    <button class="slider-btn prev-btn">&#10094;</button>
+    <div class="video-flex">
+      <video src="{{ url('video/video-1.mp4') }}" alt="video 1" controls></video>
+      <video src="{{ url('video/video-2.mp4') }}" alt="video 2" controls></video>
+      <video src="{{ url('video/video-3.mp4') }}" alt="video 3" controls></video>
+      <video src="{{ url('video/video-4.mp4') }}" alt="video 4" controls></video>
+      <video src="{{ url('video/video-5.mp4') }}" alt="video 5" controls></video>
+    </div>
+    <button class="slider-btn next-btn">&#10095;</button>
+  </div>
+</section>
+
+
+
+<section class="testi-container" id="testimonial">
+  <h2 class="section-heading">CUSTOMER FEEDBACK</span></h2>
+  
   <div class="testimonial mySwiper">
     <div class="testi-content swiper-wrapper">
       <div class="slide swiper-slide">
-        <img src="{{ asset('images/NDAGA.jpg') }}" alt="" class="image">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
-
-        <i class="fa-solid fa-quote-left quote-view"></i>
-
-        <div class="details">
-          <span class="name">Msambili Ndaga</span>
-          <span class="job">Network Engineer</span>
+        <div class="testi-item">
+          <img src="{{ url('images/NDAGA.jpg') }}" alt="client1" class="image">
+          <div class="feedback-container">
+            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+          </div>
+          <div class="details">
+            <span class="name">Msambili Ndaga</span>
+            <span class="job">Network Engineer</span>
+          </div>
         </div>
       </div>
-
 
       <div class="slide swiper-slide">
-        <img src="{{ asset('images/client-3.jng') }}" alt="" class="image">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
-
-        <i class="fa-solid fa-quote-left quote-view"></i>
-
-        <div class="details">
-          <span class="name">Donald Michael</span>
-          <span class="job">Network Engineer</span>
+        <div class="testi-item">
+          <img src="{{ url('images/client-3.jpg') }}" alt="client2" class="image">
+          <div class="feedback-container">
+            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+          </div>
+          <div class="details">
+            <span class="name">Donald Michael</span>
+            <span class="job">Network Engineer</span>
+          </div>
         </div>
       </div>
-
 
       <div class="slide swiper-slide">
-        <img src="{{ asset('images/client-1.jng') }}" alt="" class="image">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
-
-        <i class="fa-solid fa-quote-left quote-view"></i>
-
-        <div class="details">
-          <span class="name">Emmy Joel</span>
-          <span class="job">Network Engineer</span>
+        <div class="testi-item">
+          <img src="{{ url('images/client-2.jpg') }}" alt="client3" class="image">
+          <div class="feedback-container">
+            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+          </div>
+          <div class="details">
+            <span class="name">Emmy Joel</span>
+            <span class="job">Network Engineer</span>
+          </div>
         </div>
       </div>
-
     </div>
 
     <div class="swiper-button-next nav-button"></div>
     <div class="swiper-button-prev nav-button"></div>
     <div class="swiper-pagination"></div>
-
-
-
   </div>
 </section>
 
 
 
 
-
-
-
-
-
-<!-- <section class="feedback-section" id="testimonial">
-  <h2 class="section-heading">Customer <span style="color: rgba(255,215,0);">Feedback</span></h2>  
-  <div class="feedback-container">
-    <div class="feedback-card">
-      <div class="customer-photo">
-        <img src="images/NDAGA.jpg" alt="Customer 1">
-      </div>
-      <div class="customer-feedback">
-        <p>"The logo design exceeded my expectations! It perfectly represents my brand."</p>
-        <h4>— Msambili Ndaga</h4>
-      </div>
-    </div>
-
-    <div class="feedback-card">
-      <div class="customer-photo">
-        <img src="images/client-3.jpg" alt="Customer 2">
-      </div>
-      <div class="customer-feedback">
-        <p>"Professional and creative work. The brand identity design was spot on."</p>
-        <h4>— Mary Smith</h4>
-      </div>
-    </div>
-
-    <div class="feedback-card">
-      <div class="customer-photo">
-        <img src="images/image-6.jpg" alt="Customer 3">
-      </div>
-      <div class="customer-feedback">
-        <p>"Amazing print designs! The brochures were exactly what I needed."</p>
-        <h4>— Emily Johnson</h4>
-      </div>
-    </div>
-
-    <div class="feedback-card">
-      <div class="customer-photo">
-        <img src="images/image-7.jpg" alt="Customer 3">
-      </div>
-      <div class="customer-feedback">
-        <p>"Amazing print designs! The brochures were exactly what I needed."</p>
-        <h4>— Emily Johnson</h4>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-    <section class="section__container gallery__container">
-      <h2 class="section__header">VIEW <span style="color: rgba(255,215,0);">PROJECTS</span></h2>
-      <div class="gallery__grid">
-        <img src="{{ asset('images/image-1.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-2.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-3.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-4.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-5.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-6.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-7.jpg') }}" alt="gallery" />
-        <img src="{{ asset('images/image-8-3.jpg') }}" alt="gallery" />
-      </div>
-      <div class="gallery__btn">
-        <button class="btn">VIEW </button>
-      </div>
-    </section>
-
-    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn><strong><i class="fa-solid fa-arrow-up"></i>Up</strong></a>
-
-
-
     <!-- -----------------------------------*********CONTACT SECTION***********------------------------------------ -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <div class="container">
+        <h1 class="section-title">CONTACT <span style="color: rgb(255,215,0);">ME</span></h1>
         <div class="contact-box">
           <div class="left">
-            
+            <img class="img-contact" src="{{ url('images/gold-logo.png') }}" alt="logo">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.863104910521!2d39.16382427566294!3d-6.786508493210604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4f4929b5abe1%3A0x48cdb20b461cc493!2sKimara%20Mwisho!5e0!3m2!1sen!2stz!4v1723218072638!5m2!1sen!2stz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-  
+    
           <div class="right">
-            <form action="{{ route('form.submit') }}" method="POST">
-            @csrf
-              <h2>Contact Me</h2>
-              <input type="text" name="name" placeholder="Enter Your Name" class="field">
-              <input type="text" name="email" placeholder="Enter Your Email" class="field">
-              <input type="text" name="phone"placeholder="Enter Your Phone" class="field">
-  
-              <textarea name="message" id="" placeholder="Message" class="field"></textarea>
-
-              <!-- // CSRF token against cross-site request forgery -->
-              <button class="contact-btn" type="submit" value="">Submit</button>
-
-              </form>
+            <h2>Let's Talk Together</h2>
+            <!-- Submit form using route  -->
+            <form action="{{ route('form.submit') }}" method="post">
+              
+             <!-- Client Side Request Forgery -->
+              @csrf
+              <div class="input-group">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="name" placeholder="Enter Your Name" class="field">
+              </div>
+              <div class="input-group">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" name="email" placeholder="Enter Your Email" class="field">
+              </div>
+              <div class="input-group">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" name="phone" placeholder="Enter Your Phone" class="field">
+              </div>
+              <div class="input-group">
+                <i class="fa-solid fa-briefcase"></i>
+                <select name="service" id="services" class="field">
+                  <option value="graphics_design">GRAPHICS DESIGNING</option>
+                  <option value="video_doc">VIDEO DOCUMENTARY</option>
+                  <option value="poster_ad">POSTER & ADVERTISEMENT</option>
+                  <option value="digital">DIGITAL MARKETING</option>
+                </select>
+              </div>
+              <textarea name="message" placeholder="Message" class="field"></textarea>
+              <button class="contact-btn">Submit</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
+
     
+    <!-- ------FOOTER -->
 
 
 
-    <footer id="footer-id">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <img src="{{ asset('images/gold-logo.png') }}" alt="logo" />
-          <div class="footer__socials">
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-            <a href="#"><i class="ri-instagram-line"></i></a>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-            <a href="#"><i class="ri-youtube-fill"></i></a>
-            <a href="#"><i class="ri-pinterest-line"></i></a>
-          </div>
+    <footer class="footer-container">
+      <div class="footer-left">
+       <h2>Xander Creative</h2>
+
+        <p class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#servi">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#testimonial">Testimonials</a>
+        <a href="#contact">Contact Me</a></p>
+
+        <p class="footer-company"> Copyright &copy; 2024 <strong>Xander Creatives</strong> <br> All rights reserved</p> 
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa-solid fa-location-dot"></i>
+          <p><span>Dar es Salaam TZ</span></p>
         </div>
-        <div class="footer__col">
-          <ul class="footer__links">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#service">SERVICES</a></li>
-            <li><a href="#client">CLIENT</a></li>
-            <li><a href="#blog">BLOG</a></li>
-            <li><a href="#contact">CONTACT US</a></li>
-          </ul>
+        <div>
+          <i class="fa-solid fa-phone"></i>
+          <p><span>+255 789 113 449 | +255 752 865 523</span></p>
         </div>
-        <div class="footer__col">
-          <h4>STAY IN TOUCH</h4>
-          <p>
-            Keep up-to-date with all things Capturer! Join our community and
-            never miss a moment!
-          </p>
+
+        <div>
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="https://mail.google.com/mail/" target="_blank">alexandermatovelo77@gmail.com</a></p>
         </div>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 Xander Creatives. All rights reserved.
+
+      <div class="footer-right">
+        <p class="footer-about">
+          <span>About the Company</span>
+          <strong>Xander Creative</strong> is creative design company which offers variety of services in quality and good way.
+        </p>
+
+        <div class="footer-icons">
+          <a href="https://web.facebook.com/" target="_blank" class="facebook-icon"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank" class="twitter-icon"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="instagram-icon"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.whatsapp.com/" target="_blank" class="whatsapp-icon"><i class="fa-brands fa-square-whatsapp" target="_blank"></i></a>
+          <a href="https://www.linkedin.com/" target="_blank" class="linkedin-icon"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.dribbble.com/" target="_blank" class="dribbble-icon"><i class="fab fa-dribbble"></i></a>
+          <a href="https://www.behance.com/" target="_blank" class="behance-icon"><i class="fab fa-behance"></i></a>
+        </div>
       </div>
     </footer>
+    
 
-
-      <!-- Include compiled JS -->
-    @vite('resources/js/app.js')
    
-  
+    @vite('resources/js/app.js')
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- <script src="/js/main.js"></script> -->
-    <!-- Swipper Js -->
-      <!-- ------------------------------Script for Display effect home-------------------------------- -->
-      <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+   
+   <!-- Include Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
+    <!-- ----- js swip---- -->
+    <script src="js/swipe.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <!-- --------------------------Auto typing words------------------- -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <!-- -------------------------------Font Awesome script-------------------------- -->
     <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script>
     <!-- ----------------------------------3D Background Effect----------------------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-    <!-- ----- js swip---- -->
-    <script src="js/swipe.js"></script>
     
   </body>
 </html>
