@@ -26,29 +26,14 @@
 
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
 
-// const backTopBtn = document.querySelector("[data-back-top-btn]");
-
-// window.addEventListener("scroll", function () {
-//   const bodyHeight = document.body.scrollHeight;
-//   const windowHeight = window.innerHeight;
-//   const scrollEndPos = bodyHeight - windowHeight;
-//   const totalScrollPercent = (window.scrollY / scrollEndPos) * 100;
-
-//   backTopBtn.textContent = '${totalScrollPercent.toFixed(0)}%';
-// });
-
-// -------------------SCRIPT USER SCROLL DOWN IMMEDIATELY-----------------------
-window.addEventListener("scroll", function() {
-  const backTopBtn = document.querySelector(".back-top-btn");
-  if (window.scrollY > 0) {
-    backTopBtn.classList.add("show");
+document.addEventListener('scroll', () => {
+  const topBtn = document.querySelector('.top-btn');
+  if (window.scrollY > 200) { // Change 200 to the scroll position where you want to show the button
+      topBtn.classList.add('show');
   } else {
-    backTopBtn.classList.remove("show");
+      topBtn.classList.remove('show');
   }
 });
-// -------------------SCRIPT USER SCROLL DOWN IMMEDIATELY-----------------------
-
-
 
 // --------------------------------------ANIMATION EFFECT-------------------------------
 
