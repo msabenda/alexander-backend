@@ -9,7 +9,7 @@
     <!-- ----------------------------Our Css Styles------------------------ -->
     @vite('resources/css/app.css')
     <!-- ---------------------------------Favicon Image--------------------------- -->
-    <link rel="shortcut icon" href="{{ url('images/gold-logo.jpg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/gold-logo.jpg') }}" type="image/x-icon">
     <!-- ------------------------------Script for Display effect home-------------------------------- -->
     
     <!-- -------Swipper CSS----- -->
@@ -227,7 +227,7 @@
 
     
 <!-- --------------------------------------------------------MY SERVICES------------------------------------------>
-<section class="myservices-section" id="servi">
+<section class="services-section" id="servi">
   
   <h2 class="section-heading">MY SERVICES</h2>
   <div class="service-card">
@@ -578,7 +578,7 @@
     <!-- -------------------------------Font Awesome script-------------------------- -->
     <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script>
     <!-- ----------------------------------3D Background Effect----------------------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
     
   </body>
 </html>
