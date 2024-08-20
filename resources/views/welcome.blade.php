@@ -9,7 +9,7 @@
     <!-- ----------------------------Our Css Styles------------------------ -->
     @vite('resources/css/app.css')
     <!-- ---------------------------------Favicon Image--------------------------- -->
-    <link rel="shortcut icon" href="{{ url('images/gold-logo.jpg') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('images/gold-logo.jpg') }}" type="image/x-icon">
     <!-- ------------------------------Script for Display effect home-------------------------------- -->
     
     <!-- -------Swipper CSS----- -->
@@ -206,7 +206,7 @@
         </div>
         <div class="service-card">
           <h4>VISION</h4>
-          <img src="{{ url('images/vision-icon.png') }}" alt="vision-logo" class="vision">
+          <img src="{{ url('images/vision-icon.jpg') }}" alt="vision-logo" class="vision">
           <p>
             Embrace the beauty and miracle of new life with our maternity and
             newborn photography sessions.
@@ -214,7 +214,7 @@
         </div>
         <div class="service-card">
           <h4>TEAM</h4>
-          <img src="{{ url('images/team-icon.png') }}" alt="team-logo" class="team">
+          <img src="{{ url('images/team-icon.jpg') }}" alt="team-logo" class="team">
           <p>
             Cherish the bond of family with our custom-designed playful candid
             moments and portrait sessions.
@@ -324,28 +324,28 @@
           <h2 class="section-heading">Latest BLOG</h2>
           <div class="blog-content">
               <div class="row-blog">
-                  <img src="{{ url('images/image-1.jpg') }}" alt="image-here">
+                  <img src="{{ url('images/After_Effects_Logo-blog-1.png') }}" alt="image-here">
                   <div class="layer">
-                      <h3>USCF MLIMANI</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <h3>What is Adobe After Effect ?</h3>
+                      <p> is a professional motion graphics software primarily used for creating animations, visual effects, and compositing. It's a powerful tool that allows you to Create animations, Animate text, shapes, and images using keyframes and expressions.</p>
                       <a href="#" class="read-more">READ MORE</a>
                   </div>
               </div>
 
               <div class="row-blog">
-                  <img src="{{ url('images/image-2.jpg') }}" alt="image-here">
+                  <img src="{{ url('images/Adobe_Photoshop-blog-2.png') }}" alt="image-here">
                   <div class="layer">
-                      <h3>USCF MLIMANI</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <h3>What is Adobe Photoshop ?</h3>
+                      <p> is a professional-grade image editing software known for its powerful tools and capabilities. It's ideal for photographers, graphic designers, and those who need advanced features for manipulating images and creating complex designs.</p>
                       <a href="#" class="read-more">READ MORE</a>
                   </div>
               </div>
 
               <div class="row-blog">
-                  <img src="{{ url('images/image-3.jpg') }}" alt="image-here">
+                  <img src="{{ url('images/Adobe_Express_logo-blog-3.png') }}" alt="image-here">
                   <div class="layer">
-                      <h3>USCF MLIMANI</h3>
-                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem excepturi beatae, quis minus voluptates, maxime qui exercitationem odio illum id non tenetur ut vitae, ipsum nesciunt ipsam delectus officiis nihil?</p>
+                      <h3>What is Adobe Express ?</h3>
+                      <p>is a simplified online design tool that offers a more streamlined experience compared to Photoshop. It's suitable for those who need basic image editing and design features without the complexity of Photoshop.</p>
                       <a href="#" class="read-more">READ MORE</a>
                   </div>
               </div>
@@ -378,9 +378,9 @@
 <section class="project-container content-container">
   <h2 class="project-header">PICTURES PROJECTS</h2>
   <div class="picture-flex">
-    <img src="{{ url('images/image-1.jpg') }}" alt="image-1" />
-    <img src="{{ url('images/image-2.jpg') }}" alt="image-2" />
-    <img src="{{ url('images/image-3.jpg') }}" alt="image-3" />
+    <img src="{{ url('images/family-client-2.webp') }}" alt="image-1" />
+    <img src="{{ url('images/black-mother-client-2.avif') }}" alt="image-2" />
+    <img src="{{ url('images/customer-3.jpg') }}" alt="image-3" />
     <img src="{{ url('images/image-4.jpg') }}" alt="image-4" />
     <img src="{{ url('images/image-5.jpg') }}" alt="image-5" />
     <img src="{{ url('images/image-6.jpg') }}" alt="image-6" />
@@ -414,9 +414,9 @@
     <div class="testi-content swiper-wrapper">
       <div class="slide swiper-slide">
         <div class="testi-item">
-          <img src="{{ url('images/NDAGA.jpg') }}" alt="client1" class="image">
+          <img src="{{ url('images/customer-1') }}" alt="client1" class="image">
           <div class="feedback-container">
-            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+            <p class="feedback">Xander creative is one of the best design company honestly i appreciate their services. Get in touch with them and you will enjoy their services.</p>
           </div>
           <div class="details">
             <span class="name">Msambili Ndaga</span>
@@ -427,26 +427,26 @@
 
       <div class="slide swiper-slide">
         <div class="testi-item">
-          <img src="{{ url('images/client-3.jpg') }}" alt="client2" class="image">
+          <img src="{{ url('images/customer-2.jpg') }}" alt="client2" class="image">
           <div class="feedback-container">
-            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+            <p class="feedback">"I had a wonderful experience working with Xander Creative. The photographer was very professional and made me feel comfortable in front of the camera. The logo design was also top-notch and exceeded my expectations</p>
           </div>
           <div class="details">
             <span class="name">Donald Michael</span>
-            <span class="job">Network Engineer</span>
+            <span class="job">Programmer</span>
           </div>
         </div>
       </div>
 
       <div class="slide swiper-slide">
         <div class="testi-item">
-          <img src="{{ url('images/client-2.jpg') }}" alt="client3" class="image">
+          <img src="{{ url('images/customer-3.jpg') }}" alt="client3" class="image">
           <div class="feedback-container">
-            <p class="feedback">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque natus commodi, odio qui ratione et laboriosam dolorem dolorum nostrum eveniet illum beatae iste nobis iusto nihil repudiandae est possimus iure!</p>
+            <p class="feedback">Artful Images and Branding went above and beyond to deliver exceptional service. The photographer was incredibly talented and captured the perfect shots</p>
           </div>
           <div class="details">
-            <span class="name">Emmy Joel</span>
-            <span class="job">Network Engineer</span>
+            <span class="name">Emmy Michael</span>
+            <span class="job">Business woman</span>
           </div>
         </div>
       </div>
@@ -578,7 +578,7 @@
     <!-- -------------------------------Font Awesome script-------------------------- -->
     <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script>
     <!-- ----------------------------------3D Background Effect----------------------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
     
   </body>
 </html>

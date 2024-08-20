@@ -40,7 +40,7 @@
 
 .top-btn.show {
   visibility: visible;
-  opacity: 1;
+  opacity: 5;
   transform: translateY(0);
 }
 
@@ -55,10 +55,10 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  background-color:rgba(214, 194, 82, 0.5); /* Custom shadow color */
+  background-color:rgb(236, 204, 23); /* Custom shadow color */
   border-radius: 50%; /* Make it a circle */
   pointer-events: none; /* Allow interaction with underlying elements */
-  box-shadow: 0 0 15px rgba(255,215,0,0.3); /* Shadow effect */
+  box-shadow: 0 0 15px rgb(255, 217, 0); /* Shadow effect */
   transform: translate(-50%, -50%); /* Center the cursor */
   transition: background-color 0.5s ease, box-shadow 0.2s ease;
 }
@@ -92,7 +92,7 @@ nav {
 /*--------------------*********Styling HEAD SECTION Part*************------------------------------ */
 .header {
   height: 100vh;
-  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url("../images/background.webp");
+  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url("../images/final-wallpaper.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -616,6 +616,11 @@ p {
 }
 
 .container1 {
+  display: grid;
+  grid-template-rows: auto auto; /* Adjust based on your needs */
+  gap: 20px; /* Adjust spacing between rows if needed */
+  margin: 0 auto;
+
   width: 400px;
   height: 600px;
   padding: 75px 90px;
@@ -624,6 +629,12 @@ p {
   /* display: inline-block; */
 }
 
+.professional-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+.
 
 
 .heading1 {
@@ -798,8 +809,8 @@ a {
 
 
 /* Section Styling */
-.services-section {
-  display: grid;
+.myservices-section {
+  /* display: grid; */
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   padding: 2rem;
@@ -1516,8 +1527,6 @@ textarea {
   .footer__col:nth-child(3) {
     border-left: 2px solid var(--text-dark);
   }
-}
-
 
   nav {
     padding: 2rem 1rem;
@@ -1550,10 +1559,6 @@ textarea {
     max-width: 150px;
   }
 
-  .portfolio__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .service__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1569,20 +1574,7 @@ textarea {
   .blog__content {
     grid-column: 2/3;
   }
-
-  .footer__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer__col:nth-child(1) {
-    grid-area: 1/2/2/3;
-    border-left: 2px solid var(--text-dark);
-    border-right: 2px solid var(--text-dark);
-  }
-
-  .footer__col:nth-child(3) {
-    border: none;
-  }
+}
 
 
 @media (width > 1024px) {
@@ -2103,7 +2095,7 @@ textarea {
 
 /* -----------------Scroll CSS button media------------ */
 @media (max-width: 480px) {
-    .back-top-btn {
+    .top-btn {
         bottom: 10px; /* Adjust distance from the bottom */
         right: 10px;  /* Adjust distance from the right */
         padding: 8px 12px; /* Smaller padding */
@@ -2113,7 +2105,7 @@ textarea {
         height: auto; /* Allow the button height to adjust */
     }
 
-    .back-top-btn i {
+    .top-btn i {
         font-size: 14px; /* Smaller icon size */
         margin-right: 4px; /* Smaller margin between icon and text */
     }
@@ -2490,5 +2482,22 @@ textarea {
     width: 80%; /* Adjust width for responsiveness */
     max-width: 300px; /* Constrain maximum width */
     height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media (max-width: 480px) {
+  .top-btn {
+      bottom: 10px;  /* Adjust distance from the bottom */
+      right: 10px;   /* Adjust distance from the right */
+      padding: 8px 12px; /* Smaller padding */
+      font-size: 14px; /* Smaller font size */
+      border-radius: 50%; /* Keep the border-radius consistent with the circular shape */
+      width: 50px; /* Adjust width for smaller screens */
+      height: 50px; /* Adjust height for smaller screens */
+      margin-right: 10px;
+  }
+
+  .top-btn i {
+      font-size: 14px; /* Smaller icon size */
   }
 }
