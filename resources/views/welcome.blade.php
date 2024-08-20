@@ -6,24 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
-    <!-- ----------------------------Our Css Styles------------------------ -->
-    @vite('resources/css/app.css')
-    <!-- ---------------------------------Favicon Image--------------------------- -->
+    @vite('resources/css/app.css') <!-- Vite css build -->
     <link rel="shortcut icon" href="{{ asset('images/gold-logo.jpg') }}" type="image/x-icon">
-    <!-- ------------------------------Script for Display effect home-------------------------------- -->
-    
-    <!-- -------Swipper CSS----- -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Xander Creative</title>
     </head>
-    <!-- -------------------------------------Heads End Here----------------------------------- -->
-
-  <body>
-
-  <!-- -----------------------------PRELOADING THE PAGE------------------------- -->
-  
+  <body>  
     <!-- -------------------------------------------HEADING SECTION PART-------------------------------------- -->
-  
     <header class="header" id="home">
       <nav class="nav-bar">
         <div class="nav__header">
@@ -58,7 +46,6 @@
         <strong><span style="color: rgb(255,215,0);"  class="auto-type">Expert Graphic Design, Digital Marketing, Motion Graphics</span></strong>
       </div>
       
-       
       <div class="social-media">
         <a href="https://web.facebook.com/" target="_blank" class="facebook-icon"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://twitter.com/" target="_blank" class="twitter-icon"><i class="fa-brands fa-x-twitter"></i></a>
@@ -69,11 +56,8 @@
         <a href="https://www.behance.com/" target="_blank" class="behance-icon"><i class="fab fa-behance"></i></a>
       </div>
 
-    </header>
-   <!-- --------------------------------HEADING SECTION ENDS-------------------------------------- -->
-
+    </header> <!-- Header ends here-->
     <!-- -------------------------------------ABOUT SECTION----------------------------------------- -->
-   
     <section id="about">
         <h2 class="section-heading">ABOUT ME</h2>
         <div class="row">
@@ -96,9 +80,7 @@
         <img src="{{ url('images/black-logo.png') }}" alt="alex-image" class="alex-img scroll-reveal from-right">
       </div>
 
-        </div>
-      
-    <!-- -------------------------------------ABOUT SECTION ENDS----------------------------------------- -->
+        </div> <!-- About ends here -->
 <!-- ---------------------------------------------EDUCATION AND EXPERIENCE-------------------------------------- -->
 <hr id="line">
   <div class="row-bigger">
@@ -181,16 +163,8 @@
   </div>
   </div>
    </div>
-
-   <!-- Button for download CV and Contact Me
-   <div class="btn-container">
-    <button class="btn btn-color-1" onclick="window.open('./cv/uandishi_wa_kitabu_kinachouzika_22062022_03_47.pdf')">DOWNLOAD CV <i class="fa-solid fa-download"></i></button>
-    <button class="btn btn-color-2" onclick="location.href='./#contact'"> Contact Me</button>
-  </div> -->
-</section>     
-<!-- ----------------------------------------EDUCATION AND EXPERIENCE ENDS------------------------------------ -->
-
-    <!-- ------------------------------------------SECTION 1-MISSION--------------------------------------------- -->
+</section> <!-- Education & Experience ends here -->    
+<!-- ------------------------------------------SECTION 1-MISSION--------------------------------------------- -->
 
    <section class="section1" id="section1-id">
 
@@ -222,10 +196,7 @@
         </div>
       </div>
     </div>
-    </section>
-  <!-- ------------------------------------------SECTION 1-MISSION ENDS--------------------------------------------- -->
-
-    
+    </section> <!-- Mission ends here -->
 <!-- --------------------------------------------------------MY SERVICES------------------------------------------>
 <section class="services-section" id="servi">
   
@@ -261,9 +232,8 @@
     <h3>Motion Graphics</h3>
     <p>Create stunning visuals for websites, including banners, icons, and illustrations.</p>
   </div>
-</section>
+</section> <!-- Services ends here -->
 
-    
 <!------------------------------------------------PROFESSIONAL SKILLS------------------------------------------->
 
     <section class="skills" id="skills-id">
@@ -271,8 +241,7 @@
        <!-- div for container1 on left side -->
        
       <div class="container1">
-       
-       
+
         <h1 class="section-heading" style="color: rgb(255,255,255);">MY SKILLS</h1>
         <div class="technical-bar">
           <div class="bar" ><i class="fa-solid fa-marker" style="margin-bottom: 5px;"></i>
@@ -313,9 +282,7 @@
              <!-- // Add more div for skills here -->
         </div>
       </div>   
-      </section>
-<!----------------------------------------------------------PROFESSIONAL SKILLS ENDS HERE------------------------------------------------->
-
+      </section> <!-- Professional ends here -->
 
 <!-- ------------------------------------***************BLOG/PROJECTS***********************----------------------------- -->
 <section class="blog-section">
@@ -355,24 +322,15 @@
 
   <a href="#blog" class="blog-btn">SEE MORE</a>
       
-</section>
+</section> <!-- Blog ends here -->
 
-<!-- ------------------------------------***************BLOG/PROJECTS***********************----------------------------- -->
-
-<!-- --------------------------------------TESTIMONIALS------------------------------------------- -->
-
-
-<!-- <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"> -->
-
-
-
-
+<!-- --------------------Top Up button ----------------- -->
 
 <a href="#top" class="top-btn" aria-label="back to top" data-back-top-btn>
   <strong><i class="fa-solid fa-arrow-up"></i>Up</strong>
 </a>
 
-<!-- --------My Projects----------- -->
+<!-- --------------------------------My Projects---------------------------- -->
 
 <!-- --------Pictures-------- -->
 <section class="project-container content-container">
@@ -404,8 +362,7 @@
     <button class="slider-btn next-btn">&#10095;</button>
   </div>
 </section>
-
-
+<!-- -------------------------------Testimonial----------------------------- -->
 
 <section class="testi-container" id="testimonial">
   <h2 class="section-heading">CUSTOMER FEEDBACK</span></h2>
@@ -456,12 +413,9 @@
     <div class="swiper-button-prev nav-button"></div>
     <div class="swiper-pagination"></div>
   </div>
-</section>
+</section> <!-- Testimonial ends here -->
 
-
-
-
-    <!-- -----------------------------------*********CONTACT SECTION***********------------------------------------ -->
+<!-- -----------------------------------*********CONTACT SECTION***********------------------------------------ -->
     <section class="contact-section" id="contact">
       <div class="container">
         <h1 class="section-title">CONTACT <span style="color: rgb(255,215,0);">ME</span></h1>
@@ -477,7 +431,7 @@
             <form action="{{ route('form.submit') }}" method="post">
               
              <!-- Client Side Request Forgery -->
-              @csrf
+              @csrf 
               <div class="input-group">
                 <i class="fa-solid fa-user"></i>
                 <input type="text" name="name" placeholder="Enter Your Name" class="field">
@@ -505,13 +459,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> <!-- Contact ends here -->
 
     
-    <!-- ------FOOTER -->
-
-
-
+    <!-- ------------------------------FOOTER --------------------------->
     <footer class="footer-container">
       <div class="footer-left">
        <h2>Xander Creative</h2>
@@ -559,26 +510,16 @@
           <a href="https://www.behance.com/" target="_blank" class="behance-icon"><i class="fab fa-behance"></i></a>
         </div>
       </div>
-    </footer>
+    </footer> <!-- Footer ends here -->
     
 
-   
-    @vite('resources/js/app.js')
+   <!-- --------Java Script codes used ----------- -->
+    @vite('resources/js/app.js') <!-- Vite for build js files -->
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   
-   <!-- Include Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@latest/swiper-bundle.min.js"></script>
-    <!-- ----- js swip---- -->
-    <script src="js/swipe.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-    <!-- --------------------------Auto typing words------------------- -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <!-- -------------------------------Font Awesome script-------------------------- -->
-    <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script>
-    <!-- ----------------------------------3D Background Effect----------------------------------- -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
-    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
+    <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script -->    
   </body>
 </html>

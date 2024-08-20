@@ -1,28 +1,3 @@
-// // -------------PRELOADING SCRIPT CODES--------------------
-// 'use strick';
-
-// // add Event on multiple element
-
-// const addEventOnElements = function (elements, eventType, callback) {
-
-//   for (let i = 0; i < elements.length; i++) {
-//     elements[i]. addEventListener(eventType, callback);
-//   }
-// }
-
-
-// // Preloading the page
-
-// const loadingElement = documnet.querySelector("[data-loading]");
-
-// window.addEventListener("load", function() {
-
-//   loadingElement.classList.add("loaded");
-//   document.body.classList.remove("active");
-// });
-
-// -------------PRELOADING SCRIPT CODES--------------------
-
 
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
 
@@ -182,25 +157,6 @@ ScrollReveal().reveal('.quote', {
   interval: 300, // Stagger the appearance of each card
   delay: 800,
 });
-
-// Appearance of Education from left
-ScrollReveal().reveal('.education', {
-  ...scrollRevealOption,
-  origin: 'left',
-  distance: '60px',
-  interval: 300, 
-  delay: 800,
-});
-
-// Appearance of Education from right
-ScrollReveal().reveal('.experience', {
-  ...scrollRevealOption,
-  origin: 'right',
-  distance: '60px',
-  interval: 300, 
-  delay: 800,
-});
-
 
 // Rotate and scale effect
 ScrollReveal().reveal('.btn-container', {
