@@ -236,53 +236,106 @@
 
 <!------------------------------------------------PROFESSIONAL SKILLS------------------------------------------->
 
-    <section class="skills" id="skills-id">
-
-       <!-- div for container1 on left side -->
-       
-      <div class="container1">
-
-        <h1 class="section-heading" style="color: rgb(255,255,255);">MY SKILLS</h1>
-        <div class="technical-bar">
-          <div class="bar" ><i class="fa-solid fa-marker" style="margin-bottom: 5px;"></i>
-            <div class="info">
-              <span>Graphics Design</span>
-            </div>
-            <div class="progress-line graphics">
-              <span></span>
-            </div>
+<section class="skills" id="skills-id">
+  <!-- Flex container for both skill containers -->
+  <div class="skills-container">
+    <!-- div for container1 on left side -->
+    <div class="container1">
+      <h1 class="section-heading1">Professional Skills</h1>
+      <div class="technical-bar">
+        <div class="bar">
+          <i class="fa-solid fa-marker" style="margin-bottom: 5px;"></i>
+          <div class="info">
+            <span>Graphics Design</span>
           </div>
-
-          <div class="bar"><i class="fa-solid fa-video" style="margin-top: 30px;"></i>
-            <div class="info">
-              <span>Motion Graphics</span>
-            </div>
-            <div class="progress-line motion">
-              <span></span>
-            </div>
+          <div class="progress-line graphics">
+            <span></span>
           </div>
-
-          <div class="bar"><i class="fa-solid fa-desktop" style="margin-top: 30px;"></i>
-            <div class="info">
-              <span>Branding</span>
-            </div>
-            <div class="progress-line branding">
-              <span></span>
-            </div>
-          </div>
-
-          <div class="bar"><i class="fa-solid fa-rectangle-ad" style="margin-top: 30px;"></i>
-            <div class="info">
-              <span>Poster and Advertisement</span>
-            </div>
-            <div class="progress-line poster">
-              <span></span>
-            </div>
-          </div>
-             <!-- // Add more div for skills here -->
         </div>
-      </div>   
-      </section> <!-- Professional ends here -->
+
+        <div class="bar">
+          <i class="fa-solid fa-video" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Motion Graphics</span>
+          </div>
+          <div class="progress-line motion">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-desktop" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Branding</span>
+          </div>
+          <div class="progress-line branding">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-rectangle-ad" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Poster and Advertisement</span>
+          </div>
+          <div class="progress-line poster">
+            <span></span>
+          </div>
+        </div>
+        <!-- Add more div for skills here if needed -->
+      </div>
+    </div>
+
+    <!-- div for container2 on right side -->
+    <div class="container2">
+      <!-- Additional Skills -->
+      <h1 class="section-heading1">Technical Skills</h1>
+      <div class="technical-bar">
+        <div class="bar">
+          <i class="fa-solid fa-lightbulb" style="margin-bottom: 5px;"></i>
+          <div class="info">
+            <span>Creative Thinking</span>
+          </div>
+          <div class="progress-line creative-thinking">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-tools" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Technical Skills</span>
+          </div>
+          <div class="progress-line technical-skills">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-people-group" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Team Collaboration</span>
+          </div>
+          <div class="progress-line team-collaboration">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="bar">
+          <i class="fa-solid fa-calendar" style="margin-top: 30px;"></i>
+          <div class="info">
+            <span>Project Management</span>
+          </div>
+          <div class="progress-line project-management">
+            <span></span>
+          </div>
+        </div>
+        <!-- Add more div for additional skills here if needed -->
+      </div>
+    </div>
+  </div> <!-- End of skills-container -->
+</section> <!-- Professional ends here -->
+
 
 <!-- ------------------------------------***************BLOG/PROJECTS***********************----------------------------- -->
 <section class="blog-section">
@@ -325,7 +378,6 @@
 </section> <!-- Blog ends here -->
 
 <!-- --------------------Top Up button ----------------- -->
-
 <a href="#top" class="top-btn" aria-label="back to top" data-back-top-btn>
   <strong><i class="fa-solid fa-arrow-up"></i>Up</strong>
 </a>
@@ -334,7 +386,7 @@
 
 <!-- --------Pictures-------- -->
 <section class="project-container content-container">
-  <h2 class="project-header">PICTURES PROJECTS</h2>
+  <h2 class="section-heading">PICTURES PROJECTS</h2>
   <div class="picture-flex">
     <img src="{{ url('images/family-client-2.webp') }}" alt="image-1" />
     <img src="{{ url('images/black-mother-client-2.avif') }}" alt="image-2" />
@@ -349,7 +401,7 @@
 
 <!-- --------------Videos-------------------- -->
 <section class="video-container content-container">
-  <h2 class="project-header">VIDEOS PROJECT</h2>
+  <h2 class="section-heading">VIDEOS PROJECT</h2>
   <div class="video-slider">
     <button class="slider-btn prev-btn">&#10094;</button>
     <div class="video-flex">
@@ -517,7 +569,6 @@
     @vite('resources/js/app.js') <!-- Vite for build js files -->
 
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
     <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script -->    

@@ -47,9 +47,6 @@
 .top-btn:hover {
   color: rgb(238, 188, 24);
 }
-
-/* -----------------------------BACK TO TOP BUTTON(ENDS)----------------------- */
-
 /* ----------------------------MOUSE Effect on the Website------------------------- */
 .cursor {
   position: absolute;
@@ -71,11 +68,13 @@ body {
 body {
   font-family: 'Roboto', sans-serif;
   background-color: rgb(248, 248, 248);
+<<<<<<< HEAD
   /* max-width: 80%; */
   /* min-width: 80%; */
+=======
+>>>>>>> 0f99c0e (Responsive website)
   width: 100%;
   height: 100vh;
-  /* min-height: 100%; */
   margin: 0 auto;
 }
 
@@ -84,7 +83,7 @@ nav {
   isolation: isolate;
   top: 0;
   width: 100%;
-  max-width: var(--max-width);
+  /* max-width: var(--max-width); */
   margin: auto;
   z-index: 9;
 }
@@ -242,8 +241,13 @@ nav {
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+<<<<<<< HEAD
   margin-top: 100px;
   margin-bottom: 200px;
+=======
+  margin-top: 150px;
+  margin-bottom: 250px;
+>>>>>>> 0f99c0e (Responsive website)
 }
 
 .social-media a {
@@ -283,7 +287,6 @@ color: #EA4C89;
 .behance-icon:hover {
 color: #1769FF;
 }
-
 /*----------------------------------- Styling Header text on HEAD SECTION -------------------------*/
 .header-text {
   margin-top: 100px;
@@ -296,11 +299,7 @@ color: #1769FF;
   margin-left: 50px;
   font-size: 30px;
 }
-/*---------------------------*********Styling HEAD SECTION ENDS*************------------------------------ */
-
-
 /*---------------------------- Styling ABOUT SECTION STARTS ------------------------------- */
-
 #about {
   padding-top: 50px;
   /* padding: 80px 0px; */
@@ -401,14 +400,13 @@ color: #1769FF;
   filter: grayscale(0%); /* Remove grayscale on hover */
 }
 
-
+/* Horinzontal Line */
 #line {
  font-weight: 600;
  font-weight: bold;
  border: 1px solid rgb(0,0,0);
 }
 /*-----------***************Styling EDUCATION AND EXPERIENCE***********-----------------------*/
-/* General Styles */
 .row-bigger {
   display: flex;
   justify-content: space-between;
@@ -495,55 +493,6 @@ color: #1769FF;
   background-color: rgb(255, 215, 0);  /* Light background color on hover */
 } 
 
-
-
-/* ----------------Styling for the button-----------*/
-.btn-container {
-  margin: 50px auto; /* Top margin and auto horizontal centering */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.btn {
-font-weight: 600;
-transition: all 300ms ease;
-padding: 1rem;
-width: 100%;
-border-radius: 2rem;
-}
-
-.btn-color-1, .btn-color-2 {
-border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1 {
-background: rgb(0,0,0);
-margin-left: 280px;
-font-size: 13px;
-padding: auto 100px;
-
-}
-.btn-color-1:hover {
-display: block;
-background-color: rgb(255,215,0);
-color: rgb(0,0,0);
-}
-
-.btn-color-2 {
-background: rgb(0,0,0);
-}
-
-.btn-color-2:hover {
-display: block;
-background-color: rgb(255,215,0);
-color: rgb(0,0,0);
-}
-/*-----------***************Styling EDUCATION AND EXPERIENCE(ENDS)***********-----------------------*/
-
-/* ----------------------************Styling ABOUT ENDS**************------------------------ */
-
 /* -------------************Styling SECTION 1(MISSION,VISION and TEAM)*********----------------------- */
 
 .section1 {
@@ -603,8 +552,72 @@ p {
   color: #ccc;
 }
 
-/* -------------************Styling SECTION 1(MISSION,VISION and TEAM)ENDS*********----------------------- */
+/* ---------------**********Styling MY SERVICES*********------------------ */
+/* Section Styling */
+.myservices-section {
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
 
+.section-heading {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Service Card Styling */
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255,215,0);
+  color: #000000;
+}
+
+.service-card:hover .icon i {
+  color: #000000;
+}
+
+.service-card:hover h3, .service-card:hover p {
+  color: #000000;
+}
+
+/* Icon Styling */
+.service-card .icon {
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Text Styling */
+.service-card h3 {
+  margin: 0.5rem 0;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
 
 /* ----------------------*************Styling PROFESSIONAL SKILLS******************---------------------------- */
 .skills {
@@ -612,42 +625,41 @@ p {
   padding-left: 150px;
   background-image: radial-gradient(rgba(113, 113, 113, 0.329), rgba(0, 0, 0, 10)),url("../images/picture-back.avif");
   background-position: center;
-  /* background-color: red; */
   margin-bottom: 0 ;
 }
 
-.container1 {
-  display: grid;
-  grid-template-rows: auto auto; /* Adjust based on your needs */
-  gap: 20px; /* Adjust spacing between rows if needed */
-  margin: 0 auto;
+/* Flex container for both skill containers */
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  gap: 20px; /* Space between containers */
+  padding: 20px; /* Add padding around the section */
+}
 
-  width: 400px;
-  height: 600px;
+/* Existing container1 styling */
+.container1, .container2 {
+  flex: 1 1 400px; /* Flex-basis for responsiveness */
   padding: 75px 90px;
-  margin-left: 120px;
-  align-items: center;
-  /* display: inline-block; */
+  background: rgba(0, 0, 0, 0.5); /* Adjust as needed */
+  border-radius: 10px;
+  color: #fff;
 }
 
-.professional-bar {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
-}
-
-
-.heading1 {
-  text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 5px;
-  margin-bottom: 50px;
-}
-
-.text {
+.section-heading1 {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  margin-top: 0;
+  margin-bottom: 20px;
   text-align: center;
 }
+
+
+/* Styling for container2 */
+.container2 {
+  /* Add specific styles for container2 as needed */
+}
+
 .bar {
   font-size: 23px;
 }
@@ -681,7 +693,7 @@ p {
   width: 100%;
   height: 5px;
   background-color:  rgb(255, 255, 255);
-  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards; /* effect on line */
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -745,6 +757,50 @@ p {
   content: "90%";
 }
 
+
+.progress-line.creative-thinking span {
+  width: 88%;
+}
+
+.progress-line.technical-skills span {
+  width: 84%;
+}
+
+.progress-line.team-collaboration span {
+  width: 85%;
+}
+
+.progress-line.project-management span {
+  width: 95%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 8px;
+  background-color: rgb(0, 0, 0);
+  font-size: 18px;
+  border-radius: 3px;
+  top: -20px;
+  right: -20px;
+  animation: showText 0.5s 1.5s linear forwards;
+}
+
+.progress-line.creative-thinking span::after {
+  content: "88%";
+}
+
+.progress-line.technical-skills span::after {
+  content: "84%";
+}
+
+.progress-line.team-collaboration span::after {
+  content: "85%";
+}
+
+.progress-line.project-management span::after {
+  content: "95%";
+}
+
 .progress-line span:before {
   content: "";
   position: absolute;
@@ -764,121 +820,6 @@ p {
       opacity: 1;
     }
 }
-
-.section__header {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--text-dark);
-  text-align: center;
-}
-
-.btn {
-  padding: 0.75rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--white);
-  background-color: var(--text-dark);
-  border-radius: 5px;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: var(--text-light);
-}
-
-img {
-  display: flex;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  transition: 0.3s;
-}
-/*----------------------*************Styling PROFESSIONAL SKILLS(ENDS)******************---------------------------- */
-
-
-
-/* ---------------**********Styling MY SERVICES*********------------------ */
-/* 
-
-
-/* Section Styling */
-.myservices-section {
-  /* display: grid; */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.section-heading {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2rem;
-  
-}
-
-
-
-/* Service Card Styling */
-.service-card {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: rgb(255,215,0);
-  color: #000000;
-}
-
-.service-card:hover .icon i {
-  color: #000000;
-}
-
-.service-card:hover h3, .service-card:hover p {
-  color: #000000;
-}
-
-/* Icon Styling */
-.service-card .icon {
-  font-size: 3rem;
-  color: rgb(0, 0, 0);
-  margin-bottom: 1rem;
-  transition: color 0.3s ease;
-}
-
-/* Text Styling */
-.service-card h3 {
-  margin: 0.5rem 0;
-  color: #333;
-  transition: color 0.3s ease;
-}
-
-.service-card p {
-  color: #666;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  transition: color 0.3s ease;
-}
-
-
-
 /* ---------************Styling Blog Posts**********----------- */
 
 .blog-section {
@@ -994,10 +935,121 @@ a {
   background-color: rgb(255, 215, 0);
 }
 
+/* ----------------------------MY PROJECTS--------------- */
+.content-container {
+  overflow: hidden;
+}
+
+.picture-flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  white-space: nowrap; /* Prevents images from wrapping to the next line */
+  animation: scroll 45s linear infinite;
+}
+
+.project-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.project-header {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.picture-flex img {
+  width: 400px; /* Increased width */
+  height: 400px; /* Increased height */
+  object-fit: cover; /* Ensures images cover their container */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.picture-flex img:hover {
+  opacity: 0.7; /* Makes the image slightly transparent on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* --------Video Project------------- */
+.video-container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.video-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.video-flex {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.video-flex video {
+  width: 450px; /* Adjust dimensions */
+  height: 500px; /* Adjust dimensions */
+  object-fit: cover;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.video-flex video:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
 
 /* --------------------------------------------------Styling Testimonials---------------------------------------------- */
-/* Section Styling */
-
 .testi-container {
   height: 100vh;
   width: 100%;
@@ -1100,137 +1152,11 @@ a {
 }
 
 .swiper-pagination-bullet {
-  background-color: red;
-}
-
-/* ----------------------------MY PROJECTS--------------- */
-.content-container {
-  overflow: hidden;
-}
-
-.picture-flex {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  white-space: nowrap; /* Prevents images from wrapping to the next line */
-  animation: scroll 45s linear infinite;
-}
-
-
-.project-container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-  /* background-color: rgba(173, 173, 173, 0.747); */
-}
-
-.project-header {
-
-  font-weight: 500;
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 2rem;
-  /* font-size: 36px;
-  color: rgb(0, 0, 0);
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-align: center; */
-}
-
-.picture-flex img {
-  width: 400px; /* Increased width */
-  height: 400px; /* Increased height */
-  object-fit: cover; /* Ensures images cover their container */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.picture-flex img:hover {
-  opacity: 0.7; /* Makes the image slightly transparent on hover */
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
-/* --------Video Project------------- */
-.video-container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-  position: relative;
-  overflow: hidden;
-  /* background-color: rgba(173, 173, 173, 0.747); */
-}
-
-.project-header {
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--text-dark);
-  text-align: center;
-}
-
-.video-slider {
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.video-flex {
-  display: flex;
-  gap: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.video-flex video {
-  width: 450px; /* Adjust dimensions */
-  height: 500px; /* Adjust dimensions */
-  object-fit: cover;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.video-flex video:hover {
-  opacity: 0.7;
-  transform: scale(1.05);
-}
-
-.slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 2;
-}
-
-.prev-btn {
-  left: 10px;
-}
-
-.next-btn {
-  right: 10px;
+  background-color: rgb(255, 208, 0);
 }
 
 
 /* ------------------****************CONTACT SECTION*******************-------------------- */
-
 .contact-section {
   background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), url("../images/contact-2.avif");
   background-size: cover;
@@ -1338,10 +1264,6 @@ h2:after {
   transition: border-color 0.3s ease;
 }
 
-/* .field:focus {
-  border-color:  rgb(255,215,0);
-} */
-
 textarea {
   width: 100%;
   border: 2px solid #ddd;
@@ -1371,7 +1293,7 @@ textarea {
   color: rgb(255, 255, 255);
 }
 
-/* ---------FOOTER--------------- */
+/* -------------*****FOOTER******--------------- */
 
 .footer-container {
   background-color: rgba(34, 34, 34, 0.772);
@@ -1491,43 +1413,48 @@ textarea {
   margin-bottom: 5px;
 }
 
-
-/* @media(max-width: 880px) {
-  .footer-container .footer-left .footer-container .footer-center .footer-container .footer-right {
-    display: block;
+  body {
+    margin: 0 auto;
     width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
+    height: 100%;
+    background-color: rgb(248, 248, 248);
+    scroll-behavior: smooth;
   }
-} */
 
+  .header {
+  height: 100vh;
+  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url("../images/final-wallpaper.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+  width: 100%;
+  margin: 0 auto;
+  }
 
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .header-text {
+    margin-top: 120px;
+    margin-left: 50px;
+    color: #fff;
+  }
+  
+  .typing {
+    margin-top: 5rem;
+    margin-left: 50px;
+    font-size: 25px;
+  }
 
 @media (width > 540px) {
-  .portfolio__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .service__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .gallery__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__col:nth-child(1) {
-    grid-area: 1/1/2/3;
-  }
-
-  .footer__col:nth-child(3) {
-    border-left: 2px solid var(--text-dark);
-  }
-
   nav {
     padding: 2rem 1rem;
     position: static;
@@ -1558,626 +1485,533 @@ textarea {
   .nav__links .nav__logo img {
     max-width: 150px;
   }
-
-  .service__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .gallery__grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .blog__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .blog__content {
-    grid-column: 2/3;
-  }
 }
-
-
-@media (width > 1024px) {
-  .header {
-    min-height: 700px;
-  }
-
-  .portfolio__grid {
-    gap: 2rem;
-  }
-}
-
 
 /* --------------------RESPONSIVE WEBSITE--------------------- */
 
-/* Tablets and Larger Phones (Portrait) */
-@media (max-width: 768px) {
+/* --------------------- Responsive Styling with Media Queries --------------------- */
 
-  .heading {
-/* height: 100vh; */
-  }
-
-  .header-text {
-    margin-top: 50px;
-    margin-left: 20px;
-    font-size: 8px;
-  }
-
-  .typing {
-    margin-top: 3rem;
-    margin-left: 20px;
-    font-size: 8px;
-  }
-
-  .nav-bar {
-    flex-direction: column; /* Stack navigation links vertically */
-    align-items: center;
-  }
-
-  .nav__links {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .nav__links li {
-    margin: 10px 0;
-  }
-
-  .social-media {
-    margin-top: 2rem;
-  }
-
-  .social-media a {
-    margin: 0 10px;
-  }
-
-  nav {
-    padding: 2rem 1rem;
-    position: static;
-    max-width: 900px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav__header {
-    display: none;
-  }
-
-  .nav__links {
-    padding: 0;
-    width: 100%;
-    position: static;
-    transform: none;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: transparent;
-  }
-
-  .nav__links .nav__logo {
-    display: block;
-  }
-
-  .nav__links .nav__logo img {
-    max-width: 150px;
-  }
-}
-
-/* Small Phones (Landscape and Portrait) */
-@media (max-width: 480px) {
-  .header {
-    height: 100vh; /* Let the header height adjust based on content */
-    padding: 10px;
-    
-  }
-
-  .header-text {
-    margin-top: 30px;
-    margin-left: 10px;
-    font-size: 12px; /* Smaller font size */
-    /* text-align: center; Center text for small screens */
-  }
-
-  .typing {
-    margin-top: 4rem;
-    margin-left: 10px;
-    font-size: 10px;
-    /* text-align: center; Center text for small screens */
-  }
-
-  .nav__logo {
-      display: block;
-      margin-left: auto;
-      margin-right: 10px;
-      cursor: pointer;
-      font-size: 24px;
-      color: #fff;
-    
-  }
-
-  .nav__links {
-    display: none; /* Hide navigation links by default */
-    flex-direction: column;
-    position: absolute;
-    top: 60px; /* Adjust based on your header height */
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Menu background */
-    padding: 10px 0;
-  }
-  .nav__links li {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-
-  .nav__links.show {
-    display: flex; /* Show navigation links when menu is toggled */
-  }
-
-
-  .nav__menu__btn {
-    display: block;
-    cursor: pointer;
-    font-size: 2px;
-    color: rgb(255, 255, 255);
-    margin-left: auto;
-    margin-right: 10px;
-  }
-
-  .nav__links {
-    display: none; /* Hide the navigation links by default */
-    flex-direction: column;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px 0;
-  }
-
-  .nav__links li {
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .nav__links.show {
-    display: flex;
-  }
-
-  .social-media {
-    margin-top: 8rem;
-    text-align: center;
-  }
-
-
-  .social-media a {
-    margin: 0 5px;
-    font-size: 18px;
-  }
-}
-
-
-/* -----------------------------ABOUT SECTION--------------------- */
-/* Media Query for Small Screens (480px and below) */
-@media (max-width: 480px) {
-  #about {
-    padding-top: 20px; /* Adjust padding for smaller screens */
-    margin-bottom: 20px; /* Adjust bottom margin */
-  }
-
+/* For Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
   .row {
-    flex-direction: column; /* Stack columns vertically */
-    margin: 0 10px; /* Reduce margin */
+    margin: auto 20px; /* Reduce margins for smaller screens */
   }
-
-  .about-left,
-  .about-right {
-    flex-basis: 100%; /* Full width for both sections */
-    margin-bottom: 20px; /* Space between sections */
-  }
-
   .section__header {
-    font-size: 1.5rem; /* Reduce font size */
-    margin-bottom: 1rem; /* Adjust margin */
+    font-size: 2rem; /* Adjust font size */
   }
-
-  .section__description {
-    font-size: 1rem; /* Adjust font size */
-    line-height: 1.5rem; /* Adjust line height */
+  .about-left, .about-right {
+    flex: 1 1 100%; /* Stack elements vertically */
+    padding: 10px; /* Reduce padding */
   }
-
-  .quote {
-    margin: 10px 0; /* Adjust margin for quotes */
-    padding: 10px; /* Adjust padding */
-  }
-
   .alex-img {
-    width: 100%; /* Full width image */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 300px; /* Optional: Set a maximum width */
-    box-shadow: 0 0 10px rgba(155, 155, 155, 0.5); /* Adjust shadow */
+    max-width: 100%; /* Ensure the image is fully responsive */
   }
 }
 
-
-
-/* ---------------------SKILLS CSS MEDIA------------ */
-/* Existing CSS code remains unchanged */
-
-/* Existing CSS code remains unchanged */
-
-/* Responsive styles for screens with width 480px or less */
-@media (max-width: 480px) {
-  .skills {
-    padding-left: 10px;
-    padding-right: 10px; /* Add right padding to avoid overflow */
-    background-image: radial-gradient(rgba(113, 113, 113, 0.329), rgba(0, 0, 0, 10)), url("../images/picture-back.avif");
-    background-size: cover; /* Ensure background image covers the area */
-    background-position: center;
-    background-repeat: no-repeat; /* Prevent repeating background image */
+/* For Tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .row {
+    margin: auto 40px; /* Adjust margins for medium screens */
   }
-
-  .container1 {
-    width: 100%;
-    height: auto; /* Adjust height to auto for better fit */
-    padding: 20px;
-    margin: 0; /* Remove margin to fit within the viewport */
-    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  .section__header {
+    font-size: 2.2rem; /* Slightly smaller font size */
   }
-
-  .heading1 {
-    font-size: 1.5rem; /* Adjust heading size */
-    margin-bottom: 30px;
+  .about-left, .about-right {
+    flex: 1 1 100%; /* Stack elements vertically */
   }
-
-  .technical-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; /* Ensure technical bar fits within container */
-  }
-
-  .technical-bar .bar {
-    margin-top: 20px;
-    width: 100%; /* Ensure bar fits within technical-bar */
-    text-align: center;
-    box-sizing: border-box; /* Ensure padding and borders are included in width calculation */
-  }
-
-  .technical-bar .bar i {
-    font-size: 18px; /* Adjust icon size */
-  }
-
-  .technical-bar .bar .info span {
-    font-size: 14px; /* Adjust font size */
-  }
-
-  .technical-bar .bar .progress-line {
-    height: 4px; /* Adjust height of progress line */
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    width: 100%; /* Ensure progress line fits within bar */
-  }
-
-  .technical-bar .bar .progress-line span {
-    height: 100%;
-    background-color: rgb(255, 215, 0);
-    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
-    transform: scaleX(0);
-    transform-origin: left;
-    width: 0; /* Initial width to be animated */
-  }
-
-  .progress-line.graphics span {
-    width: 90%; /* Adjust width to fit within the bar */
-  }
-
-  .progress-line.motion span {
-    width: 80%; /* Adjust width to fit within the bar */
-  }
-
-  .progress-line.branding span {
-    width: 85%; /* Adjust width to fit within the bar */
-  }
-
-  .progress-line.poster span {
-    width: 90%; /* Adjust width to fit within the bar */
-  }
-
-  .progress-line span::after {
-    content: attr(data-percentage); /* Use data attribute for percentage text */
-    font-size: 14px; /* Adjust percentage text size */
-    position: absolute;
-    right: 0; /* Place text at the end of the progress line */
-    top: 50%;
-    transform: translateY(-50%); /* Center text vertically */
-    background-color: rgb(0, 0, 0);
-    color:  rgb(255, 215, 0);
-    padding: 2px 6px;
-    border-radius: 3px;
-  }
-
-  .progress-line span:before {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-width: 0;
-    border-top-color: rgb(0, 0, 0);
-    top: -10px;
-    right: 10px; /* Adjust position */
+  .alex-img {
+    max-width: 80%; /* Constrain the image width */
   }
 }
 
-
-/* --------------------------CSS MEDIA BLOG--------------------- */
-.blog-section {
-  margin: 0 10px; /* Adjusted margin for smaller screens */
-}
-
-.main-text {
-  padding: 30px 20px; /* Reduced padding for smaller screens */
-}
-
-.main-text h2 {
-  font-size: 32px; /* Reduced font size for smaller screens */
-  text-align: center;
-}
-
-.main-text h2 span {
-  color: rgba(255, 215, 0, 0.9); /* Adjusted color opacity for better visibility */
-}
-
-.blog-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min-width for smaller screens */
-  grid-gap: 15px; /* Reduced grid gap */
-  margin-top: 10px;
-}
-
-.row-blog {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.row-blog img {
-  width: 100%;
-  border-radius: 8px;
-  display: block;
-  transition: transform 0.5s;
-}
-
-.layer {
-  width: 100%;
-  height: 0;
-  position: absolute;
-  border-radius: 8px;
-  left: 0;
-  bottom: 0;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px; /* Reduced padding */
-  transition: 0.5s;
-}
-
-.layer h3 {
-  color: rgb(255, 255, 255);
-  font-size: 16px; /* Reduced font size */
-  font-weight: bold;
-  margin-bottom: 10px; /* Reduced margin */
-}
-
-.layer p {
-  color: rgb(255, 255, 255);
-  font-size: 0.875rem; /* Reduced font size */
-  line-height: 1.6; /* Adjusted line height */
-}
-
-.layer a {
-  margin-top: 10px; /* Reduced margin-top */
-  color: rgba(255, 215, 0);
-  text-decoration: none;
-  font-size: 14px; /* Reduced font size */
-  width: auto; /* Adjust width */
-  height: auto; /* Adjust height */
-  border-radius: 3px; /* Adjust border radius */
-  padding: 5px 10px; /* Adjust padding */
-  display: inline-block; /* Adjust display */
-  text-align: center;
-}
-
-.row-blog:hover img {
-  transform: scale(1.05); /* Adjusted scale for hover effect */
-}
-
-.row-blog:hover .layer {
-  height: 100%;
-}
-
-.blog-btn {
-  display: block;
-  margin: 20px auto; /* Reduced margin */
-  width: fit-content;
-  border: 1px solid rgb(8, 8, 8);
-  padding: 10px 30px; /* Adjusted padding */
-  border-radius: 5px; /* Adjusted border radius */
-  text-decoration: none;
-  background: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-align: center;
-}
-
-.blog-btn:hover {
-  background-color: rgb(255, 215, 0);
-}
-
-.layer:hover {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(87, 85, 85));
-}
-
-
-/* --------------------------CUSTOMER CSS MEDIA------------------ */
-@media (max-width: 480px) {
-  .section-heading {
-    font-size: 24px; /* Smaller font size for better fit */
-    margin-bottom: 10px;
-    text-align: center; /* Centered heading */
+/* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .row {
+    margin: auto 60px; /* Adjust margins */
   }
-
-  .testimonial {
-    padding: 20px 10px; /* Adjusted padding */
+  .about-left, .about-right {
+    flex: 1 1 45%; /* Adjust flex basis */
   }
-
-  .testi-item {
-    padding: 10px;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text */
-  }
-
-  .image {
-    height: 100px; /* Reduced image size */
-    width: 100px;
-  }
-
-  .feedback-container {
-    background-color: rgba(255, 255, 0, 0.2); /* Lighter background color */
-    padding: 10px;
-    margin: 10px 0; /* Added margin for spacing */
-    border-radius: 8px; /* Rounded corners */
-  }
-
-  .feedback {
-    font-size: 14px; /* Smaller font size */
-    margin: 0;
-    line-height: 1.4; /* Increased line height for readability */
-  }
-
-  .details {
-    margin-top: 10px; /* Added spacing */
-    text-align: center; /* Centered text */
-  }
-
-  .details .name {
-    font-size: 14px; /* Smaller font size */
-    margin: 0;
-  }
-
-  .details .job {
-    font-size: 12px; /* Smaller font size */
-    margin: 0;
-  }
-
-  .nav-button {
-    height: 30px; /* Smaller navigation buttons */
-    width: 30px;
-  }
-
-  .nav-button::after,
-  .nav-button::before {
-    font-size: 16px;
-  }
-
-  .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+  .alex-img {
+    max-width: 300px; /* Slightly reduce max width */
   }
 }
 
-/* -----------------Scroll CSS button media------------ */
-@media (max-width: 480px) {
-    .top-btn {
-        bottom: 10px; /* Adjust distance from the bottom */
-        right: 10px;  /* Adjust distance from the right */
-        padding: 8px 12px; /* Smaller padding */
-        font-size: 14px; /* Smaller font size */
-        border-radius: 4px; /* Slightly smaller border radius */
-        width: auto; /* Allow the button width to adjust */
-        height: auto; /* Allow the button height to adjust */
-    }
-
-    .top-btn i {
-        font-size: 14px; /* Smaller icon size */
-        margin-right: 4px; /* Smaller margin between icon and text */
-    }
+/* For Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+  .row-bigger {
+    flex-direction: column; /* Stack the education and experience sections */
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+  .education, .experience {
+    margin-bottom: 20px; /* Add space between stacked sections */
+  }
+  .title {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+  .timeline {
+    padding-left: 20px; /* Reduce padding */
+  }
+  .timeline-item::before {
+    left: -10px; /* Adjust to align with smaller screen */
+  }
+  .circle-dot {
+    left: -20px; /* Adjust for smaller screen */
+    width: 16px; /* Reduce size for smaller screens */
+    height: 16px; /* Reduce size for smaller screens */
+  }
 }
 
-
-/* --------Contact CSS Media------ */
-/* Base styles (already provided) */
-
-/* Large desktops and above (default styling) */
-@media (min-width: 1200px) {
-  .contact-section {
-    height: 100vh; /* Full height for large screens */
+/* For Tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .row-bigger {
+    flex-direction: column; /* Stack the sections vertically */
+    padding: 15px; /* Adjust padding */
   }
-
-  .contact-box {
-    flex-direction: row;
-    max-width: 1200px;
-    width: 90%;
-    padding: 2rem;
+  .education, .experience {
+    margin-bottom: 20px; /* Space between stacked sections */
   }
-
-  .left, .right {
-    margin: 0 1rem;
+  .title {
+    font-size: 1.8rem; /* Adjust font size */
   }
-
-  .img-contact {
-    width: 150px;
+  .timeline {
+    padding-left: 30px; /* Adjust padding */
   }
-
-  iframe {
-    height: 400px;
+  .timeline-item::before {
+    left: -15px; /* Adjust to align with timeline */
   }
-
-  .input-group {
-    flex-direction: row;
+  .circle-dot {
+    left: -25px; /* Adjust for screen size */
+    width: 20px; /* Slightly smaller dot */
+    height: 20px; /* Slightly smaller dot */
   }
+}
 
-  .input-group i {
-    margin-right: 0.5rem;
+/* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .row-bigger {
+    padding: 20px; /* Standard padding */
   }
-
-  .field, textarea {
-    width: 100%;
-    border: 2px solid #ddd;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
+  .title {
+    font-size: 1.9rem; /* Slightly adjust font size */
   }
+  .timeline {
+    padding-left: 35px; /* Adjust padding */
+  }
+  .timeline-item::before {
+    left: -18px; /* Adjust to align with timeline */
+  }
+  .circle-dot {
+    left: -28px; /* Adjust for screen size */
+  }
+}
 
-  .contact-btn {
-    width: 100%;
+/* --------------------- Responsive Styling with Media Queries --------------------- */
+
+/* For Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+  .service-grid {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 15px; /* Reduce gap for smaller screens */
+  }
+  .service-card {
+    flex: 1 1 100%; /* Make each card take full width */
+    padding: 15px; /* Adjust padding */
+  }
+  .service-card img {
+    height: 80px; /* Smaller image size */
+    width: 80px; /* Smaller image size */
+  }
+  h4 {
+    font-size: 1.2rem; /* Adjust font size */
+  }
+  p {
+    font-size: 0.9rem; /* Adjust paragraph font size */
+  }
+}
+
+/* For Tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .service-grid {
+    gap: 20px; /* Maintain the gap */
+  }
+  .service-card {
+    flex: 1 1 45%; /* Cards take up about half the width */
+    padding: 18px; /* Adjust padding */
+  }
+  .service-card img {
+    height: 90px; /* Slightly smaller image size */
+    width: 90px; /* Slightly smaller image size */
+  }
+  h4 {
+    font-size: 1.4rem; /* Adjust font size */
+  }
+  p {
+    font-size: 0.95rem; /* Adjust paragraph font size */
+  }
+}
+
+/* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .service-grid {
+    gap: 20px; /* Maintain gap */
+  }
+  .service-card {
+    flex: 1 1 48%; /* Cards take up nearly half the width */
+    padding: 20px; /* Standard padding */
+  }
+  .service-card img {
+    height: 100px; /* Standard image size */
+    width: 100px; /* Standard image size */
+  }
+  h4 {
+    font-size: 1.5rem; /* Standard font size */
+  }
+  p {
+    font-size: 1rem; /* Standard paragraph font size */
+  }
+}
+
+/* Mobile Devices (Portrait, max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .myservices-section {
+    grid-template-columns: 1fr; /* Single column layout for small screens */
     padding: 1rem;
-    border-radius: 10px;
+  }
+
+  .service-card {
+    padding: 1rem;
+    margin-bottom: 1.5rem; /* Add spacing between cards */
+  }
+
+  .section-heading {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .service-card .icon {
+    font-size: 2.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.85rem;
   }
 }
 
-/* Tablets and small desktops */
-@media (max-width: 1199px) {
-  .contact-section {
-    height: auto; /* Adjust height based on content */
-    padding: 4rem 0; /* Add top and bottom padding */
-  }
-
-  .contact-box {
-    flex-direction: row;
-    max-width: 1000px;
-    width: 90%;
+/* Tablets (Portrait, max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .myservices-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
     padding: 1.5rem;
   }
 
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card .icon {
+    font-size: 2.8rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Laptops (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+  .myservices-section {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .service-card .icon {
+    font-size: 3rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .skills {
+    padding-left: 10px; /* Reduce padding */
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack containers vertically */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .container1, .container2 {
+    flex: 1 1 100%; /* Make containers full width */
+    padding: 20px; /* Adjust padding */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .bar {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .technical-bar .bar {
+    margin-top: 20px; /* Adjust margin */
+  }
+
+  .technical-bar .bar .info span {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .technical-bar .bar .progress-line {
+    height: 4px; /* Smaller line height */
+  }
+
+  .progress-line span::after {
+    font-size: 14px; /* Smaller font size */
+    top: -15px; /* Adjust position */
+    right: -15px; /* Adjust position */
+  }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .skills {
+    padding-left: 20px; /* Adjust padding */
+  }
+
+  .skills-container {
+    flex-direction: column; /* Stack containers vertically on smaller tablets */
+  }
+
+  .container1, .container2 {
+    flex: 1 1 100%; /* Make containers full width */
+    padding: 30px; /* Adjust padding */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .bar {
+    font-size: 20px; /* Slightly smaller font size */
+  }
+
+  .technical-bar .bar {
+    margin-top: 30px; /* Adjust margin */
+  }
+
+  .technical-bar .bar .info span {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .technical-bar .bar .progress-line {
+    height: 4px; /* Adjust height */
+  }
+
+  .progress-line span::after {
+    font-size: 16px; /* Adjust font size */
+    top: -15px; /* Adjust position */
+    right: -15px; /* Adjust position */
+  }
+}
+
+/* Desktops (769px and above) */
+@media (min-width: 769px) {
+  .skills {
+    padding-left: 150px; /* Restore original padding */
+  }
+
+  .skills-container {
+    flex-direction: row; /* Align containers side by side */
+  }
+
+  .container1, .container2 {
+    flex: 1 1 400px; /* Maintain size */
+    padding: 75px 90px; /* Maintain padding */
+    margin-left: 120px; /* Restore margin */
+  }
+
+  .bar {
+    font-size: 23px; /* Maintain original font size */
+  }
+
+  .technical-bar .bar {
+    margin-top: 40px; /* Maintain margin */
+  }
+
+  .technical-bar .bar .info span {
+    font-size: 17px; /* Maintain font size */
+  }
+
+  .technical-bar .bar .progress-line {
+    height: 5px; /* Maintain height */
+  }
+
+  .progress-line span::after {
+    font-size: 18px; /* Maintain font size */
+    top: -20px; /* Maintain position */
+    right: -20px; /* Maintain position */
+  }
+}
+
+
+
+
+/* Tablets and smaller screens (up to 768px wide) */
+@media (max-width: 768px) {
+  .main-text {
+    padding: 30px 20px; /* Reduced padding */
+  }
+
+  .main-text h2 {
+    font-size: 40px; /* Smaller heading font size */
+  }
+
+  .blog-content {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted grid layout */
+    grid-gap: 15px; /* Reduced gap between items */
+  }
+
+  .container1, .container2 {
+    padding: 50px 30px; /* Reduced padding */
+  }
+
+  .layer h3 {
+    font-size: 18px; /* Smaller font size for layer headings */
+  }
+
+  .layer p {
+    font-size: 0.9rem; /* Smaller font size for paragraph text */
+  }
+
+  .blog-btn {
+    padding: 0 30px; /* Adjusted button padding */
+    font-size: 16px; /* Smaller font size for button text */
+  }
+}
+
+/* Mobile screens (up to 480px wide) */
+@media (max-width: 480px) {
+  .main-text {
+    padding: 20px 10px; /* Further reduced padding */
+  }
+
+  .main-text h2 {
+    font-size: 30px; /* Smaller heading font size */
+  }
+
+  .blog-content {
+    grid-template-columns: 1fr; /* Single-column layout */
+    grid-gap: 10px; /* Reduced gap between items */
+  }
+
+  .container1, .container2 {
+    padding: 30px 20px; /* Further reduced padding */
+  }
+
+  .layer h3 {
+    font-size: 16px; /* Smaller font size for layer headings */
+  }
+
+  .layer p {
+    font-size: 0.8rem; /* Smaller font size for paragraph text */
+  }
+
+  .blog-btn {
+    padding: 0 20px; /* Further adjusted button padding */
+    font-size: 14px; /* Smaller font size for button text */
+  }
+}
+
+
+/* -----------------------------BACK TO TOP BUTTON----------------------- */
+.top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 70px;
+  height: 70px;
+  border: 1px dashed rgb(0, 0, 0);
+  color: rgb(1, 1, 1);
+  font-size: 14px;
+  border-radius: 80%;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  z-index: 3;
+}
+
+.top-btn.show {
+  visibility: visible;
+  opacity: 1; /* Corrected from 5 to 1 */
+  transform: translateY(0);
+}
+
+.top-btn:hover {
+  color: rgb(238, 188, 24);
+}
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .top-btn {
+    right: 15px; /* Move it closer to the edge for better accessibility */
+    width: 60px; /* Smaller size for mobile */
+    height: 60px; /* Smaller size for mobile */
+    font-size: 12px; /* Slightly smaller font size */
+  }
+  
+  .top-btn:hover {
+    color: rgb(238, 188, 24); /* Retain hover effect */
+  }
+}
+
+
+/* Media Queries */
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2rem 1rem;
+    height: auto; /* Adjust height for mobile */
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .contact-box {
+    width: 95%;
+    padding: 1rem;
+  }
+
   .left, .right {
-    margin: 0 1rem;
+    flex: 1 1 100%; /* Stack sections vertically */
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  .left {
+    margin-right: 0;
+  }
+
+  .right {
+    padding-left: 0;
   }
 
   .img-contact {
@@ -2185,136 +2019,18 @@ textarea {
   }
 
   iframe {
-    height: 350px;
-  }
-
-  .input-group {
-    flex-direction: row;
-  }
-
-  .input-group i {
-    margin-right: 0.5rem;
-  }
-
-  .field, textarea {
-    width: 100%;
-    border: 2px solid #ddd;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
-  }
-
-  .contact-btn {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-}
-
-/* Tablets and smaller devices */
-@media (max-width: 768px) {
-  .contact-section {
-    height: auto; /* Adjust height based on content */
-    padding: 2rem 0; /* Add top and bottom padding */
-  }
-
-  .contact-box {
-    flex-direction: column;
-    max-width: 95%;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .left, .right {
-    margin: 0;
-    width: 100%;
-    padding: 1rem 0; /* Add vertical padding */
-  }
-
-  .img-contact {
-    width: 100px;
-    margin: 0 auto;
-  }
-
-  iframe {
     height: 300px;
   }
 
-  .input-group {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-  }
-
-  .input-group i {
-    margin-bottom: 0.5rem;
-  }
-
   .field, textarea {
-    width: 100%;
-    border: 2px solid #ddd;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
+    font-size: 0.9rem;
   }
 
   .contact-btn {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-}
-
-/* Mobile phones */
-@media (max-width: 480px) {
-  .contact-section {
-    padding: 1rem 0; /* Add top and bottom padding */
+    padding: 0.75rem;
+    font-size: 0.9rem;
   }
 
-  .contact-box {
-    padding: 0.5rem;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .left, .right {
-    margin: 0;
-    width: 100%;
-    padding: 0.5rem 0; /* Add vertical padding */
-  }
-
-  .img-contact {
-    width: 80px;
-  }
-
-  iframe {
-    height: 250px;
-  }
-
-  .input-group {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .input-group i {
-    margin-bottom: 0.5rem;
-  }
-
-  .field, textarea {
-    width: 100%;
-    border: 2px solid #ddd;
-    padding: 0.75rem 1rem;
-    border-radius: 10px;
-  }
-
-  .contact-btn {
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-  }
-}
-
-/* --------CSS media Footer */
-/* For devices smaller than 768px (tablets and phones) */
-@media (max-width: 768px) {
   .footer-container {
     padding: 30px 20px;
   }
@@ -2322,182 +2038,98 @@ textarea {
   .footer-container .footer-left,
   .footer-container .footer-center,
   .footer-container .footer-right {
+    width: 100%;
     display: block;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
   }
 
-  .footer-container .footer-left {
-    width: 100%;
-  }
-
-  .footer-container .footer-center {
-    width: 100%;
-    line-height: 30px;
-  }
-
+  .footer-container .footer-left,
   .footer-container .footer-right {
-    width: 100%;
-  }
-
-  .footer-links {
-    font-size: 12px;
-  }
-
-  .footer-links a {
-    margin: 0 5px;
-  }
-
-  .footer-container .footer-about {
-    font-size: 12px;
+    text-align: center;
   }
 }
 
-/* For devices smaller than 480px (phones) */
-@media (max-width: 480px) {
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-box {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .left, .right {
+    flex: 1 1 45%;
+    margin: 0;
+  }
+
+  .left {
+    margin-right: 1rem;
+  }
+
+  .right {
+    padding-left: 1rem;
+  }
+
+  .img-contact {
+    width: 130px;
+  }
+
+  iframe {
+    height: 350px;
+  }
+
+  .field, textarea {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    padding: 0.9rem;
+    font-size: 0.95rem;
+  }
+
   .footer-container {
-    padding: 20px 10px;
+    padding: 40px 30px;
   }
 
   .footer-container .footer-left,
   .footer-container .footer-center,
   .footer-container .footer-right {
-    font-size: 14px;
-  }
-
-  .footer-links {
-    font-size: 10px;
-  }
-
-  .footer-links a {
-    margin: 0 3px;
-  }
-
-  .footer-container .footer-about {
-    font-size: 10px;
+    width: 33%;
   }
 }
 
-/* ------CSS Media Mission, Vision  */
-/* General Styles (already provided) */
-
+/* Mobile Devices (up to 480px) */
 @media (max-width: 480px) {
-  .section1 {
-    padding: 30px 0; /* Adjust padding for smaller screens */
+  .cursor {
+    width: 20px; /* Smaller size for mobile */
+    height: 20px; /* Smaller size for mobile */
+    box-shadow: 0 0 10px rgb(255, 217, 0); /* Adjust shadow */
   }
+}
 
-  .section-cont {
-    padding: 10px; /* Adjust padding inside the container */
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cursor {
+    width: 22px; /* Slightly larger than mobile */
+    height: 22px; /* Slightly larger than mobile */
+    box-shadow: 0 0 12px rgb(255, 217, 0); /* Adjust shadow */
   }
+}
 
-  .service-grid {
-    flex-direction: column; /* Stack cards vertically */
-    gap: 10px; /* Reduce gap between cards */
-  }
-
-  .service-card {
-    flex: 1 1 auto; /* Allow the card to take up full width available */
-    padding: 15px; /* Adjust padding inside each card */
-  }
-
-  .service-card img {
-    height: 80px; /* Adjust image size for smaller screens */
-    width: 80px; /* Adjust image size for smaller screens */
-    margin-bottom: 10px; /* Adjust margin below the image */
-  }
-
-  h4 {
-    font-size: 1.25rem; /* Reduce font size for headings */
-  }
-
-  p {
-    font-size: 0.875rem; /* Reduce font size for paragraph text */
+/* Desktop (769px and above) */
+@media (min-width: 769px) {
+  .cursor {
+    width: 25px; /* Default size for desktop */
+    height: 25px; /* Default size for desktop */
+    box-shadow: 0 0 15px rgb(255, 217, 0); /* Default shadow */
   }
 }
 
 
 
-/* ----------------------------MEDIA QUERY EXPERIENCE-------------------------- */
-@media (max-width: 768px) {
-  .row-bigger {
-    flex-direction: column;
-  }
-
-  .timeline {
-    padding-left: 20px; /* Adjust padding for smaller screens */
-  }
-
-  .circle-dot {
-    left: -20px; /* Adjust dot position for smaller screens */
-  }
-}
-
-
-/* --------MEDIA QUERY ABOUT-------------- */
-/* Media Query for Devices 480px and below */
-@media (max-width: 480px) {
-  .row {
-    flex-direction: column; /* Stack elements vertically */
-    margin: auto 10px; /* Reduce margin for smaller screens */
-    margin-bottom: 20px;
-  }
-
-  .about-left {
-    flex: 1 1 100%; /* Full width on small screens */
-    padding: 10px; /* Reduced padding for better fit */
-  }
-
-  .section__header {
-    font-size: 1.8rem; /* Smaller font size for better fit */
-    margin-bottom: 1rem; /* Adjust margin for space */
-  }
-
-  .section__description {
-    font-size: 0.9rem; /* Smaller font size for readability */
-    margin-bottom: 1.5rem; /* Adjust margin for space */
-  }
-
-  .quote {
-    margin: 15px auto; /* Adjust margin for better fit */
-    padding: 10px; /* Reduce padding */
-    border-radius: 10px; /* Smaller border radius */
-    max-width: 95%; /* Wider max-width for small screens */
-  }
-
-  .quote p::before,
-  .quote p::after {
-    font-size: 1.5rem; /* Smaller size for quote marks */
-  }
-
-  .about-right {
-    flex: 1 1 100%; /* Full width on small screens */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; /* Space between sections */
-  }
-
-  .alex-img {
-    width: 80%; /* Adjust width for responsiveness */
-    max-width: 300px; /* Constrain maximum width */
-    height: auto; /* Maintain aspect ratio */
-  }
-}
-
-@media (max-width: 480px) {
-  .top-btn {
-      bottom: 10px;  /* Adjust distance from the bottom */
-      right: 10px;   /* Adjust distance from the right */
-      padding: 8px 12px; /* Smaller padding */
-      font-size: 14px; /* Smaller font size */
-      border-radius: 50%; /* Keep the border-radius consistent with the circular shape */
-      width: 50px; /* Adjust width for smaller screens */
-      height: 50px; /* Adjust height for smaller screens */
-      margin-right: 10px;
-  }
-
-  .top-btn i {
-      font-size: 14px; /* Smaller icon size */
-  }
-}

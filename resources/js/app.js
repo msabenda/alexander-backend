@@ -1,6 +1,5 @@
 
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
-
 document.addEventListener('scroll', () => {
   const topBtn = document.querySelector('.top-btn');
   if (window.scrollY > 200) { // Change 200 to the scroll position where you want to show the button
@@ -33,8 +32,6 @@ const scrollRevealOption = {
   origin: "bottom",
   duration: 1000,
 };
-
-
 
 
 // --------DISPLAY EFFECT IN HOME PAGE-----------
@@ -71,7 +68,6 @@ window.onload = function () {
   xarr = wrapWords(x);
   animatetext(xarr);
 }
-// --------DISPLAY EFFECT IN HOME PAGE-----------
 
 // --------------------------AUTO TYPING WORDS----------------------
 var typed = new Typed(".auto-type", {
@@ -80,8 +76,6 @@ var typed = new Typed(".auto-type", {
     backSpeed: 10,
     loop: true,
   });
-// --------------------------AUTO TYPING WORDS----------------------
-
 
 ScrollReveal().reveal(".about-left", {
   ...scrollRevealOption,
@@ -99,12 +93,6 @@ ScrollReveal().reveal('.scroll-reveal.from-right', {
   duration: 3000,     // Animation duration in milliseconds
   easing: 'ease-out'  // Animation easing function (optional)
 });
-
-
-// ScrollReveal().reveal(".about__container img", {
-//   ...scrollRevealOption,
-//   delay: 1500,
-// });
 
 ScrollReveal().reveal(".service__container .section__header", {
   ...scrollRevealOption,
@@ -169,26 +157,7 @@ ScrollReveal().reveal('.btn-container', {
   interval: 300, // Staggered appearance for multiple elements
 });
 
-
-ScrollReveal().reveal(".blog__content .section__header", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".blog__content h4", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".blog__content p", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".blog__content .blog__btn", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-
-
 // Cursor effect element
-// Create the cursor element
 const cursor = document.createElement('div');
 cursor.classList.add('cursor');
 document.body.appendChild(cursor);
@@ -198,8 +167,6 @@ document.addEventListener('mousemove', (e) => {
   cursor.style.left = e.pageX + 'px';
   cursor.style.top = e.pageY + 'px';
 });
-
-
 
 // --------------Media Query on small scree-------------
 document.getElementById("menu-btn").addEventListener("click", function() {
@@ -237,8 +204,6 @@ var swiperr = new Swiper('.mySwiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-
 
 // ---------Video Project 
 document.addEventListener('DOMContentLoaded', function () {
