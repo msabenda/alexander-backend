@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Contact;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactFormSubmitted;
 
 
 class ContactController extends Controller
@@ -19,8 +21,13 @@ class ContactController extends Controller
 
         ]);
 
+        // Insert data into database
         Contact::create($validated);
 
-        return redirect()->back()->with('success','Your message has been sent! Thank You');
+        // Send email
+        Mail::to('msa2benda@gmail.com')->send(new ContactFormSubmitted($validated));
+
+        return redirect()->to(url()->previous() . '#contact')->with('success', 'Your message has been sent! Thank You We will reach you back !');
+        
     }
 }

@@ -52,6 +52,13 @@ return [
     |
     */
 
+    'provider' => [
+        // Other Services Providers
+
+        App\Providers\AppServiceProvider::class,
+    ],
+
+
     'url' => env('APP_URL', 'http://localhost'),
 
     /*
