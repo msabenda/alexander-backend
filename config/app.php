@@ -56,6 +56,7 @@ return [
         // Other Services Providers
 
         App\Providers\AppServiceProvider::class,
+        Filament\FilamentServiceProvider::class,
     ],
 
 
