@@ -34,12 +34,8 @@
     "scripts": {
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-<<<<<<< HEAD
-            "@php artisan package:discover --ansi"
-=======
             "@php artisan package:discover --ansi",
             "@php artisan filament:upgrade"
->>>>>>> f0e97392c2e2f65677041f4f9e7850ce366d98e7
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
