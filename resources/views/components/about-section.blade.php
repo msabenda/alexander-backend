@@ -13,7 +13,7 @@
           to help your business stand out and succeed. Let’s create something amazing together!</p>
   
         <blockquote cite="https://www.huxley.net/bnw/four.html" class="quote">
-          <p>"Design is the art of making the invisible visible, the complex simple, and your vision
+          <p>Design is the art of making the invisible visible, the complex simple, and your vision
             unforgettable.</p>
         </blockquote>
         <p>Alexander N. <cite>Matovelo</cite></p>
@@ -40,7 +40,7 @@
                   <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
                 </h3>
                 <h4 class="timeline-title">Bachelor's Degree Arts in Economics <i class="fa-solid fa-graduation-cap"></i></h4>
-                <p class="timeline-text">University of Dar es Salaam</p>
+                <p class="timeline-text">University of Dar es Salaam, (UDSM Main Campus)</p>
               </div>    
 
             <div class="timeline-item">
@@ -50,29 +50,19 @@
                 </h3>
                 <h4 class="timeline-title">Certificates – GREAT Learning Academy, India</h4>
                 <p class="timeline-text">
-                  Courses;
+                  Courses:
               
                     <li>&#10148; Data Analysis</li>
                     <li>&#10148; Chatbot Building</li>
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Data Analysis</li>
-              
+                    <li>&#10148; Content Marketing</li>
+                    <li>&#10148; Digital Marketing</li>
+                    <li>&#10148; Product Marketing</li>
+                    <li>&#10148; Project Management</li>
+                    <li>&#10148; Social media marketing and management</li>
+                    <li>&#10148; UI/UX Design</li>
+                    <li>&#10148; Web Design</li>
                 </p>
               </div>    
-              
-            <div class="timeline-item">
-              <div class="cirlce-dot">
-                <h3 class="timeline-date">
-                  <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
-                </h3>
-                <h4 class="timeline-title">Bachelor of Humanity</h4>
-                <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quibusdam odit distinctio consequuntur maxime corporis ab praesentium tempora at assumenda expedita, officia veniam eos tempore. Consequuntur quaerat nisi consectetur perspiciatis!</p>
-              </div>    
-            </div>
           </div>
         </div>
       </div>
@@ -90,7 +80,7 @@
               <h3 class="timeline-date">
                 <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
               </h3>
-              <h4 class="timeline-title">Branding of </h4>
+              <h4 class="timeline-title">USCF MLIMANI</h4>
               <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quibusdam odit distinctio consequuntur maxime corporis ab praesentium tempora at assumenda expedita, officia veniam eos tempore. Consequuntur quaerat nisi consectetur perspiciatis!</p>
             </div>    
 

@@ -1,36 +1,43 @@
 <!-- --------------------------------------------------------MY SERVICES------------------------------------------>
 <section class="services-section" id="servi">
-  
-  <h2 class="section-heading">MY SERVICES</h2>
-  <div class="service-card">
-    <div class="icon">
-      <i class="fa-solid fa-paintbrush"></i>
+  <h2 class="section-heading">My Services</h2>
+
+  <div class="service-container">
+    <div class="service-image">
+      <img src="{{ url('images/graphic-design-icon.png') }}" alt="Graphic Design">
     </div>
-    <h3>Logo Design</h3>
-    <p>Create unique and memorable logos that represent your brand.</p>
+    <div class="service-details">
+      <h3>Graphic Design</h3>
+      <p>I design eye-catching visuals, including posters, logos, flyers, brand
+        identities, and company profiles. Additionally, I create social media graphics, infographics,
+        brochures, banners, and custom illustrations to ensure a cohesive and professional brand
+        presence.</p>
+    </div>
   </div>
 
-  <div class="service-card">
-    <div class="icon">
-      <i class="fa-solid fa-palette"></i>
+  <div class="service-container">
+    <div class="service-image">
+      <img src="{{ url('images/digital-marketing-icon.png') }}" alt="Digital Marketing">
     </div>
-    <h3>Brand Identity</h3>
-    <p>Develop a strong and cohesive brand identity that resonates with your audience.</p>
+    <div class="service-details">
+      <h3>Digital Marketing</h3>
+      <p>I develop and execute comprehensive marketing strategies, manage
+        social media campaigns, conduct SEO and SEM, create engaging content, and oversee
+        email marketing. I also analyze web traffic, manage pay-per-click (PPC) ads, and track
+        performance metrics to optimize and refine marketing efforts.</p>
+    </div>
   </div>
 
-  <div class="service-card">
-    <div class="icon">
-      <i class="fa-solid fa-print"></i>
+  <div class="service-container">
+    <div class="service-image">
+      <img src="{{ url('images/data-analysis-icon.png') }}" alt="Data Analysis">
     </div>
-    <h3>Poster & Advertisement Design</h3>
-    <p>Design eye-catching brochures, flyers, and posters for your marketing needs.</p>
-  </div>
-
-  <div class="service-card">
-    <div class="icon">
-      <i class="fa-solid fa-laptop-code"></i>
+    <div class="service-details">
+      <h3>Data Analysis</h3>
+      <p>I perform data collection, cleaning, and processing, conduct statistical
+        analysis, and develop data visualizations. I create detailed reports and dashboards,
+        identify trends and patterns, and provide actionable insights and recommendations to
+        support strategic decision-making.</p>
     </div>
-    <h3>Motion Graphics</h3>
-    <p>Create stunning visuals for websites, including banners, icons, and illustrations.</p>
   </div>
 </section> <!-- Services ends here -->
