@@ -52,6 +52,14 @@ return [
     |
     */
 
+    'provider' => [
+        // Other Services Providers
+
+        App\Providers\AppServiceProvider::class,
+        Filament\FilamentServiceProvider::class,
+    ],
+
+
     'url' => env('APP_URL', 'http://localhost'),
 
     /*
