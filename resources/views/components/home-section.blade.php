@@ -28,12 +28,23 @@
         </ul>
       </nav>
       <div class="header-text">
-        <h1>Hi, Welcome to Xander Creative</h1>
+        <h1>Welcome to Xander Creative</h1>
+        {{-- <h2>Graphics Design | Data Analysis | Digital Marketing </h2> --}}
       </div> 
+      
 
       <div class="typing">
-        <strong><span style="color: rgb(255,215,0);"  class="auto-type">Expert Graphic Design, Digital Marketing, Motion Graphics</span></strong>
+        <strong><span style="color: rgb(255,215,0);"  class="auto-type">Graphics Design | Data Analysis | Digital Marketing </span></strong>
       </div>
+      
+      <div class="home-welcome">
+        <p>
+          I’m a freelancer, dedicated to transforming your ideas into captivating designs, powerful
+  strategies, and data-driven solutions. Together, we’ll bring your vision to life and make it
+  unforgettable.
+        </p>
+      </div>
+     
       
       <div class="social-media">
         <a href="https://web.facebook.com/" target="_blank" class="facebook-icon"><i class="fa-brands fa-facebook"></i></a>

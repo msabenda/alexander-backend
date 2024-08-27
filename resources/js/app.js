@@ -71,7 +71,7 @@ window.onload = function () {
 
 // --------------------------AUTO TYPING WORDS----------------------
 var typed = new Typed(".auto-type", {
-    strings: ["Expert Graphic Design", "Digital Marketing", "Motion Graphics"],
+    strings: ["Graphics Design |", " Data Analysis |", " Digital Marketing"],
     typeSpeed: 300,
     backSpeed: 10,
     loop: true,

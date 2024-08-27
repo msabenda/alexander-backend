@@ -86,7 +86,7 @@ nav {
 /*--------------------*********Styling HEAD SECTION Part*************------------------------------ */
 .header {
   height: 100vh;
-  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url("../images/homepage-background.jpg");
+  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/homewallpaper.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,12 +282,18 @@ color: #1769FF;
   margin-top: 100px;
   margin-left: 50px;
   color: #fff;
+  text-align: right;
 }
 
 .typing {
   margin-top: 5rem;
   margin-left: 50px;
   font-size: 30px;
+  text-align: right;
+}
+.home-welcome {
+text-align: right;
+
 }
 /*---------------------------- Styling ABOUT SECTION STARTS ------------------------------- */
 #about {
