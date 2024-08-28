@@ -18,8 +18,12 @@
 <!-- Services section component -->
 <x-services-section />
 
+<!-- Clients section component -->
+<x-clients-section />
+
+
 <!-- Professional skills section component -->
-<x-professional-skills />
+<!-- <x-professional-skills /> -->
 
 <!-- Blog section component -->
 <x-blog-section />

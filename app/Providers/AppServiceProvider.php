@@ -31,5 +31,6 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('testimonials-section', \App\View\Components\TestimonialsSection::class);  
         Blade::component('contact-section', \App\View\Components\ContactSection::class);
         Blade::component('footer-section', \App\View\Components\FooterSection::class);
+        Blade::component('clients-section', \App\View\Components\ClientsSection::class);
     }
 }

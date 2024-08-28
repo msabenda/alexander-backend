@@ -233,4 +233,13 @@ document.addEventListener('DOMContentLoaded', function () {
   showVideo(index);
 });
 
+//Pictures-project
+
+$(".project").magnificPopup({
+  delegate: 'a',
+  type: "image",
+  picture: {
+    enabled: true
+  }
+});
 

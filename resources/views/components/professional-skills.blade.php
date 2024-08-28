@@ -1,10 +1,10 @@
 <!------------------------------------------------PROFESSIONAL SKILLS------------------------------------------->
 
-<section class="skills" id="skills-id">
+<!-- <section class="skills" id="skills-id"> -->
   <!-- Flex container for both skill containers -->
-  <div class="skills-container">
+  <!-- <div class="skills-container"> -->
     <!-- div for container1 on left side -->
-    <div class="container1">
+    <!-- <div class="container1">
       <h1 class="section-heading1">Professional Skills</h1>
       <div class="technical-bar">
         <div class="bar">
@@ -45,15 +45,15 @@
           <div class="progress-line poster">
             <span></span>
           </div>
-        </div>
+        </div> -->
         <!-- Add more div for skills here if needed -->
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
 
     <!-- div for container2 on right side -->
-    <div class="container2">
+    <!-- <div class="container2"> -->
       <!-- Additional Skills -->
-      <h1 class="section-heading1">Technical Skills</h1>
+      <!-- <h1 class="section-heading1">Technical Skills</h1>
       <div class="technical-bar">
         <div class="bar">
           <i class="fa-solid fa-lightbulb" style="margin-bottom: 5px;"></i>
@@ -93,9 +93,9 @@
           <div class="progress-line project-management">
             <span></span>
           </div>
-        </div>
+        </div> -->
         <!-- Add more div for additional skills here if needed -->
-      </div>
-    </div>
-  </div> <!-- End of skills-container -->
-</section> <!-- Professional ends here -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> End of skills-container -->
+<!-- </section> Professional ends here -->
