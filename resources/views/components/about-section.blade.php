@@ -20,7 +20,7 @@
       </div>
   
       <div class="about-right">
-        <img src="{{ url('images/about-me.jpg') }}" alt="alex-image" class="alex-img scroll-reveal from-right">
+        <img src="{{ url('images/black-background.png') }}" alt="alex-image" class="alex-img scroll-reveal from-right">
       </div>
 
         </div> <!-- About ends here -->
@@ -48,7 +48,7 @@
                 <h3 class="timeline-date">
                   <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
                 </h3>
-                <h4 class="timeline-title">Certificates – GREAT Learning Academy, India</h4>
+                <h4 class="timeline-title">Certificates – GREAT Learning Academy, India 🇮🇳</h4>
                 <p class="timeline-text">
                   Courses:
               
@@ -64,6 +64,7 @@
                 </p>
               </div>    
           </div>
+         
         </div>
       </div>
     </div>
@@ -81,27 +82,153 @@
                 <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
               </h3>
               <h4 class="timeline-title">USCF MLIMANI</h4>
-              <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quibusdam odit distinctio consequuntur maxime corporis ab praesentium tempora at assumenda expedita, officia veniam eos tempore. Consequuntur quaerat nisi consectetur perspiciatis!</p>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics Design</li>
+                    <li>&#10148; Photography and Video Production</li>
+                    <li>&#10148; Content creation</li>
+              </p>
             </div>    
+            </div>
 
-          <div class="timeline-item">
+            <div class="timeline-item">
             <div class="cirlce-dot">
               <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
+                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
               </h3>
-              <h4 class="timeline-title">Bachelor of Humanity</h4>
-              <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quibusdam odit distinctio consequuntur maxime corporis ab praesentium tempora at assumenda expedita, officia veniam eos tempore. Consequuntur quaerat nisi consectetur perspiciatis!</p>
-            </div>    
-
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
-              </h3>
-              <h4 class="timeline-title">Bachelor of Humanity</h4>
-              <p class="timeline-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique quibusdam odit distinctio consequuntur maxime corporis ab praesentium tempora at assumenda expedita, officia veniam eos tempore. Consequuntur quaerat nisi consectetur perspiciatis!</p>
+              <h4 class="timeline-title">Youth United Nations Associaion - YUNA</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+                    <li>&#10148; Photography and video production</li>
+              </p>
             </div>    
           </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
+              </h3>
+              <h4 class="timeline-title">JIGUNDUE Platform</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+                    <li>&#10148; Social media management</li>
+                    <li>&#10148; Podcast production</li>
+              </p>
+            </div>    
+          </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
+              </h3>
+              <h4 class="timeline-title">MY DOCTOR</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+                    <li>&#10148; Social media management</li>
+                    <li>&#10148; Finance management</li>
+              </p>
+            </div>    
+          </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
+              </h3>
+              <h4 class="timeline-title">Tanzania Associatoion of Tax Consultants</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+                    <li>&#10148; Photography and video production</li>
+                    <li>&#10148; Social media management</li>
+              </p>
+            </div>    
+          </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2024
+              </h3>
+              <h4 class="timeline-title">Mtetezi wa Mama - Ubungo</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Data Analysis</li>
+                    <li>&#10148; Project Management</li>
+              </p>
+            </div>    
+            </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2022 - 2024
+              </h3>
+              <h4 class="timeline-title">Dar es Salaam University Economics Association (DUEA)</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+              </p>
+            </div>    
+          </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2022 - 2023
+              </h3>
+              <h4 class="timeline-title">University Dar es Salaam TRA Association - UDTA</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+              </p>
+            </div>    
+          </div>
+
+         
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2024
+              </h3>
+              <h4 class="timeline-title">MJUE MUNGU CAMPAIGN</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+                    <li>&#10148; Social media management</li>
+              </p>
+            </div>    
+          </div>
+
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2022 - 2024
+              </h3>
+              <h4 class="timeline-title">University of Dar es Salaam School of Economics</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+              </p>
+            </div>    
+          </div>
+          
+          <div class="timeline-item">
+            <div class="cirlce-dot">
+              <h3 class="timeline-date">
+                <i class="fa-regular fa-calendar-days"></i> 2023
+              </h3>
+              <h4 class="timeline-title">CCT USCF Dar, Pwani and Zanzibar</h4>
+              <p class="timeline-text">
+                    <li>&#10148; Graphics design</li>
+                    <li>&#10148; Content creation</li>
+              </p>
+            </div>    
+          </div>
+
         </div>
       </div>
     </div>

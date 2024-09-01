@@ -1,4 +1,4 @@
-<!------------------------------------------------PROFESSIONAL SKILLS------------------------------------------->
+<!-- ----------------------------------------------PROFESSIONAL SKILLS----------------------------------------- -->
 
 <!-- <section class="skills" id="skills-id"> -->
   <!-- Flex container for both skill containers -->

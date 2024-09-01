@@ -28,7 +28,7 @@
         </ul>
       </nav>
       <div class="header-text">
-        <h1>Welcome to Xander Creative</h1>
+        <h1>Welcome to <span style="color: rgb(255,215,0)">Xander Creative</span></h1>
         {{-- <h2>Graphics Design | Data Analysis | Digital Marketing </h2> --}}
       </div> 
       
@@ -37,10 +37,10 @@
         <strong><span style="color: rgb(255,215,0);"  class="auto-type">Graphics Design | Data Analysis | Digital Marketing </span></strong>
       </div>
       
-      <div class="home-welcome">
-        <p>
-          I’m a freelancer, dedicated to transforming your ideas into captivating designs, powerful
-  strategies, and data-driven solutions. Together, we’ll bring your vision to life and make it
+      <div>
+        <p class="home-paragraphy">
+          I’m a freelancer, dedicated to transforming your ideas into captivating designs, <br> powerful
+  strategies, and data-driven solutions. <br> Together, we’ll bring your vision to life and make it
   unforgettable.
         </p>
       </div>

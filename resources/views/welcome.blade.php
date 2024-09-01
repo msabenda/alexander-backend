@@ -22,9 +22,6 @@
 <x-clients-section />
 
 
-<!-- Professional skills section component -->
-<!-- <x-professional-skills /> -->
-
 <!-- Blog section component -->
 <x-blog-section />
 

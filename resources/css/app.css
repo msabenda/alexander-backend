@@ -85,7 +85,6 @@ nav {
 
 /*--------------------*********Styling HEAD SECTION Part*************------------------------------ */
 .header {
-  height: 100vh;
   background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/homewallpaper.jpg");
   background-position: center center;
   background-size: cover;
@@ -93,6 +92,9 @@ nav {
   overflow: auto;
   width: 100%;
   margin: 0 auto;
+  height: auto;
+  position: relative;
+  background-attachment: fixed;
 }
 
 /*---------------------------- Styling Navigation Bar --------------------------*/
@@ -237,7 +239,7 @@ nav {
   gap: 1rem;
   flex-wrap: wrap;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .social-media a {
@@ -280,9 +282,11 @@ color: #1769FF;
 /*----------------------------------- Styling Header text on HEAD SECTION -------------------------*/
 .header-text {
   margin-top: 100px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   color: #fff;
   text-align: right;
+  color: #fff;
+  margin-right: 80px;
 }
 
 .typing {
@@ -290,10 +294,14 @@ color: #1769FF;
   margin-left: 50px;
   font-size: 30px;
   text-align: right;
+  margin-right: 80px;
 }
-.home-welcome {
-text-align: right;
 
+.home-paragraphy {
+  color: #fff;
+  text-align: right;
+  margin-right: 80px;
+  margin-top: 30px;
 }
 /*---------------------------- Styling ABOUT SECTION STARTS ------------------------------- */
 #about {
@@ -381,13 +389,14 @@ text-align: right;
   align-items: center;
 }
 
+
 .alex-img {
   width: 100%; /* Full width for responsiveness */
   max-width: 350px; /* Constrain the maximum width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 15px; /* Rounded corners */
   box-shadow: 0 0 15px rgba(155, 155, 155, 0.5); /* Subtle shadow */
-  transition: filter 1.5s ease, opacity 0.5s ease; /* Smooth transitions */
+  /* transition: filter 1.5s ease, opacity 0.5s ease; Smooth transitions */
 }
 
 .alex-img:hover {
@@ -395,6 +404,8 @@ text-align: right;
   opacity: 0.8; /* Slightly less opaque on hover */
   filter: grayscale(0%); /* Remove grayscale on hover */
 }
+
+
 
 /* Horinzontal Line */
 #line {
@@ -487,10 +498,10 @@ text-align: right;
 }
 
 .education:hover {
-  background-color: rgb(255, 215, 0);  /* Light background color on hover */
+  background-color: rgba(255, 215, 0,0.8);  /* Light background color on hover */
 } 
 .experience:hover {
-  background-color: rgb(255, 215, 0);  /* Light background color on hover */
+  background-color: rgba(255, 215, 0,0.8);   /* Light background color on hover */
 } 
 
 /* -------------************Styling SECTION 1(MISSION,VISION and TEAM)*********----------------------- */
@@ -500,6 +511,7 @@ text-align: right;
   background-size: cover;
   background-position: center;
   padding: 60px 0;
+  background-attachment: fixed;
 }
 
 .section-cont {
@@ -515,9 +527,10 @@ text-align: right;
   flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
 }
 
+
 .service-card {
-  background: rgb(255, 255, 255); /* Transparent black background */
-  color: rgb(0, 0, 0); /* Text color */
+  background: rgba(255, 255, 255, 0.527); /* Transparent black background */
+  /* color: rgb(255, 255, 255);  */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
@@ -525,7 +538,6 @@ text-align: right;
   flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis for responsive layout */
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 
 .service-card img {
   display: block; /* Ensures that the image is treated as a block-level element */
@@ -567,6 +579,7 @@ p {
   transform: translateY(-5px); /* Slight lift effect on hover */
   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
   background-color: rgb(255, 215, 0);
+  /* color: rgb(0, 0, 0); */
 }
 
 .service-image {
@@ -621,12 +634,12 @@ p {
 /* Service Card Styling */
 .service-card {
   /* background-color: rgba(255, 255, 255); */
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  padding: 2rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  /* text-align: center; */
+  /* padding: 2rem; */
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; */
 }
 
 .service-card:hover {
@@ -666,29 +679,34 @@ p {
   transition: color 0.3s ease;
 }
 
-/* ----------------------*************Styling PROFESSIONAL SKILLS******************---------------------------- */
+/* ----------------------*************Styling RECENT CLIENTS******************---------------------------- */
 :root {
   --total-brand: 14;
   --logo-width: 12rem;
   --total-logo-width: calc(var(--total-brand) * var(--logo-width) * 2);
-  --animation-duration: calc(var(--total-brand) * 1s);
+  --animation-duration: calc(var(--total-brand) * 2s);
 }
 
 .partners{
   display: grid; 
   place-items: center;
+  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(117, 117, 117, 0.9)), url("../images/background-contact.jpg");
+  background-attachment: fixed;
 }
-
+.brand-logo {
+  color: rgb(255,255,255);
+}
 .slider {
   position: relative;
   width: 100vw;
   height: 12rem;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 
-  box-shadow: 0 .8rem 1.4rem -.2rem;
+  box-shadow: 0 0.5rem 0.5rem -.5rem;
   display: flex;
   align-items: center;
   overflow: hidden;
+  /* padding: 100px auto; */
 }
 
 .slider ul.brands {
@@ -726,12 +744,12 @@ ul.brands li.brand-logo {
 
 .slider::before {
   left: 0;
-  background: linear-gradient(to right, rgb(255, 255, 255) 0%,  rgba(197, 195, 195, 0.932) 100%);
+  /* background: linear-gradient(to right, rgb(107, 107, 107) 0%,  rgb(54, 54, 54) 100%); */
 }
 
 .slider::after {
   right: 0;
-  background: linear-gradient(to left, rgb(255, 255, 255) 0%,  rgba(197, 195, 195, 0.932) 100%);
+  background: linear-gradient(to left, rgb(141, 141, 141) 0%,  rgba(32, 32, 32, 0.521) 100%);
 }
 /* ---------************Styling Blog Posts**********----------- */
 
@@ -842,6 +860,7 @@ ul.brands li.brand-logo {
   color: rgb(0, 0, 0);
   font-weight: bold;
   text-align: center;
+  padding: 10px 10px;
 }
 
 .blog-btn:hover {
@@ -1398,17 +1417,6 @@ textarea {
     /* height: 100vh; */
     background-color: rgb(248, 248, 248);
     scroll-behavior: smooth;
-  }
-
-  .header {
-  height: 100vh;
-  background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)),url("../images/homewallpaper.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  overflow: auto;
-  width: 100%;
-  margin: 0 auto;
   }
 
   .social-media {

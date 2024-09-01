@@ -7,7 +7,7 @@
     <div class="service-card">
       <h4 class="mvt-head">MISSION</h4>
       <img src="images/mission-icon.png" alt="mission-logo" class="mission">
-      <p>
+      <p class="para-m">
       "To empower brands and individuals by transforming ideas into impactful designs, strategic solutions, and
 insightful data-driven decisions that inspire growth and success."
       </p>
@@ -15,7 +15,7 @@ insightful data-driven decisions that inspire growth and success."
     <div class="service-card">
       <h4 class="mvt-head">VISION</h4>
       <img src="images/vision-icon.jpg" alt="vision-logo" class="vision">
-      <p>
+      <p class="para-m">
       "To be a leading force in the creative industry, recognized for delivering innovative and results-driven
 solutions that elevate brands and turn visions into reality."
       </p>
@@ -23,7 +23,7 @@ solutions that elevate brands and turn visions into reality."
     <div class="service-card">
       <h4 class="mvt-head">TEAM</h4>
       <img src="images/team-icon.jpg" alt="team-logo" class="team">
-      <p>
+      <p class="para-m">
       "Driven by creativity and collaboration, our team is dedicated to turning your ideas into exceptional
 outcomes."
       </p>

@@ -1,5 +1,5 @@
 <section class="partners">
-    <h2>OUR RECENT CLIENTS</h2>
+    <h2 style="color: rgb(255,255,255)">MY RECENT CLIENTS</h2>
 <div class="slider">
     <ul class="brands">
         <li class="brand-logo"><img src="{{ url('images/i.png') }}" alt="" width="150px" height="150px"><br>CCT USCF Dar</li>
