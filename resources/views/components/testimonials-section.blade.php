@@ -49,4 +49,4 @@
     <div class="swiper-button-prev nav-button"></div>
     <div class="swiper-pagination"></div>
   </div>
-</section> <!-- Testimonial ends here -->
+</section> Testimonial ends here

@@ -1,75 +1,40 @@
 <!-- resources/views/components/pictures-projects.blade.php -->
 <!-- --------Pictures-------- -->
 
-<div class="picture-section">
-  <div class="inner-width">
-    <h1>My Gallery</h1>
-    <div class="border"></div>
+<section class="portfolio">
+        <header>
+            <h1>Project Highlights</h1>
+            
+        </header>
+        <div class="gallery">
+            <div class="project landscape">
+                <img src="{{ url('images/black-background.png') }}" alt="Landscape Project 1">
+                <div class="overlay">
+                    <div class="info">
+                        <h2>Xander Creative</h2>
+                        <p>Xander Creative one of the best creative company</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project portrait">
+                <img src="{{ url('images/black-logo.png') }}" alt="Portrait Project 1">
+                <div class="overlay">
+                    <div class="info">
+                        <h2>Portrait Project 1</h2>
+                        <p>Stunning portrait of a model.</p>
+                    </div>
+                </div>
+            </div>
 
-    <div class="picture">
-      <a href="{{ url('images/i.png') }}" class="image">
-        <img src="{{ url('images/i.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/ii.png') }}" class="image">
-        <img src="{{ url('images/ii.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/iii.png') }}" class="image">
-        <img src="{{ url('images/iii.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/iv.png') }}" class="image">
-        <img src="{{ url('images/iv.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/v.png') }}" class="image">
-        <img src="{{ url('images/v.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/vi.png') }}" class="image">
-        <img src="{{ url('images/vi.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/vii.png') }}" class="image">
-        <img src="{{ url('images/vii.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/viii.png') }}" class="image">
-        <img src="{{ url('images/viii.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/ix.png') }}" class="image">
-        <img src="{{ url('images/ix.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/x.png') }}" class="image">
-        <img src="{{ url('images/x.png') }}" alt="">
-      </a>
-
-      <a href="{{ url('images/xi.png') }}" class="image">
-        <img src="{{ url('images/xi.png') }}" alt="">
-      </a>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-<!-- <section class="project-container content-container">
-  <h2 class="section-heading">PICTURES PROJECTS</h2>
-  <div class="picture-flex">
-    <img src="{{ url('images/family-client-2.webp') }}" alt="image-1" />
-    <img src="{{ url('images/black-mother-client-2.avif') }}" alt="image-2" />
-    <img src="{{ url('images/customer-3.jpg') }}" alt="image-3" />
-    <img src="{{ url('images/image-4.jpg') }}" alt="image-4" />
-    <img src="{{ url('images/image-5.jpg') }}" alt="image-5" />
-    <img src="{{ url('images/image-6.jpg') }}" alt="image-6" />
-    <img src="{{ url('images/image-7.jpg') }}" alt="image-7" />
-    <img src="{{ url('images/image-8.jpg') }}" alt="image-8" />
-  </div>
-</section> -->
+            <div class="project portrait">
+                <img src="{{ url('images/gold-logo.png') }}" alt="Portrait Project 1">
+                <div class="overlay">
+                    <div class="info">
+                        <h2>Portrait Project 1</h2>
+                        <p>Stunning portrait of a model.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
