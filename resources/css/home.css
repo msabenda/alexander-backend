@@ -1,0 +1,220 @@
+/*--------------------*********Styling HEAD SECTION Part*************------------------------------ */
+.header {
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/homewallpaper.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    position: relative;
+    background-attachment: fixed;
+  }
+  
+  /*---------------------------- Styling Navigation Bar --------------------------*/
+  .nav__header {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: var(--text-dark);
+  }
+  
+  .nav__logo img {
+    max-width: 70px;
+  }
+  
+  .nav__menu__btn {
+    font-size: 1.5rem;
+    color: rgba(255,215,0,0.5);
+    cursor: pointer;
+  }
+  
+  .nav__links {
+    list-style: none;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--text-dark);
+    transform: translateY(-100%);
+    transition: 0.5s;
+    z-index: -1;
+  }
+  
+  .nav__links.open {
+    transform: translateY(0);
+  }
+  
+  .nav__links .nav__logo {
+    display: none;
+  }
+  
+  .nav__links a {
+    padding-bottom: 5px;
+    font-weight: 500;
+    color: var(--white);
+    border-bottom: 2px solid transparent;
+  }
+  
+  #home-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  #home-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+  }
+  
+  #about-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  #about-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+    font-size: medium;
+  }
+  
+  #service-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  #service-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+  }
+  
+  #testimonials-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  #testimonials-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+  }
+  
+  #blog-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none; 
+  }
+  
+  #blog-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+  }
+  
+  #contact-nav {
+    display: block;
+    border-radius: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  #contact-nav:hover {
+    display: block;
+    background-color: rgb(255,215,0);
+    color: rgb(0,0,0);
+    padding: 10px 10px;
+  }
+  
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  
+  .social-media a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+  }
+  
+  .facebook-icon:hover {
+  color: #1877F2;
+  }
+  
+  .twitter-icon:hover {
+  color: #302d2d;
+  }
+  
+  .instagram-icon:hover {
+  color: #E4405F;
+  }
+  
+  .whatsapp-icon:hover {
+  color: #25D366; 
+  }
+  
+  .linkedin-icon:hover {
+  color: #0e76a8;
+  }
+  
+  .dribbble-icon:hover {
+  color: #EA4C89;
+  }
+  
+  .behance-icon:hover {
+  color: #1769FF;
+  }
+  /*----------------------------------- Styling Header text on HEAD SECTION -------------------------*/
+  .header-text {
+    margin-top: 100px;
+    /* margin-left: 50px; */
+    color: #fff;
+    text-align: right;
+    color: #fff;
+    margin-right: 80px;
+  }
+  
+  .typing {
+    margin-top: 5rem;
+    margin-left: 50px;
+    font-size: 30px;
+    text-align: right;
+    margin-right: 80px;
+  }
+  
+  .home-paragraphy {
+    color: #fff;
+    text-align: right;
+    margin-right: 80px;
+    margin-top: 30px;
+  }

@@ -1,0 +1,112 @@
+/*---------------------------- Styling ABOUT SECTION STARTS ------------------------------- */
+#about {
+    padding-top: 50px;
+    /* padding: 80px 0px; */
+    margin-bottom: 0;
+    
+  }
+  
+  /* General Styling for the About Section */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto 120px;
+    margin-bottom: 50px;
+    gap: 20px; /* Add gap between items for better spacing */
+  }
+  
+  /* Left part of About section */
+  .about-left {
+    flex: 1 1 50%; /* Adjust the basis for better responsiveness */
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  .section__header {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.5rem; /* Slightly smaller size for a better fit */
+    color: #333;
+    margin-bottom: 1.5rem; /* Adjust margins for better spacing */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .section__description {
+    color: var(--text-light);
+    line-height: 1.75rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Styling for the Quote */
+  .quote {
+    background-color: rgb(255, 255, 255); /* Subtle background */
+    margin: 20px auto; /* Centered margin */
+    padding: 20px;
+    border-radius: 15px; /* Slightly rounded corners */
+    max-width: 80%; /* Ensure it doesn't overflow */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  .quote:hover {
+    background-color: rgb(255, 215, 0);
+  }
+  .quote p {
+    color: rgb(0, 0, 0);
+  }
+  .quote p::before {
+    content: '\201C';
+    font-size: 2rem; /* Larger size for emphasis */
+    color: rgba(0, 0, 0, 0.8); /* Highlight color */
+  }
+  
+  .quote p::after {
+    content: '\201D';
+    font-size: 2rem; /* Larger size for emphasis */
+    color: rgba(0, 0, 0, 0.8); /* Highlight color */
+  }
+  .quote + p {
+    color: rgb(0, 0, 0);
+  }
+  
+  .quote + p {
+    text-align: right;
+    margin-top: 10px;
+    font-style: italic; /* Italicize author's name */
+  }
+  
+  /* Right part of About section */
+  .about-right {
+    flex: 1 1 30%; /* Adjust the basis for better responsiveness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .alex-img {
+    width: 100%; /* Full width for responsiveness */
+    max-width: 350px; /* Constrain the maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(155, 155, 155, 0.5); /* Subtle shadow */
+    /* transition: filter 1.5s ease, opacity 0.5s ease; Smooth transitions */
+  }
+  
+  .alex-img:hover {
+    background-color: rgb(255, 215, 0);/* Light background on hover */
+    opacity: 0.8; /* Slightly less opaque on hover */
+    filter: grayscale(0%); /* Remove grayscale on hover */
+  }
+  
+  
+  
+  /* Horinzontal Line */
+  #line {
+   font-weight: 600;
+   font-weight: bold;
+   border: 1px solid rgb(0,0,0);
+  }
+  
+  

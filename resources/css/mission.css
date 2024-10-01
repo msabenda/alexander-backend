@@ -1,0 +1,56 @@
+/* -------------************Styling SECTION 1(MISSION,VISION and TEAM)*********----------------------- */
+
+.section1 {
+    background-image: url("../images/background-Mission.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    background-attachment: fixed;
+  }
+  
+  .section-cont {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .service-grid {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between cards */
+    gap: 20px; /* Optional: Adjust gap between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  }
+  
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.527); /* Transparent black background */
+    /* color: rgb(255, 255, 255);  */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and flex-basis for responsive layout */
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .service-card img {
+    display: block; /* Ensures that the image is treated as a block-level element */
+    margin: 0 auto; /* Centers the image horizontally */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  h4 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  

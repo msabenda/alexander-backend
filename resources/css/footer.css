@@ -1,0 +1,121 @@
+/* -------------*****FOOTER******--------------- */
+
+.footer-container {
+    background-color: rgba(34, 34, 34, 0.772);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: bold 16px;
+    padding: 50px 50px 60px 50px;
+  }
+  
+  .footer-container .footer-left, .footer-container .footer-center, .footer-container .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .footer-container .footer-left {
+    width: 30%;
+  }
+  
+  .footer-container h2 {
+    color: rgb(255, 215, 0);
+    margin: 0;
+  }
+  
+  .footer-links {
+    margin: 20px 0;
+    font-size: 14px;
+  }
+  
+  .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff; /* White color for the links */
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .footer-links a:not(:last-child)::after {
+    content: "|";
+    color: #fff; /* White color for the separator */
+    margin: 0 10px;
+  }
+  
+  .footer-links a:hover {
+    color: rgb(255, 215, 0); /* Change color on hover */
+  }
+  
+  .footer-container .footer-company {
+    color: rgb(255, 215, 0);
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-container .footer-center {
+    width: 35%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-container .footer-center p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    color: #fff; /* White color for center text */
+  }
+  
+  .footer-container .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1;
+  }
+  
+  .footer-container .footer-center p a {
+    color: rgb(255, 215, 0); /* Keep the links color as gold */
+    text-decoration: none;
+  }
+  
+  .footer-container .footer-right {
+    width: 30%;
+  }
+  
+  .footer-container .footer-about {
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    color: #fff; /* White color for about text */
+  }
+  
+  .footer-container .footer-about span {
+    display: block;
+    color: rgb(255, 215, 0); /* Gold color for the span text */
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-container .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-container .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff; /* White color for the icons */
+    text-align: center;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+    

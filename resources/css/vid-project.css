@@ -1,0 +1,63 @@
+/* --------Video Project------------- */
+.video-container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-header {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--text-dark);
+    text-align: center;
+  }
+  
+  .video-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .video-flex {
+    display: flex;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-flex video {
+    width: 450px; /* Adjust dimensions */
+    height: 500px; /* Adjust dimensions */
+    object-fit: cover;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .video-flex video:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+  
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  

@@ -1,0 +1,86 @@
+/* ----------------------------MY PROJECTS--------------- */
+
+.portfolio {
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  .filter {
+    margin-top: 10px;
+  }
+  
+  .filter button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .filter button:hover {
+    background-color: #555;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .project {
+    position: relative;
+    width: calc(33.333% - 10px);
+    overflow: hidden;
+  }
+  
+  .project img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .overlay .info {
+    max-width: 80%;
+  }
+  
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .project {
+        width: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .project {
+        width: calc(100% - 10px);
+    }
+  }

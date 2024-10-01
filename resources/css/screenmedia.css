@@ -1,0 +1,643 @@
+/* --------------------- Responsive Styling with Media Queries --------------------- */
+
+
+/* For Mobile Devices (up to 480px) */
+@media only screen and (max-width: 480px) {
+    .row {
+      margin: auto 20px; /* Reduce margins for smaller screens */
+    }
+    .section__header {
+      font-size: 2rem; /* Adjust font size */
+    }
+    .about-left, .about-right {
+      flex: 1 1 100%; /* Stack elements vertically */
+      padding: 10px; /* Reduce padding */
+    }
+    .alex-img {
+      max-width: 100%; /* Ensure the image is fully responsive */
+    }
+  }
+  
+  /* For Tablets (481px - 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .row {
+      margin: auto 40px; /* Adjust margins for medium screens */
+    }
+    .section__header {
+      font-size: 2.2rem; /* Slightly smaller font size */
+    }
+    .about-left, .about-right {
+      flex: 1 1 100%; /* Stack elements vertically */
+    }
+    .alex-img {
+      max-width: 80%; /* Constrain the image width */
+    }
+  }
+  
+  /* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .row {
+      margin: auto 60px; /* Adjust margins */
+    }
+    .about-left, .about-right {
+      flex: 1 1 45%; /* Adjust flex basis */
+    }
+    .alex-img {
+      max-width: 300px; /* Slightly reduce max width */
+    }
+  }
+  
+  /* For Mobile Devices (up to 480px) */
+  @media only screen and (max-width: 480px) {
+    .row-bigger {
+      flex-direction: column; /* Stack the education and experience sections */
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .education, .experience {
+      margin-bottom: 20px; /* Add space between stacked sections */
+    }
+    .title {
+      font-size: 1.5rem; /* Adjust font size */
+    }
+    .timeline {
+      padding-left: 20px; /* Reduce padding */
+    }
+    .timeline-item::before {
+      left: -10px; /* Adjust to align with smaller screen */
+    }
+    .circle-dot {
+      left: -20px; /* Adjust for smaller screen */
+      width: 16px; /* Reduce size for smaller screens */
+      height: 16px; /* Reduce size for smaller screens */
+    }
+  }
+  
+  /* For Tablets (481px - 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .row-bigger {
+      flex-direction: column; /* Stack the sections vertically */
+      padding: 15px; /* Adjust padding */
+    }
+    .education, .experience {
+      margin-bottom: 20px; /* Space between stacked sections */
+    }
+    .title {
+      font-size: 1.8rem; /* Adjust font size */
+    }
+    .timeline {
+      padding-left: 30px; /* Adjust padding */
+    }
+    .timeline-item::before {
+      left: -15px; /* Adjust to align with timeline */
+    }
+    .circle-dot {
+      left: -25px; /* Adjust for screen size */
+      width: 20px; /* Slightly smaller dot */
+      height: 20px; /* Slightly smaller dot */
+    }
+  }
+  
+  /* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .row-bigger {
+      padding: 20px; /* Standard padding */
+    }
+    .title {
+      font-size: 1.9rem; /* Slightly adjust font size */
+    }
+    .timeline {
+      padding-left: 35px; /* Adjust padding */
+    }
+    .timeline-item::before {
+      left: -18px; /* Adjust to align with timeline */
+    }
+    .circle-dot {
+      left: -28px; /* Adjust for screen size */
+    }
+  }
+  
+  /* --------------------- Responsive Styling with Media Queries --------------------- */
+  
+  /* For Mobile Devices (up to 480px) */
+  @media only screen and (max-width: 480px) {
+    .service-grid {
+      flex-direction: column; /* Stack cards vertically */
+      gap: 15px; /* Reduce gap for smaller screens */
+    }
+    .service-card {
+      flex: 1 1 100%; /* Make each card take full width */
+      padding: 15px; /* Adjust padding */
+    }
+    .service-card img {
+      height: 80px; /* Smaller image size */
+      width: 80px; /* Smaller image size */
+    }
+    h4 {
+      font-size: 1.2rem; /* Adjust font size */
+    }
+    p {
+      font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* For Tablets (481px - 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .service-grid {
+      gap: 20px; /* Maintain the gap */
+    }
+    .service-card {
+      flex: 1 1 45%; /* Cards take up about half the width */
+      padding: 18px; /* Adjust padding */
+    }
+    .service-card img {
+      height: 90px; /* Slightly smaller image size */
+      width: 90px; /* Slightly smaller image size */
+    }
+    h4 {
+      font-size: 1.4rem; /* Adjust font size */
+    }
+    p {
+      font-size: 0.95rem; /* Adjust paragraph font size */
+    }
+  }
+  
+  /* For Small Laptops/Tablets in Landscape (769px - 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .service-grid {
+      gap: 20px; /* Maintain gap */
+    }
+    .service-card {
+      flex: 1 1 48%; /* Cards take up nearly half the width */
+      padding: 20px; /* Standard padding */
+    }
+    .service-card img {
+      height: 100px; /* Standard image size */
+      width: 100px; /* Standard image size */
+    }
+    h4 {
+      font-size: 1.5rem; /* Standard font size */
+    }
+    p {
+      font-size: 1rem; /* Standard paragraph font size */
+    }
+  }
+  
+  /* Mobile Devices (Portrait, max-width: 600px) */
+  @media only screen and (max-width: 600px) {
+    .myservices-section {
+      grid-template-columns: 1fr; /* Single column layout for small screens */
+      padding: 1rem;
+    }
+  
+    .service-card {
+      padding: 1rem;
+      margin-bottom: 1.5rem; /* Add spacing between cards */
+    }
+  
+    .section-heading {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+    }
+  
+    .service-card .icon {
+      font-size: 2.5rem;
+    }
+  
+    .service-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .service-card p {
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Tablets (Portrait, max-width: 768px) */
+  @media only screen and (max-width: 768px) {
+    .myservices-section {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 1.5rem;
+    }
+  
+    .service-card {
+      padding: 1.5rem;
+    }
+  
+    .service-card .icon {
+      font-size: 2.8rem;
+    }
+  
+    .service-card h3 {
+      font-size: 1.4rem;
+    }
+  
+    .service-card p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Laptops (max-width: 1024px) */
+  @media only screen and (max-width: 1024px) {
+    .myservices-section {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+  
+    .service-card .icon {
+      font-size: 3rem;
+    }
+  
+    .service-card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .service-card p {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  
+  /* Mobile Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .skills {
+      padding-left: 10px; /* Reduce padding */
+    }
+  
+    .skills-container {
+      flex-direction: column; /* Stack containers vertically */
+      padding: 10px; /* Reduce padding */
+    }
+  
+    .container1, .container2 {
+      flex: 1 1 100%; /* Make containers full width */
+      padding: 20px; /* Adjust padding */
+      margin-left: 0; /* Remove margin */
+    }
+  
+    .bar {
+      font-size: 18px; /* Smaller font size */
+    }
+  
+    .technical-bar .bar {
+      margin-top: 20px; /* Adjust margin */
+    }
+  
+    .technical-bar .bar .info span {
+      font-size: 14px; /* Smaller font size */
+    }
+  
+    .technical-bar .bar .progress-line {
+      height: 4px; /* Smaller line height */
+    }
+  
+    .progress-line span::after {
+      font-size: 14px; /* Smaller font size */
+      top: -15px; /* Adjust position */
+      right: -15px; /* Adjust position */
+    }
+  }
+  
+  /* Tablets (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .skills {
+      padding-left: 20px; /* Adjust padding */
+    }
+  
+    .skills-container {
+      flex-direction: column; /* Stack containers vertically on smaller tablets */
+    }
+  
+    .container1, .container2 {
+      flex: 1 1 100%; /* Make containers full width */
+      padding: 30px; /* Adjust padding */
+      margin-left: 0; /* Remove margin */
+    }
+  
+    .bar {
+      font-size: 20px; /* Slightly smaller font size */
+    }
+  
+    .technical-bar .bar {
+      margin-top: 30px; /* Adjust margin */
+    }
+  
+    .technical-bar .bar .info span {
+      font-size: 16px; /* Adjust font size */
+    }
+  
+    .technical-bar .bar .progress-line {
+      height: 4px; /* Adjust height */
+    }
+  
+    .progress-line span::after {
+      font-size: 16px; /* Adjust font size */
+      top: -15px; /* Adjust position */
+      right: -15px; /* Adjust position */
+    }
+  }
+  
+  /* Desktops (769px and above) */
+  @media (min-width: 769px) {
+    .skills {
+      padding-left: 150px; /* Restore original padding */
+    }
+  
+    .skills-container {
+      flex-direction: row; /* Align containers side by side */
+    }
+  
+    .container1, .container2 {
+      flex: 1 1 400px; /* Maintain size */
+      padding: 75px 90px; /* Maintain padding */
+      margin-left: 120px; /* Restore margin */
+    }
+  
+    .bar {
+      font-size: 23px; /* Maintain original font size */
+    }
+  
+    .technical-bar .bar {
+      margin-top: 40px; /* Maintain margin */
+    }
+  
+    .technical-bar .bar .info span {
+      font-size: 17px; /* Maintain font size */
+    }
+  
+    .technical-bar .bar .progress-line {
+      height: 5px; /* Maintain height */
+    }
+  
+    .progress-line span::after {
+      font-size: 18px; /* Maintain font size */
+      top: -20px; /* Maintain position */
+      right: -20px; /* Maintain position */
+    }
+  }
+  
+  
+  
+  
+  /* Tablets and smaller screens (up to 768px wide) */
+  @media (max-width: 768px) {
+    .main-text {
+      padding: 30px 20px; /* Reduced padding */
+    }
+  
+    .main-text h2 {
+      font-size: 40px; /* Smaller heading font size */
+    }
+  
+    .blog-content {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted grid layout */
+      grid-gap: 15px; /* Reduced gap between items */
+    }
+  
+    .container1, .container2 {
+      padding: 50px 30px; /* Reduced padding */
+    }
+  
+    .layer h3 {
+      font-size: 18px; /* Smaller font size for layer headings */
+    }
+  
+    .layer p {
+      font-size: 0.9rem; /* Smaller font size for paragraph text */
+    }
+  
+    .blog-btn {
+      padding: 0 30px; /* Adjusted button padding */
+      font-size: 16px; /* Smaller font size for button text */
+    }
+  }
+  
+  /* Mobile screens (up to 480px wide) */
+  @media (max-width: 480px) {
+    .main-text {
+      padding: 20px 10px; /* Further reduced padding */
+    }
+  
+    .main-text h2 {
+      font-size: 30px; /* Smaller heading font size */
+    }
+  
+    .blog-content {
+      grid-template-columns: 1fr; /* Single-column layout */
+      grid-gap: 10px; /* Reduced gap between items */
+    }
+  
+    .container1, .container2 {
+      padding: 30px 20px; /* Further reduced padding */
+    }
+  
+    .layer h3 {
+      font-size: 16px; /* Smaller font size for layer headings */
+    }
+  
+    .layer p {
+      font-size: 0.8rem; /* Smaller font size for paragraph text */
+    }
+  
+    .blog-btn {
+      padding: 0 20px; /* Further adjusted button padding */
+      font-size: 14px; /* Smaller font size for button text */
+    }
+  }
+  
+  
+  /* -----------------------------BACK TO TOP BUTTON----------------------- */
+  .top-btn {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    border: 1px dashed rgb(0, 0, 0);
+    color: rgb(1, 1, 1);
+    font-size: 14px;
+    border-radius: 80%;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 3;
+  }
+  
+  .top-btn.show {
+    visibility: visible;
+    opacity: 1; /* Corrected from 5 to 1 */
+    transform: translateY(0);
+  }
+  
+  .top-btn:hover {
+    color: rgb(238, 188, 24);
+  }
+  
+  /* Mobile Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .top-btn {
+      right: 15px; /* Move it closer to the edge for better accessibility */
+      width: 60px; /* Smaller size for mobile */
+      height: 60px; /* Smaller size for mobile */
+      font-size: 12px; /* Slightly smaller font size */
+    }
+    
+    .top-btn:hover {
+      color: rgb(238, 188, 24); /* Retain hover effect */
+    }
+  }
+  
+  
+  /* Media Queries */
+  
+  /* Mobile Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .contact-section {
+      padding: 2rem 1rem;
+      height: auto; /* Adjust height for mobile */
+    }
+  
+    .section-title {
+      font-size: 1.75rem;
+    }
+  
+    .contact-box {
+      width: 95%;
+      padding: 1rem;
+    }
+  
+    .left, .right {
+      flex: 1 1 100%; /* Stack sections vertically */
+      margin: 0;
+      padding: 0.5rem;
+    }
+  
+    .left {
+      margin-right: 0;
+    }
+  
+    .right {
+      padding-left: 0;
+    }
+  
+    .img-contact {
+      width: 120px;
+    }
+  
+    iframe {
+      height: 300px;
+    }
+  
+    .field, textarea {
+      font-size: 0.9rem;
+    }
+  
+    .contact-btn {
+      padding: 0.75rem;
+      font-size: 0.9rem;
+    }
+  
+    .footer-container {
+      padding: 30px 20px;
+    }
+  
+    .footer-container .footer-left,
+    .footer-container .footer-center,
+    .footer-container .footer-right {
+      width: 100%;
+      display: block;
+    }
+  
+    .footer-container .footer-left,
+    .footer-container .footer-right {
+      text-align: center;
+    }
+  }
+  
+  /* Tablets (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .contact-section {
+      padding: 3rem 1.5rem;
+    }
+  
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .contact-box {
+      width: 95%;
+      padding: 1.5rem;
+    }
+  
+    .left, .right {
+      flex: 1 1 45%;
+      margin: 0;
+    }
+  
+    .left {
+      margin-right: 1rem;
+    }
+  
+    .right {
+      padding-left: 1rem;
+    }
+  
+    .img-contact {
+      width: 130px;
+    }
+  
+    iframe {
+      height: 350px;
+    }
+  
+    .field, textarea {
+      font-size: 0.95rem;
+    }
+  
+    .contact-btn {
+      padding: 0.9rem;
+      font-size: 0.95rem;
+    }
+  
+    .footer-container {
+      padding: 40px 30px;
+    }
+  
+    .footer-container .footer-left,
+    .footer-container .footer-center,
+    .footer-container .footer-right {
+      width: 33%;
+    }
+  }
+  
+  /* Mobile Devices (up to 480px) */
+  @media (max-width: 480px) {
+    .cursor {
+      width: 20px; /* Smaller size for mobile */
+      height: 20px; /* Smaller size for mobile */
+      box-shadow: 0 0 10px rgb(255, 217, 0); /* Adjust shadow */
+    }
+  }
+  
+  /* Tablets (481px to 768px) */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .cursor {
+      width: 22px; /* Slightly larger than mobile */
+      height: 22px; /* Slightly larger than mobile */
+      box-shadow: 0 0 12px rgb(255, 217, 0); /* Adjust shadow */
+    }
+  }
+  
+  /* Desktop (769px and above) */
+  @media (min-width: 769px) {
+    .cursor {
+      width: 25px; /* Default size for desktop */
+      height: 25px; /* Default size for desktop */
+      box-shadow: 0 0 15px rgb(255, 217, 0); /* Default shadow */
+    }
+  }
+  

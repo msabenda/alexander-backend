@@ -1,0 +1,91 @@
+/*-----------***************Styling EDUCATION AND EXPERIENCE***********-----------------------*/
+.row-bigger {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
+  
+  .education, .experience {
+    flex: 1;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .timeline-box {
+    position: relative;
+  }
+  
+  .timeline {
+    position: relative;
+    padding-left: 40px; /* Space for the static timeline line and dot */
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 20px 0;
+    margin-bottom: 30px; /* Space between timeline items */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -20px; /* Adjust to ensure the dot aligns with the timeline line */
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgb(0, 0, 0);/* Timeline line color */
+  }
+  
+  .circle-dot {
+    position: absolute;
+    left: -30px; /* Space for the dot */
+    width: 24px;
+    height: 24px;
+    background: rgb(255, 217, 2); 
+    border-radius: 50%;
+    top: 0;
+  }
+  
+  .timeline-date {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .timeline-title {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timeline-text {
+    margin: 10px 0 0 0; /* Increased top margin to separate from title */
+    font-size: 1rem;
+    color: #000000;
+  }
+  
+  .timeline-text, li {
+    list-style: none;
+  }
+  
+  .education:hover {
+    background-color: rgba(255, 215, 0,0.8);  /* Light background color on hover */
+  } 
+  .experience:hover {
+    background-color: rgba(255, 215, 0,0.8);   /* Light background color on hover */
+  } 
+  

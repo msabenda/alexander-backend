@@ -1,0 +1,73 @@
+/* ----------------------*************Styling RECENT CLIENTS******************---------------------------- */
+:root {
+    --total-brand: 14;
+    --logo-width: 12rem;
+    --total-logo-width: calc(var(--total-brand) * var(--logo-width) * 2);
+    --animation-duration: calc(var(--total-brand) * 2s);
+  }
+  
+  .partners{
+    display: grid; 
+    place-items: center;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(117, 117, 117, 0.9)), url("../images/background-contact.jpg");
+    background-attachment: fixed;
+  }
+  .brand-logo {
+    color: rgb(255,255,255);
+  }
+  .slider {
+    position: relative;
+    width: 100vw;
+    height: 12rem;
+    /* background-color: rgb(255, 255, 255); */
+  
+    box-shadow: 0 0.5rem 0.5rem -.5rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    /* padding: 100px auto; */
+  }
+  
+  .slider ul.brands {
+    list-style: none;
+    width: var(--total-logo-width);
+    display: flex;
+    animation: slideLeft var(--animation-duration) linear infinite;
+  }
+  
+  .slider:hover ul.brands {
+    animation-play-state: paused;
+  }
+  
+  @keyframes slideLeft {
+    100% {
+      transform: translateX(calc(-100% /2));
+    }
+  }
+  
+  ul.brands li.brand-logo {
+    width: var(--logo-width);
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 3rem;
+  }
+  
+  .slider::before, .slider::after {
+  
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: var(--logo-width);
+  
+  }
+  
+  .slider::before {
+    left: 0;
+    /* background: linear-gradient(to right, rgb(107, 107, 107) 0%,  rgb(54, 54, 54) 100%); */
+  }
+  
+  .slider::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(141, 141, 141) 0%,  rgba(32, 32, 32, 0.521) 100%);
+  }
+  
