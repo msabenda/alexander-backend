@@ -28,7 +28,6 @@ class ContactController extends Controller
         Mail::to('msa2benda@gmail.com')->send(new ContactFormSubmitted($validated));
 
         // return redirect()->to(url()->previous() . '#contact')->with('success', 'Your message has been sent! Thank You We will reach you back !');
-        return redirect()->to(url()->previous() . '#contact')
-        ->with('success', 'Your message has been sent successfully!');
+        return redirect()->route('home')->with('success', 'Your message has been sent successfully!')->with('scrollTo', '#contact');
     }
 }

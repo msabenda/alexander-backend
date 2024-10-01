@@ -3,13 +3,14 @@
     --total-brand: 14;
     --logo-width: 12rem;
     --total-logo-width: calc(var(--total-brand) * var(--logo-width) * 2);
-    --animation-duration: calc(var(--total-brand) * 2s);
+    --animation-duration: calc(var(--total-brand) * 5s);
   }
   
   .partners{
     display: grid; 
     place-items: center;
-    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(117, 117, 117, 0.9)), url("../images/background-contact.jpg");
+    background-color: rgb(68, 68, 68);
+    position: relative;
     background-attachment: fixed;
   }
   .brand-logo {

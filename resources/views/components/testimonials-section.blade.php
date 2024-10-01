@@ -1,5 +1,6 @@
-
+<h2 class="section-heading">CUSTOMER FEEDBACK</h2>
     <section class="container">
+    
       <div class="testimonial mySwiper">
         <div class="testi-content swiper-wrapper">
           <div class="slide swiper-slide">
