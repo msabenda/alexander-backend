@@ -27,7 +27,8 @@ class ContactController extends Controller
         // Send email
         Mail::to('msa2benda@gmail.com')->send(new ContactFormSubmitted($validated));
 
-        return redirect()->to(url()->previous() . '#contact')->with('success', 'Your message has been sent! Thank You We will reach you back !');
-        
+        // return redirect()->to(url()->previous() . '#contact')->with('success', 'Your message has been sent! Thank You We will reach you back !');
+        return redirect()->to(url()->previous() . '#contact')
+        ->with('success', 'Your message has been sent successfully!');
     }
 }

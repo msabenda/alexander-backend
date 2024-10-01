@@ -1,15 +1,14 @@
 <!-- --------------Videos-------------------- -->
-<section class="video-container content-container">
-  <h2 class="section-heading">VIDEOS PROJECT</h2>
-  <div class="video-slider">
-    <button class="slider-btn prev-btn">&#10094;</button>
-    <div class="video-flex">
-      <video src="video/video-1.mp4" alt="video 1" controls></video>
-      <video src="video/video-2.mp4" alt="video 2" controls></video>
-      <video src="video/video-3.mp4" alt="video 3" controls></video>
-      <video src="video/video-4.mp4" alt="video 4" controls></video>
-      <video src="video/video-5.mp4" alt="video 5" controls></video>
-    </div>
-    <button class="slider-btn next-btn">&#10095;</button>
-  </div>
-</section>
+ <section id="video-section">
+
+ <header> 
+  <h1 id="head-video">Video Highlights</h1>  
+  </header>
+<div class="container-videos">
+		<div class="main-video-container">
+			<video src="{{ url('videos/video-1.mp4') }}" loop controls class="main-video"></video>
+			<h3 class="main-vid-title">3D helicopter animation</h3>
+		</div>
+		<div class="video-list-container" id="videosList"></div>
+	</div>
+ </section>

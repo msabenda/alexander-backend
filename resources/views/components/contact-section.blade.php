@@ -1,6 +1,6 @@
 <!-- -----------------------------------*********CONTACT SECTION***********------------------------------------ -->
 <section class="contact-section" id="contact">
-      <div class="container">
+      <div class="container-contact">
         <h1 class="section-title">CONTACT <span style="color: rgb(255,215,0);">ME</span></h1>
 
 
@@ -21,7 +21,6 @@
             </ul>
          </div>
     @endif
-
 
         <div class="contact-box">
           <div class="left">
@@ -63,4 +62,15 @@
           </div>
         </div>
       </div>
+      <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const scrollToSection = "{{ session('scrollTo') }}";
+        if (scrollToSection) {
+            const target = document.querySelector(scrollToSection);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+</script>
     </section> <!-- Contact ends here -->

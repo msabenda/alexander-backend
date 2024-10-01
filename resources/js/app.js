@@ -1,4 +1,6 @@
-
+import './swiper-bundle.min.js';
+import './video-section.js';
+// import 'swiper/swiper-bundle.min.css';
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
 document.addEventListener('scroll', () => {
   const topBtn = document.querySelector('.top-btn');
@@ -32,42 +34,6 @@ const scrollRevealOption = {
   origin: "bottom",
   duration: 1000,
 };
-
-
-// --------DISPLAY EFFECT IN HOME PAGE-----------
-function findelem(tag, text) {
-  var x = document.getElementsByTagName(tag);
-  for (var i = 0; i < x.length; i++) {
-    if (x[i].innerHTML == text) {
-      return x[i];
-    }
-  }
-  return null;
-}
-
-function wrapWords (text) {
-  words = text.innerHTML.split(" ");
-  text.innerHTML = "";
-  for (var i = 0; i < words.length; i++) {
-    text.innerHTML += "<span style = \"opacity: 0; position: relative; top: 30px;\">" + words[i] +  " " + "</span>";
-  }
-  return text.children
-}
-function animatetext (wordarr) {
-  anime({
-    targets: wordarr,
-    translateY: -30,
-    duration: 3000,
-    opacity: 1,
-    delay: anime.stagger(1000),
-  });
-}
-
-window.onload = function () {
-  x = findelem("h1", "Hi, Welcome to Xander Creative");
-  xarr = wrapWords(x);
-  animatetext(xarr);
-}
 
 // --------------------------AUTO TYPING WORDS----------------------
 var typed = new Typed(".auto-type", {
@@ -105,13 +71,6 @@ ScrollReveal().reveal(".service__card", {
   duration: 1000,
   delay: 1000,
   interval: 500,
-});
-
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  pagination: {
-    el: ".swiper-pagination",
-  },
 });
 
 
@@ -176,7 +135,7 @@ document.getElementById("menu-btn").addEventListener("click", function() {
 
 // -------Top Up Button------
 document.addEventListener('DOMContentLoaded', function() {
-  const backTopBtn = document.querySelector('.back-top-btn');
+  const backTopBtn = document.querySelector('.top-btn');
   
   window.addEventListener('scroll', function() {
     if (window.scrollY > 100) { // Show button when scrolled more than 100px
@@ -187,54 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// ---------Swipper images---------
-var swiperr = new Swiper('.mySwiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  autoplay: {
-    delay: 3000, // Adjust speed here (in milliseconds)
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-
-// ---------Video Project 
-document.addEventListener('DOMContentLoaded', function () {
-  const videoFlex = document.querySelector('.video-flex');
-  const videos = Array.from(videoFlex.querySelectorAll('video'));
-  const prevBtn = document.querySelector('.prev-btn');
-  const nextBtn = document.querySelector('.next-btn');
-
-  let index = 0;
-  
-  function showVideo(index) {
-    const offset = -index * (videos[0].offsetWidth + 10); // 10px is the gap between videos
-    videoFlex.style.transform = `translateX(${offset}px)`;
-  }
-
-  prevBtn.addEventListener('click', () => {
-    index = (index > 0) ? index - 1 : videos.length - 1;
-    showVideo(index);
-  });
-
-  nextBtn.addEventListener('click', () => {
-    index = (index < videos.length - 1) ? index + 1 : 0;
-    showVideo(index);
-  });
-
-  // Initialize view
-  showVideo(index);
-});
-
-//Pictures-project
-
 $(".project").magnificPopup({
   delegate: 'a',
   type: "image",
@@ -242,4 +153,21 @@ $(".project").magnificPopup({
     enabled: true
   }
 });
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+
+
 
