@@ -6,6 +6,15 @@
     height: 109vh; /* Full height */
     padding: 4rem 0; /* Add top and bottom padding for spacing */
   }
+
+  .iti {
+    width: 100%;
+}
+
+.iti__flag-container {
+    margin-right: 10px;
+}
+
   
   .section-title {
     text-align: center;

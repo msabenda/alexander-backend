@@ -3,7 +3,7 @@
 <section class="blog-section">
   <div id="blog">
       <div class="main-text">
-          <h2 class="section-heading">Latest BLOG</h2>
+      <h2 class="section-heading">My Services</h2>
           <div class="blog-content">
               <div class="row-blog">
                   <img src="{{ url('images/Blog1.png') }}" alt="image-here">

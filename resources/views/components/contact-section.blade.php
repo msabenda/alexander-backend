@@ -3,7 +3,6 @@
       <div class="container-contact">
         <h1 class="section-title">CONTACT <span style="color: rgb(255,215,0);">ME</span></h1>
 
-
     <!-- Display Success Message -->
     @if (session('success'))
       <div class="alert alert-success">
@@ -45,7 +44,7 @@
               </div>
               <div class="input-group">
                 <i class="fa-solid fa-phone"></i>
-                <input type="text" name="phone" placeholder="Enter Your Phone" class="field">
+                <input type="tel" id="phoneInput" name="phone" placeholder="Enter Your Phone" class="field">
               </div>
               <div class="input-group">
                 <i class="fa-solid fa-briefcase"></i>
@@ -62,15 +61,15 @@
           </div>
         </div>
       </div>
-      <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const scrollToSection = "{{ session('scrollTo') }}";
-        if (scrollToSection) {
-            const target = document.querySelector(scrollToSection);
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    });
-</script>
+  
     </section> <!-- Contact ends here -->
+
+    <script>
+    window.onload = function() {
+        // Check if the session variable is set
+        @if (session('contactSubmitted'))
+            // If it is, load the contact section
+            window.location.hash = '#contact';
+        @endif
+    };
+</script>

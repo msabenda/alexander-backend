@@ -1,5 +1,42 @@
 import './swiper-bundle.min.js';
 import './video-section.js';
+import 'intl-tel-input/build/css/intlTelInput.css';
+
+import intlTelInput from 'intl-tel-input';
+import 'intl-tel-input/build/css/intlTelInput.css';
+
+// Initialize the input field with the intl-tel-input plugin
+const input = document.querySelector("#phoneInput");
+intlTelInput(input, {
+  initialCountry: "tz", // Set Tanzania as the default country
+  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js" // load utils script
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slider = document.getElementById('brandSlider');
+  const totalLogos = slider.children.length;
+  const logoWidth = 150; // Adjust based on your logo size
+  const totalWidth = logoWidth * totalLogos;
+  let offset = 0;
+
+  function animate() {
+      offset -= 0.5; // Adjust speed here
+      if (Math.abs(offset) >= totalWidth) {
+          offset = 0; // Reset to start when logos are out of view
+      }
+      slider.style.transform = `translateX(${offset}px)`;
+      requestAnimationFrame(animate);
+  }
+
+  animate();
+});
+
+
+
+
+
 // import 'swiper/swiper-bundle.min.css';
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
 document.addEventListener('scroll', () => {

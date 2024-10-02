@@ -3,7 +3,7 @@
 
 <section class="portfolio">
         <header>
-            <h1>Project Highlights</h1>
+        <h2 class="section-heading">PICTURES HIGHLIGHTS</h2>
             
         </header>
         <div class="gallery">

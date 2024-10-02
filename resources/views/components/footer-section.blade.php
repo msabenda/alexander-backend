@@ -18,7 +18,7 @@
       <div class="footer-center">
         <div>
           <i class="fa-solid fa-location-dot"></i>
-          <p><span>Dar es Salaam, Tanzania</span></p>
+          <p><span>Dar es Salaam, Tanzania 🇹🇿</span></p>
         </div>
         <div>
           <i class="fa-solid fa-phone"></i>

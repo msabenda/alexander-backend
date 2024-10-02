@@ -1,4 +1,4 @@
-<section class="partners">
+<!-- <section class="partners">
     <h2 style="color: rgb(255,255,255)">MY RECENT CLIENTS</h2>
 <div class="slider">
     <ul class="brands">
@@ -28,4 +28,18 @@
 
     </ul>
 </div>
+</section> -->
+
+<section class="partners">
+    <h2 style="color: rgb(255,255,255)">MY RECENT CLIENTS</h2>
+    <div class="slider">
+        <ul class="brands" id="brandSlider">
+            @foreach (['i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'ii', 'ix', 'x', 'xi'] as $logo)
+                <li class="brand-logo">
+                    <img src="{{ url('images/' . $logo . '.png') }}" alt="" width="150px" height="150px"><br>
+                    <span>{{ $logo }}</span>
+                </li>
+            @endforeach
+        </ul>
+    </div>
 </section>
