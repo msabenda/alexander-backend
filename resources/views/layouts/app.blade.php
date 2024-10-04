@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
     
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
 
     <!-- Boxicons CSS -->
     <link
@@ -50,7 +50,7 @@
 <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
 <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script --> 
-<script src="js/swiper-bundle.min.js"></script>     <!-- Swiper JS -->
+<!-- <script src="js/swiper-bundle.min.js"></script>     Swiper JS -->
 
   </body>
 </html>
