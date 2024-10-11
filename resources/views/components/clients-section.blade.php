@@ -30,7 +30,7 @@
 </div>
 </section> -->
 
-<section class="partners">
+<!-- <section class="partners">
     <h2 style="color: rgb(255,255,255)">MY RECENT CLIENTS</h2>
     <div class="slider">
         <ul class="brands" id="brandSlider">
@@ -42,4 +42,27 @@
             @endforeach
         </ul>
     </div>
+</section> -->
+
+<section class="logos">
+<h2 class="section-heading">My <span class="clieent">CLIENTS</span></h2>
+      <div class="logos-slide">
+        <img src="{{ url('images/i.png') }}"/>
+        <img src="{{ url('images/ii.png') }}" />
+        <img src="{{ url('images/iii.png') }}" />
+        <img src="{{ url('images/iv.png') }}" />
+        <img src="{{ url('images/v.png') }}" />
+        <img src="{{ url('images/vi.png') }}" />
+        <img src="{{ url('images/vii.png') }}" />
+        <img src="{{ url('images/ii.png') }}" />
+        <img src="{{ url('images/ix.png') }}" />
+        <img src="{{ url('images/x.png') }}" />
+        <img src="{{ url('images/xi.png') }}" />
+        
+      </div>
 </section>
+
+    <script>
+      var copy = document.querySelector(".logos-slide").cloneNode(true);
+      document.querySelector(".logos").appendChild(copy);
+    </script>

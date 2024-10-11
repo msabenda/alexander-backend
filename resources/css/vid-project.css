@@ -8,9 +8,14 @@
 }
 #video-section{
     /* height: 60vh; */
-    background-color: #292929e0;
+    background-color: #ffffffe0;
     padding-bottom: 50px;
 }
+
+.videoz {
+	color: rgb(255, 215, 0); 
+}
+
 #head-video{
     color: #fff;
     padding-top: 15px;

@@ -1,6 +1,8 @@
-<h2 class="section-heading">CUSTOMER FEEDBACK</h2>
-    <section class="container">
-    
+
+
+<section>
+<h2 class="section-heading">Customer <span class="clieent">FEEDBACK</span></h2>
+    <div class="container">
       <div class="testimonial mySwiper">
         <div class="testi-content swiper-wrapper">
           <div class="slide swiper-slide">
@@ -56,4 +58,5 @@
         <div class="swiper-button-prev nav-btn"></div>
         <div class="swiper-pagination"></div>
       </div>
-    </section>
+</div>
+</section>

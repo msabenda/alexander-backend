@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+     
+  
     
     <!-- Swiper CSS -->
     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
@@ -51,6 +53,9 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
 <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script --> 
 <!-- <script src="js/swiper-bundle.min.js"></script>     Swiper JS -->
+
+
+
 
   </body>
 </html>

@@ -3,7 +3,7 @@
 
  <!-- -------------------------------------ABOUT SECTION----------------------------------------- -->
  <section id="about">
-        <h2 class="section-heading">ABOUT ME</h2>
+        <h2 class="section-heading">ABOUT <span class="me">ME</span></h2>
         <div class="row">
       <div class="about-left">
         <h2 class="section__header">CRAFTING YOUR VISION INTO REALITY</h2>

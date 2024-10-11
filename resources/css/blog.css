@@ -1,10 +1,17 @@
 /* ---------************Styling Blog Posts**********----------- */
 
-.blog-section {
+.blogu-section {
     margin: 0 20px;
+    color: red;
+    /* border-color: rgba(163, 1, 1, 0.5); */
+    /* box-sizing: 0.5 solid rgba(216, 25, 25, 0.5); */
     /* background-color: rgba(158, 157, 157, 0.26); */
   }
   
+  .blogu {
+    color: rgb(255, 215, 0);
+  }
+
   .main-text {
     padding: 50px 50px;
   }

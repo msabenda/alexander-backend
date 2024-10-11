@@ -5,6 +5,9 @@
     margin-bottom: 0;
     
   }
+  .me {
+    color: rgb(255, 215, 0);
+  }
   
   /* General Styling for the About Section */
   .row {

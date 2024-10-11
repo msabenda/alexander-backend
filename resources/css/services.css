@@ -12,6 +12,10 @@
     transition: transform 0.3s, box-shadow 0.3s;
     overflow: hidden;
   }
+
+  .sevi {
+    color: rgb(255, 215, 0);
+  }
   
   .service-container:hover {
     transform: translateY(-5px); /* Slight lift effect on hover */

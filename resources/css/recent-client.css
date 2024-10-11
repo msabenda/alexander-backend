@@ -1,39 +1,55 @@
-.partners {
-  display: grid; 
-  place-items: center;
-  background-color: rgb(68, 68, 68);
-  position: relative;
-  background-attachment: fixed;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
-.brand-logo {
-  color: rgb(255, 255, 255);
-}
-
-.slider {
-  position: relative;
-  width: 100vw;
-  height: 12rem;
-  display: flex;
-  align-items: center;
+.logos {
   overflow: hidden;
+  padding: 40px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
 }
 
-ul.brands {
-  list-style: none;
-  display: flex;
-  /* Removed animation styles */
+.clieent {
+  color: rgb(255, 215, 0);
 }
 
-ul.brands li.brand-logo {
-  width: 150px; /* Adjust this to match your logo size */
-  font-size: 1rem;
-  text-align: center;
-  margin-left: 3rem;
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
 }
 
-/* Optional: Keep the gradient if desired */
-.slider::after {
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
   right: 0;
-  background: linear-gradient(to left, rgb(141, 141, 141) 0%, rgba(32, 32, 32, 0.521) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 150px;
+  width: 150px;
+  margin: 0 40px;
 }

@@ -1,6 +1,6 @@
 <!-- --------------------------------------------------------MY SERVICES------------------------------------------>
 <section class="services-section" id="servi">
-  <h2 class="section-heading">My Services</h2>
+  <h2 class="section-heading">My <span class="sevi">SERVICES</span></h2>
 
   <div class="service-container">
     <div class="service-image">

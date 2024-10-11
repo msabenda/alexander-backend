@@ -2,10 +2,7 @@
 <!-- --------Pictures-------- -->
 
 <section class="portfolio">
-        <header>
-        <h2 class="section-heading">PICTURES HIGHLIGHTS</h2>
-            
-        </header>
+<h2 class="section-heading">My <span class="picha">PICTURES</span></h2>
         <div class="gallery">
             <div class="project landscape">
                 <img src="{{ url('images/black-background.png') }}" alt="Landscape Project 1">
