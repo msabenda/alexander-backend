@@ -1,16 +1,15 @@
 /* ----------------------------MY PROJECTS--------------- */
 
 .portfolio {
-    padding: 20px;
+    
+    background-color: #ffffff;
+    /* padding-bottom: 1.5rem; */
   }
   
   .picha {
     color: rgb(255, 215, 0);
   }
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+  
   
   header h1 {
     margin: 0;

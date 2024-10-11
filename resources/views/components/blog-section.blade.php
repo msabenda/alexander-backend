@@ -6,7 +6,7 @@
       <div class="main-text">
           <div class="blog-content">
               <div class="row-blog">
-                  <img src="{{ url('images/Blog1.png') }}" alt="image-here">
+                  <img src="{{ url('images/Blog1.webp') }}" alt="image-here">
                   <div class="layer">
                       <h3>The Power of Visual Storytelling:</h3>
                       <p>How Graphic Design Transforms Your Brand:
@@ -17,7 +17,7 @@
               </div>
 
               <div class="row-blog">
-                  <img src="{{ url('images/Blog2.png') }}" alt="image-here">
+                  <img src="{{ url('images/Blog2.webp') }}" alt="image-here">
                   <div class="layer">
                       <h3>Boosting Your Social Media</h3>
                       <p>Effective Strategies for Boosting Your Social Media Presence</p>
@@ -26,7 +26,7 @@
               </div>
 
               <div class="row-blog">
-                  <img src="{{ url('images/Blog3.jpg') }}" alt="image-here">
+                  <img src="{{ url('images/Blog3.webp') }}" alt="image-here">
                   <div class="layer">
                       <h3>How to Use Data Analysis to Improve Your Marketing Strategies</h3>
                       <p>It involves collecting, analyzing, and interpreting data to make informed decisions that enhance the effectiveness of your marketing efforts. Here's a step-by-step approach to using data analysis for better marketing strategies.</p>

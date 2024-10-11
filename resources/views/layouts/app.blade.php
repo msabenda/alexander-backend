@@ -16,10 +16,7 @@
     <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
 
     <!-- Boxicons CSS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
     
     @vite('resources/css/app.css') <!-- Vite css build -->
 
@@ -53,8 +50,6 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
 <script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script --> 
 <!-- <script src="js/swiper-bundle.min.js"></script>     Swiper JS -->
-
-
 
 
   </body>

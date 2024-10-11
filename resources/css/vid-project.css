@@ -1,21 +1,25 @@
 .container-videos {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	padding: 3rem 3rem;
 	gap: 20px;
 }
 #video-section{
     /* height: 60vh; */
-    background-color: #ffffffe0;
-    padding-bottom: 50px;
+    background-color: #ffffff;
+    /* padding-bottom: 50px; */
 }
 
 .videoz {
 	color: rgb(255, 215, 0); 
 }
 
+.section-heading {
+	padding-top: 1.5rem;
+}
 #head-video{
     color: #fff;
     padding-top: 15px;
@@ -23,13 +27,13 @@
 
 .main-video-container {
 	flex: 1 1 700px;
-	background-color: #000000;
-    border-radius: 5%;
+	background-color: #ffffff;
 	padding: 15px;
 }
 .main-video {
 	margin-bottom: 7px;
 	width: 100%;
+	border-radius: 3%;
 }
 .main-vid-title {
 	font-size: 20px;
@@ -38,7 +42,7 @@
 .video-list-container {
 	flex: 1 1 300px;
 	border-left: 2px solid #eee;
-    background-color: #000000;
+    background-color: #ffffff;
     border-radius: 5%;
 	padding: 15px 15px 15px 35px;
 }

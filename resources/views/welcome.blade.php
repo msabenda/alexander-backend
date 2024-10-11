@@ -21,7 +21,6 @@
 <!-- Clients section component -->
 <x-clients-section />
 
-
 <!-- Blog section component -->
 <x-blog-section />
 
