@@ -20,6 +20,7 @@
     
     @vite('resources/css/app.css') <!-- Vite css build -->
 
+
     <!-- Favicon Image -->
     <link rel="shortcut icon" href="{{ url('images/gold-logo.png') }}" type="image/x-icon">
     <title>Xander Creative</title>

@@ -5,6 +5,20 @@ import 'intl-tel-input/build/css/intlTelInput.css';
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
+
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', '/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+
+
+
+
+
+
+
+
 // Initialize the input field with the intl-tel-input plugin
 const input = document.querySelector("#phoneInput");
 intlTelInput(input, {
