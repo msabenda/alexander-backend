@@ -1,91 +1,185 @@
-/*-----------***************Styling EDUCATION AND EXPERIENCE***********-----------------------*/
-.row-bigger {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-radius: 8px;
-  }
+.timeline {
+  position: relative;
+  /* max-width: 1200px; */
+  width: auto;
+  margin:auto;
+  /* margin-bottom: 20px; */
   
-  .education, .experience {
-    flex: 1;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url("../images/eduex.jpg");
+  /* background-size: cover; */
+  /* background-position: center; */
+}
+.edu {
+  color: #fff;
+}
+
+.eduex-h2 {
+  color: #fff;
+}
+
+.container-eduex {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-30px);
   }
-  
-  .title {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
-  
-  .timeline-box {
-    position: relative;
+}
+
+.container-eduex:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.container-eduex:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.container-eduex:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.container-eduex:nth-child(4) {
+  animation-delay: 3s;
+}
+
+.container-eduex:nth-child(5) {
+  animation-delay: 4s;
+}
+
+.container-eduex:nth-child(6) {
+  animation-delay: 5s;
+}
+
+.container-eduex:nth-child(7) {
+  animation-delay: 6s;
+}
+
+.container-eduex:nth-child(8) {
+  animation-delay: 7s;
+}
+
+.container-eduex:nth-child(9) {
+  animation-delay: 8s;
+}
+
+.container-eduex:nth-child(10) {
+  animation-delay: 9s;
+}
+
+.container-eduex:nth-child(11) {
+  animation-delay: 10s;
+}
+
+
+
+.text-box {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #5252518a;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+}
+
+.container-eduex img {
+  position: absolute;
+  width: 60px;
+  border-radius: 50%;
+  right: -20px;
+  z-index: 10;
+
+}
+
+small {
+  color: rgb(255, 218, 6);
+}
+
+
+
+.right-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #ffff00;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  /* animation: moveline 6s linear forwards; */
+}
+
+
+@keyframes moveline {
+  0% {
+    height: 0;
   }
-  
-  .timeline {
-    position: relative;
-    padding-left: 40px; /* Space for the static timeline line and dot */
-  }
-  
-  .timeline-item {
-    position: relative;
-    padding: 20px 0;
-    margin-bottom: 30px; /* Space between timeline items */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
-  }
-  
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -20px; /* Adjust to ensure the dot aligns with the timeline line */
-    top: 0;
-    width: 2px;
+
+  100% {
     height: 100%;
-    background: rgb(0, 0, 0);/* Timeline line color */
   }
-  
-  .circle-dot {
-    position: absolute;
-    left: -30px; /* Space for the dot */
-    width: 24px;
-    height: 24px;
-    background: rgb(255, 217, 2); 
-    border-radius: 50%;
-    top: 0;
-  }
-  
-  .timeline-date {
-    margin: 0;
-    font-size: 1rem;
-    color: #333;
-  }
-  
-  .timeline-title {
-    margin: 5px 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .timeline-text {
-    margin: 10px 0 0 0; /* Increased top margin to separate from title */
-    font-size: 1rem;
-    color: #000000;
-  }
-  
-  .timeline-text, li {
-    list-style: none;
-  }
-  
-  .education:hover {
-    background-color: rgba(255, 215, 0,0.8);  /* Light background color on hover */
-  } 
-  .experience:hover {
-    background-color: rgba(255, 215, 0,0.8);   /* Light background color on hover */
-  } 
-  
+}
+
+.text-box h2 {
+  font-weight: 600;
+}
+
+.text-box small {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.text-box p  {
+  color: #fff;
+}
+
+.text-box p, li {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid yellow;
+  right: -15px;
+}
+
+.right-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid yellow;
+  left: -15px;
+}

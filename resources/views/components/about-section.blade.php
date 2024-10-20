@@ -26,33 +26,30 @@
         </div> <!-- About ends here -->
 <!-- ---------------------------------------------EDUCATION AND EXPERIENCE-------------------------------------- -->
 <hr id="line">
-  <div class="row-bigger">
+</section>
 
-    <!-- Left side div for education -->
-    <div class="education">
-      <h3 class="title">Education</h3>
-        <div class="timeline-box">
-          <div class="timeline">
+<div class="timeline">
+<h2 class="section-heading"><span class="edu">EDUCATION</span><span class="me">/EXPERIENCE</span></h2>
 
-            <div class="timeline-item">
-              <div class="cirlce-dot">
-                <h3 class="timeline-date">
-                  <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
-                </h3>
-                <h4 class="timeline-title">Bachelor's Degree Arts in Economics <i class="fa-solid fa-graduation-cap"></i></h4>
-                <p class="timeline-text">University of Dar es Salaam, (UDSM Main Campus)</p>
-              </div>    
+  <div class="container-eduex left-container">
 
-            <div class="timeline-item">
-              <div class="cirlce-dot">
-                <h3 class="timeline-date">
-                  <i class="fa-regular fa-calendar-days"></i> 2020 - 2023
-                </h3>
-                <h4 class="timeline-title">Certificates – GREAT Learning Academy, India 🇮🇳</h4>
-                <p class="timeline-text">
-                  Courses:
-              
-                    <li>&#10148; Data Analysis</li>
+    <img src="{{ url('images/udsm-logo.png') }}" alt="Udsm-Logo">
+
+    <div class="text-box">
+      <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
+      <small>2020 - 2023</small>
+      <p >University of Dar es Salaam, (UDSM Main Campus)</p>
+      <span class="left-container-arrow"></span>
+    </div>
+  </div>
+
+<div class="container-eduex right-container">
+
+<img src="{{ url('images/udsm-logo.png') }}" alt="Udsm-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">Certificates – GREAT Learning Academy, India 🇮🇳</h2>
+      <small>2020 - 2023</small>
+      <p><li>&#10148; Data Analysis</li>
                     <li>&#10148; Chatbot Building</li>
                     <li>&#10148; Content Marketing</li>
                     <li>&#10148; Digital Marketing</li>
@@ -60,17 +57,167 @@
                     <li>&#10148; Project Management</li>
                     <li>&#10148; Social media marketing and management</li>
                     <li>&#10148; UI/UX Design</li>
-                    <li>&#10148; Web Design</li>
-                </p>
-              </div>    
-          </div>
-         
-        </div>
-      </div>
+                    <li>&#10148; Web Design</li></p>
+
+                    <span class="right-container-arrow"></span>
     </div>
+  </div>
+
+<div class="container-eduex left-container">
+
+<img src="{{ url('images/i.png') }}" alt="USCF-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">USCF DAR PWANI MKOA</h2>
+      <small>2023 - 2024</small>
+      <p class="p-eduex">
+                    <li>&#10148; Graphics Design</li>
+                    <li>&#10148; Photography and Video Production</li>
+                    <li>&#10148; Content creation</li>
+              </p>
+              <span class="left-container-arrow"></span>
+            </div>
     </div>
+
+
+
+<div class="container-eduex right-container">
+
+<img src="{{ url('images/ii.png') }}" alt="DUEA-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">DUEA</h2>
+      <small>2020 - 2023</small>
+    <p>
+        <li>&#10148; Graphics design</li>
+      <li>&#10148; Content creation</li>
+    </p>
+      <span class="right-container-arrow"></span>
+    </div>
+  </div>
+
+
+<div class="container-eduex left-container">
+
+<img src="{{ url('images/iii.png') }}" alt="MLIMANI-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">USCF MLIMANI</h2>
+      <small>2023 - 2024</small>
+      <p class="p-eduex">University Student's Christian Fellowship</p>
+      <span class="left-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex right-container">
+
+<img src="{{ url('images/iv.png') }}" alt="MjueMungu-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">MJUE MUNGU CAMPAIGN</h2>
+      <small>2023 - 2024</small>
+      <p class="p-eduex">mjue mungu</p>
+      <span class="right-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex left-container">
+
+<img src="{{ url('images/v.png') }}" alt="MamaSamia-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">Mtetezi wa Mama</h2>
+      <small>2020 - 2023</small>
+    <p> 
+      <li>&#10148; Data Analysis</li>
+      <li>&#10148; Project Management</li>
+    </p>
+      <span class="left-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex  right-container">
+
+<img src="{{ url('images/vi.png') }}" alt="Udsm-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">My Doctor</h2>
+      <small>2020 - 2023</small>
+      <p> 
+        <li>&#10148; Graphics design</li>
+        <li>&#10148; Content creation</li>
+        <li>&#10148; Social media management</li>
+        <li>&#10148; Finance management</li>
+      </p>
+      <span class="right-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex left-container">
+
+<img src="{{ url('images/vii.png') }}" alt="TATC-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">TATC</h2>
+      <small>2020 - 2023</small>
+      <p>
+        <li>&#10148; Graphics design</li>
+        <li>&#10148; Content creation</li>
+        <li>&#10148; Photography and video production</li>
+        <li>&#10148; Social media management</li>
+      </p>
+      <span class="left-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex right-container">
+
+<img src="{{ url('images/viii.png') }}" alt="Udsm-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
+      <small>2020 - 2023</small>
+      <p class="p-eduex">University of Dar es Salaam, (UDSM Main Campus)</p>
+      <span class="right-container-arrow"></span>
+    </div>
+  </div>
+
+
+
+<div class="container-eduex left-container">
+
+<img src="{{ url('images/ix.png') }}" alt="Udsm-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">UDSE</h2>
+      <small>2020 - 2023</small>
+      <p class="p-eduex">UDSE</p>
+      <span class="left-container-arrow"></span>
+    </div>
+  </div>
+
+
+<div class="container-eduex right-container">
+
+<img src="{{ url('images/x.png') }}" alt="Udsm-Logo">
+    <div class="text-box">
+      <h2 class="eduex-h2">USCF MLIMANI</h2>
+      <small>2020 - 2023</small>
+      <p>
+        <li>&#10148; Graphics Design</li>
+        <li>&#10148; Photography and Video Production</li>
+        <li>&#10148; Content creation</li>
+      </p>
+      <span class="right-container-arrow"></span>
+    </div>
+  </div>
+
+</div>
+</section> 
+
      
-    <!-- Right side div for education -->
+<!-- 
     <div class="experience">
       <h3 class="title">Experience</h3>
       <div class="timeline-box">
@@ -104,76 +251,8 @@
             </div>    
           </div>
 
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
-              </h3>
-              <h4 class="timeline-title">JIGUNDUE Platform</h4>
-              <p class="timeline-text">
-                    <li>&#10148; Graphics design</li>
-                    <li>&#10148; Content creation</li>
-                    <li>&#10148; Social media management</li>
-                    <li>&#10148; Podcast production</li>
-              </p>
-            </div>    
-          </div>
+          
 
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
-              </h3>
-              <h4 class="timeline-title">MY DOCTOR</h4>
-              <p class="timeline-text">
-                    <li>&#10148; Graphics design</li>
-                    <li>&#10148; Content creation</li>
-                    <li>&#10148; Social media management</li>
-                    <li>&#10148; Finance management</li>
-              </p>
-            </div>    
-          </div>
-
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2023 - 2024
-              </h3>
-              <h4 class="timeline-title">Tanzania Associatoion of Tax Consultants</h4>
-              <p class="timeline-text">
-                    <li>&#10148; Graphics design</li>
-                    <li>&#10148; Content creation</li>
-                    <li>&#10148; Photography and video production</li>
-                    <li>&#10148; Social media management</li>
-              </p>
-            </div>    
-          </div>
-
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2024
-              </h3>
-              <h4 class="timeline-title">Mtetezi wa Mama - Ubungo</h4>
-              <p class="timeline-text">
-                    <li>&#10148; Data Analysis</li>
-                    <li>&#10148; Project Management</li>
-              </p>
-            </div>    
-            </div>
-
-          <div class="timeline-item">
-            <div class="cirlce-dot">
-              <h3 class="timeline-date">
-                <i class="fa-regular fa-calendar-days"></i> 2022 - 2024
-              </h3>
-              <h4 class="timeline-title">Dar es Salaam University Economics Association (DUEA)</h4>
-              <p class="timeline-text">
-                    <li>&#10148; Graphics design</li>
-                    <li>&#10148; Content creation</li>
-              </p>
-            </div>    
-          </div>
 
           <div class="timeline-item">
             <div class="cirlce-dot">
@@ -235,4 +314,4 @@
   </div>
   </div>
    </div>
-</section> <!-- Education & Experience ends here -->    
+</section>    -->

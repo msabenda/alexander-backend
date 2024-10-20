@@ -102,7 +102,7 @@
           }
         },
         "opacity": {
-          "value": 1.5,
+          "value": 0.8,
           "random": true
         },
         "size": {
@@ -113,7 +113,7 @@
           "enable": true,
           "distance": 150,
           "color": "#ffff00",
-          "opacity": 0.8,
+          "opacity": 0.6,
           "width": 1
         },
         "move": {

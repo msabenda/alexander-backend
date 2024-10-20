@@ -115,6 +115,47 @@
       left: -28px; /* Adjust for screen size */
     }
   }
+
+
+  @media screen and (max-width: 600px){
+    .timeline {
+      margin: 50px auto;
+    }
+  
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .container-eduex {
+      width: 100%;
+      padding-left: 80x;
+      padding-right: 25px;
+    }
+  
+    .text-box {
+      font-size: 13px;
+    }
+  
+    .text-box small {
+      margin-bottom:10px ;
+    }
+  
+    .right-container {
+      left: 0;
+    }
+  
+    .left-container img, .right-container img {
+      left: 10px;
+    }
+  
+    .left-container-arrow, .right-container-arrow {
+      border-right: 15px solid rgb(245, 215, 47);
+      border-left: 0;
+      left: -15px;
+    }
+  
+  }
+  
   
   /* --------------------- Responsive Styling with Media Queries --------------------- */
   

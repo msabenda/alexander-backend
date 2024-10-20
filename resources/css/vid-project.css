@@ -9,7 +9,8 @@
 }
 #video-section{
     /* height: 60vh; */
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+	background-image: url("../images/eduex.jpg");
     /* padding-bottom: 50px; */
 }
 

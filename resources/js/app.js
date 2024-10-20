@@ -6,17 +6,11 @@ import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
 
-
+// Moving Particles on Home page
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', '/particles.json', function() {
   console.log('callback - particles.js config loaded');
 });
-
-
-
-
-
-
 
 
 // Initialize the input field with the intl-tel-input plugin
@@ -28,27 +22,24 @@ intlTelInput(input, {
 
 
 
-document.addEventListener('DOMContentLoaded', () => {
-  const slider = document.getElementById('brandSlider');
-  const totalLogos = slider.children.length;
-  const logoWidth = 150; // Adjust based on your logo size
-  const totalWidth = logoWidth * totalLogos;
-  let offset = 0;
+// document.addEventListener('DOMContentLoaded', () => {
+//   const slider = document.getElementById('brandSlider');
+//   const totalLogos = slider.children.length;
+//   const logoWidth = 150; // Adjust based on your logo size
+//   const totalWidth = logoWidth * totalLogos;
+//   let offset = 0;
 
-  function animate() {
-      offset -= 0.5; // Adjust speed here
-      if (Math.abs(offset) >= totalWidth) {
-          offset = 0; // Reset to start when logos are out of view
-      }
-      slider.style.transform = `translateX(${offset}px)`;
-      requestAnimationFrame(animate);
-  }
+//   function animate() {
+//       offset -= 0.5; // Adjust speed here
+//       if (Math.abs(offset) >= totalWidth) {
+//           offset = 0; // Reset to start when logos are out of view
+//       }
+//       slider.style.transform = `translateX(${offset}px)`;
+//       requestAnimationFrame(animate);
+//   }
 
-  animate();
-});
-
-
-
+//   animate();
+// });
 
 
 // import 'swiper/swiper-bundle.min.css';
@@ -118,7 +109,7 @@ ScrollReveal().reveal(".service__container .section__description", {
   ...scrollRevealOption,
   delay: 500,
 });
-ScrollReveal().reveal(".service__card", {
+ScrollReveal().reveal(".service-card", {
   duration: 1000,
   delay: 1000,
   interval: 500,
@@ -166,6 +157,15 @@ ScrollReveal().reveal('.btn-container', {
   opacity: 0, // Start with an opacity of 0 (invisible)
   interval: 300, // Staggered appearance for multiple elements
 });
+
+
+ScrollReveal().reveal('.social-media', {
+  ...scrollRevealOption,
+  origin: 'bottom',
+  distance: '70px',
+  duration: 1000,
+});
+
 
 // Cursor effect element
 const cursor = document.createElement('div');
