@@ -175,7 +175,7 @@
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/viii.png') }}" alt="Udsm-Logo">
+<img src="{{ url('images/vii.png') }}" alt="Udsm-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
       <small>2020 - 2023</small>

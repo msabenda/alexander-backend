@@ -6,6 +6,19 @@ import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
 
+ // Preloader fade-out effect
+ window.addEventListener("load", () => {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("content");
+
+  preloader.style.opacity = 0;
+  preloader.style.transition = "opacity 1s ease";
+
+  setTimeout(() => {
+      preloader.style.display = "none";
+  }, 1000);
+});
+
 // Moving Particles on Home page
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', '/particles.json', function() {
@@ -20,29 +33,28 @@ intlTelInput(input, {
   utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js" // load utils script
 });
 
+const topButton = document.querySelector('.top-btn');
+const scrollPercentageText = document.getElementById('scroll-percentage');
+
+window.addEventListener('scroll', () => {
+  // Calculate the scroll percentage
+  const scrollTop = window.scrollY;
+  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+  const scrollPercentage = Math.round((scrollTop / docHeight) * 100);
+
+  // Update the scroll percentage text
+  scrollPercentageText.textContent = `${scrollPercentage}%`;
+
+  // Show the button when scrolling down, hide at top
+  if (scrollTop > 100) {
+    topButton.classList.add('show');
+  } else {
+    topButton.classList.remove('show');
+  }
+});
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   const slider = document.getElementById('brandSlider');
-//   const totalLogos = slider.children.length;
-//   const logoWidth = 150; // Adjust based on your logo size
-//   const totalWidth = logoWidth * totalLogos;
-//   let offset = 0;
 
-//   function animate() {
-//       offset -= 0.5; // Adjust speed here
-//       if (Math.abs(offset) >= totalWidth) {
-//           offset = 0; // Reset to start when logos are out of view
-//       }
-//       slider.style.transform = `translateX(${offset}px)`;
-//       requestAnimationFrame(animate);
-//   }
-
-//   animate();
-// });
-
-
-// import 'swiper/swiper-bundle.min.css';
 // ---------------------SCRIPT FOR UP-SCROLL BTN----------------------
 document.addEventListener('scroll', () => {
   const topBtn = document.querySelector('.top-btn');

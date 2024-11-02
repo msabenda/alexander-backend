@@ -10,12 +10,15 @@
 #video-section{
     /* height: 60vh; */
     /* background-color: #ffffff; */
-	background-image: url("../images/eduex.jpg");
+	background-image: url("../images/Blackwall.jpg");
     /* padding-bottom: 50px; */
 }
 
 .videoz {
 	color: rgb(255, 215, 0); 
+}
+.videoZ {
+	color: rgb(255, 255, 255); 
 }
 
 .section-heading {
@@ -28,7 +31,7 @@
 
 .main-video-container {
 	flex: 1 1 700px;
-	background-color: #ffffff;
+	background-color: #000000;
 	padding: 15px;
 }
 .main-video {
@@ -38,12 +41,12 @@
 }
 .main-vid-title {
 	font-size: 20px;
-	color: #444;
+	color: #ffffff;
 }
 .video-list-container {
 	flex: 1 1 300px;
 	border-left: 2px solid #eee;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 5%;
 	padding: 15px 15px 15px 35px;
 }
@@ -73,7 +76,7 @@
 }
 .list-title {
 	font-size: 17px;
-	color: #444;
+	color: #ffffff;
 }
 
 @media (max-width:1200px) {

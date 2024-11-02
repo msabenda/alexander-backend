@@ -6,9 +6,12 @@
     <meta name="description" content="Xander Creative - A creative design company offering a variety of services." /> <!-- SEO website -->
     
     <!-- External CSS Links -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha384-Xu+1yDW4BTuH+5PS8LjsJ5TAVi7OS9gByVb6KXYDNeom5mZZPjVR7R9G7oZVE0tn" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/magnific-popup.min.css">
+
+    <!-- Include Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
      
   
     
@@ -27,13 +30,28 @@
     </head>
   <body>  
 
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <!-- Add your logo or loading animation here -->
+            <img src="{{ asset('images/gold-logo.png') }}" alt="" class="preloader-logo">
+
+              <!-- Loading Symbol -->
+              <div class="spinner">
+              </div>
+          
+            
+        </div>
+    </div>
+
   <!-- Main content section -->
   @yield('content')
 
 
   <!-- --------------------Top Up button ----------------- -->
-<a href="#top" class="top-btn" aria-label="back to top" data-back-top-btn>
-  <strong><i class="fa-solid fa-arrow-up"></i>Up</strong>
+  <a href="#top" class="top-btn" aria-label="back to top" data-back-top-btn>
+  <strong id="scroll-percentage">0%</strong>
 </a>
 
 
@@ -45,12 +63,20 @@
 
 <!-- Additional Scripts used -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.2.0/jquery.magnific-popup.min.js"></script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script> -->
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
-<script src="https://kit.fontawesome.com/8a7030f41c.js" crossorigin="anonymous"></script> <!-- Font awesome script --> 
-<!-- <script src="js/swiper-bundle.min.js"></script>     Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Include Magnific Popup JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 
 
   </body>

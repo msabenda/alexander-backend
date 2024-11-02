@@ -34,7 +34,7 @@
   <ul class="nav__links" id="nav-links">
     <li><a href="#home" id="home-nav">HOME</a></li>
     <li><a href="#about" id="about-nav">ABOUT</a></li>
-    <li><a href="#services" id="service-nav">SERVICES</a></li>
+    <li><a href="#servi" id="service-nav">SERVICES</a></li>
     <li class="nav__logo">
       <a href="#">
         <img src="{{ url('images/gold-logo.png') }}" alt="logo" />
@@ -82,6 +82,7 @@
 
   <!-- Particles.js configuration -->
   <script>
+    window.addEventListener("load", () => {
     particlesJS("particles-js", {
       "particles": {
         "number": {
@@ -141,6 +142,7 @@
       },
       "retina_detect": true
     });
+  });
   </script>
 
 

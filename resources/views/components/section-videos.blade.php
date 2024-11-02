@@ -2,7 +2,7 @@
  <section id="video-section">
 
  <header> 
- <h2 class="section-heading">My <span class="videoz">VIDEOS</span></h2>
+ <h2 class="section-heading"><span class="videoZ">My </span><span class="videoz">VIDEOS</span></h2>
   </header>
 <div class="container-videos">
 		<div class="main-video-container">
