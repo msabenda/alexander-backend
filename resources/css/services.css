@@ -1,8 +1,17 @@
 /* ---------------**********Styling MY SERVICES*********------------------ */
+
+.services-section {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 15px;
+/* border-top: solid rgb(255, 215, 0); */
+/* border-bottom: solid rgb(0, 0, 0,); */
+}
+
+
 .service-container {
     display: flex;
     align-items: center;
-    background: #ffffff; /* White background for each service card */
+    background: #dadada; /* White background for each service card */
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -18,9 +27,8 @@
   
   .service-container:hover {
     transform: translateY(-5px); /* Slight lift effect on hover */
-    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
     background-color: rgb(255, 215, 0);
-    /* color: rgb(0, 0, 0); */
+   
   }
   
   .service-image {

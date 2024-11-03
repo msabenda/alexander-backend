@@ -9,21 +9,26 @@
 
 .logos {
   overflow: hidden;
-  padding: 40px 0;
-  background: white;
+  padding: 10px 0;
+  background: rgb(61, 60, 60);
   white-space: nowrap;
   position: relative;
+  margin-bottom: -35px;
 }
 
 .clieent {
   color: rgb(255, 215, 0);
 }
 
+.myClient {
+  color: rgb(255,255,255);
+}
+
 .logos:before,
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 120px;
   height: 100%;
   content: "";
   z-index: 2;

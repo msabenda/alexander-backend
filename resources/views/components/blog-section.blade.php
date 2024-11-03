@@ -37,6 +37,6 @@
       </div>
   </div>
 
-  <a href="#blog" class="blog-btn">SEE MORE</a>
+  <a href="#blog" class="blog-btn">READ MORE</a>
       
 </section> <!-- Blog ends here -->

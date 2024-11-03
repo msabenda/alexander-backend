@@ -2,8 +2,8 @@
 
 .portfolio {
     
-    background-color: #ffffff;
-    /* padding-bottom: 1.5rem; */
+  background-image: url("../images/Blackwall.jpg");
+  margin-bottom: -35px;
   }
   
   .picha {
@@ -23,7 +23,7 @@
     margin: 5px;
     padding: 10px 15px;
     border: none;
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
     cursor: pointer;
   }
@@ -56,7 +56,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgb(255, 255, 255);
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease;

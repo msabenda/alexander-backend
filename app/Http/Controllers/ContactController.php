@@ -46,7 +46,7 @@ class ContactController extends Controller
 
         // Redirect with success message and scroll target
         return redirect()->route('home')
-        ->with('success', 'Your message has been sent successfully!')
+        ->with('success', 'Thank Your message has been sent successfully!')
         ->with('contactSubmitted', true); // Set session variable
     }
 }

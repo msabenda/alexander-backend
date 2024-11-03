@@ -15,6 +15,7 @@
 
 .eduex-h2 {
   color: #fff;
+  font-size: 16px;
 }
 
 .container-eduex {
@@ -156,7 +157,7 @@ small {
 
 .text-box p, li {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 600;
 }
 

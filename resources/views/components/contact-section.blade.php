@@ -65,11 +65,11 @@
     </section> <!-- Contact ends here -->
 
     <script>
-    window.onload = function() {
-        // Check if the session variable is set
-        @if (session('contactSubmitted'))
-            // If it is, load the contact section
-            window.location.hash = '#contact';
-        @endif
-    };
+   window.onload = function() {
+    // Check if there's a success message or any validation errors
+    @if (session('contactSubmitted') || $errors->any())
+        // Scroll to the contact section
+        window.location.hash = '#contact';
+    @endif
+};
 </script>
