@@ -77,8 +77,6 @@
 </header>
 
 
-  <!-- Load particles.js library from CDN -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
   <!-- Particles.js configuration -->
   <script>
