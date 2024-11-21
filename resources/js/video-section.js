@@ -1,40 +1,40 @@
 const videosList = [
     {
-        video: 'videos/video-1.mp4',
-        title: 'What is Motion Graphics ?'
+        video: 'videos/2.mp4',
+        title: 'Mpiruka Mission USCF MLIMANI'
     },
     {
-        video: 'videos/video-2.mp4',
-        title: 'Logo Design Illustrator'
+        video: 'videos/3.mp4',
+        title: 'School of Economics Charity'
     },
     {
-        video: 'videos/video-3.mp4',
-        title: 'Difference between After Effects  Premiere ?'
+        video: 'videos/4.mp4',
+        title: 'YUNA Organization Project 1'
     },
-    // {
-    //     video: 'videos/video-4.mp4',
-    //     title: 'Logo Design Photoshop'
-    // },
-    // {
-    //     video: 'images/vid-4.mp4',
-    //     title: '3D town animation'
-    // },
-    // {
-    //     video: 'images/vid-5.mp4',
-    //     title: 'man chasing carrot animation'
-    // },
-    // {
-    //     video: 'images/vid-6.mp4',
-    //     title: 'door hinge animation'
-    // },
-    // {
-    //     video: 'images/vid-7.mp4',
-    //     title: 'poeple walking in town animation'
-    // },
-    // {
-    //     video: 'images/vid-8.mp4',
-    //     title: 'knight chasing virus animation'
-    // },
+    {
+        video: 'videos/5.mp4',
+        title: 'YUNA Organization Project 2'
+    },
+    {
+        video: 'videos/8.mp4',
+        title: 'UNCTN CARAVAN'
+    },
+    {
+        video: 'videos/9.mp4',
+        title: 'Why TIMUN ?'
+    },
+    {
+        video: 'videos/10.mp4',
+        title: 'UDTA Advertise'
+    },
+    {
+        video: 'videos/11.mp4',
+        title: 'Masero Garden Advertise'
+    },
+    {
+        video: 'videos/12.mp4',
+        title: 'Brunch Festival'
+    },
     ]
     
     const categories = [...new Set(videosList.map((item) => { return item }))]

@@ -6,8 +6,8 @@
   </header>
 <div class="container-videos">
 		<div class="main-video-container">
-			<video src="{{ url('videos/video-1.mp4') }}" loop controls class="main-video"></video>
-			<h3 class="main-vid-title">3D helicopter animation</h3>
+			<video src="{{ url('videos/6.mp4') }}" loop controls class="main-video"></video>
+			<h3 class="main-vid-title">YUNA Organization</h3>
 		</div>
 		<div class="video-list-container" id="videosList"></div>
 	</div>
