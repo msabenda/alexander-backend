@@ -27,7 +27,6 @@
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader">
-            <!-- Add your logo or loading animation here -->
             <img src="{{ asset('images/gold-logo.png') }}" alt="" class="preloader-logo">
 
               <!-- Loading Symbol -->
