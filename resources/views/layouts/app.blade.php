@@ -6,7 +6,8 @@
     <meta name="description" content="Xander Creative - A creative design company offering a variety of services." /> <!-- SEO website -->
     
     <!-- External CSS Links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!-- Include Magnific Popup CSS -->
