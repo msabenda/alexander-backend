@@ -12,7 +12,7 @@
 
 </style>
 
-  <!-- resources/views/components/home-section.blade.php -->
+  <!-- resources/views/components/home-secphption.blade.php -->
 <header class="header" id="home">
 
   <!-- Particle container -->

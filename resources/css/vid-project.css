@@ -29,14 +29,14 @@
 
 .main-video-container {
     flex: 1 1 700px;
-    /* background-color: #ffffff; */
+    /* background-color: #636262; */
     padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
 .main-video {
@@ -51,7 +51,7 @@
 
 .main-vid-title {
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -135,7 +135,7 @@
 
 .list-title {
     font-size: 17px;
-    color: #000000;
+    color: #ffffff;
 }
 
 @media (max-width: 1200px) {
