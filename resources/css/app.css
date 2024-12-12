@@ -1,5 +1,10 @@
 
 @import 'preloader.css';
+/* @import './all.min.css';
+@import './swiper-bundle.min.css';
+@import './magnific-popup.min.css';
+@import './boxicons.min.css'; */
+
 @import 'home.css';
 /* @import 'particles.css'; */
 @import 'about.css';

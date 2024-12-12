@@ -8,12 +8,8 @@
     <!-- External CSS Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <!-- Include Magnific Popup CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
-    <!-- Boxicons CSS -->
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+
     
     @vite('resources/css/app.css') <!-- Vite css build -->
 
@@ -60,7 +56,7 @@
 <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script> -->
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> <!-- Auto typing script -->
+<!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> Auto typing script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
 
   <!-- Load particles.js library from CDN -->
@@ -68,10 +64,10 @@
 
 
 <!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
 
 <!-- Include Magnific Popup JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> -->
 
 
 

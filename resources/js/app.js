@@ -2,6 +2,13 @@ import './swiper-bundle.min.js';
 import './video-section.js';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
+// import './jquery.min.js';
+import './typed.umd.js';
+// import './all.min.js';
+// import './particles.min.js';
+// import './jquery.magnific-popup.min.js';
+
+
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
@@ -88,84 +95,6 @@ var typed = new Typed(".auto-type", {
   loop: true,
 });
 
-// Scroll Reveal Animations
-ScrollReveal().reveal(".about-left", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".about-left", {
-  ...scrollRevealOption,
-  delay: 500,
-  interval: 500,
-});
-
-ScrollReveal().reveal('.scroll-reveal.from-right', {
-  distance: '10px',
-  origin: 'right',
-  duration: 3000,
-  easing: 'ease-out'
-});
-
-// ScrollReveal().reveal(".service__container .section__header", {
-//   ...scrollRevealOption,
-// });
-// ScrollReveal().reveal(".service__container .section__description", {
-//   ...scrollRevealOption,
-//   delay: 500,
-// });
-// ScrollReveal().reveal(".service-card", {
-//   duration: 1000,
-//   delay: 1000,
-//   interval: 500,
-// });
-
-ScrollReveal().reveal('.about-section', {
-  ...scrollRevealOption,
-  origin: 'top',
-  distance: '70px',
-  duration: 1000,
-});
-
-ScrollReveal().reveal('.nav-bar', {
-  ...scrollRevealOption,
-  origin: 'top',
-  distance: '70px',
-  duration: 1000,
-});
-
-ScrollReveal().reveal('.social-media', {
-  ...scrollRevealOption,
-  origin: 'bottom',
-  distance: '70px',
-  duration: 1000,
-});
-
-// Effect on Quote
-ScrollReveal().reveal('.quote', {
-  ...scrollRevealOption,
-  origin: 'right',
-  distance: '60px',
-  interval: 300,
-  delay: 800,
-});
-
-// Rotate and scale effect
-ScrollReveal().reveal('.btn-container', {
-  distance: '0px',
-  duration: 1000,
-  easing: 'ease-in-out',
-  scale: 0.85,
-  rotate: { x: 0, y: 0, z: 10 },
-  opacity: 0,
-  interval: 300,
-});
-
-ScrollReveal().reveal('.social-media', {
-  ...scrollRevealOption,
-  origin: 'bottom',
-  distance: '70px',
-  duration: 1000,
-});
-
 // Cursor effect element
 const cursor = document.createElement('div');
 cursor.classList.add('cursor');
@@ -195,14 +124,6 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Magnific Popup for project images
-$(".project").magnificPopup({
-  delegate: 'a',
-  type: "image",
-  picture: {
-    enabled: true
-  }
-});
 
 // Swiper Initialization
 document.addEventListener('DOMContentLoaded', () => {

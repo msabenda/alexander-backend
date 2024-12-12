@@ -9,7 +9,8 @@
 }
 
 #video-section {
-    background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), url("../images/contact-2.avif");
+    background-color: rgb(61, 60, 60);
+    /* background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), url("../images/contact-2.avif"); */
 }
 
 .videoz {
@@ -23,20 +24,20 @@
     padding-top: 1.5rem;
 }
 #head-video {
-    color: #ffffff;
+    color: #000000;
     padding-top: 15px;
 }
 
 .main-video-container {
     flex: 1 1 700px;
-    /* background-color: #636262; */
+    background-color: #000000;
     padding: 10px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .main-video {
@@ -58,13 +59,13 @@
 .video-list-container {
     flex: 1 1 300px;
     border-left: 2px solid #eee;
-    /* background-color: #ffffff; */
+    background-color: #000000;
     border-radius: 5%;
     padding: 15px 15px 15px 35px;
     max-height: 70vh; /* Limit the height */
     overflow-y: auto; /* Enable vertical scrolling */
     scrollbar-width: thin; /* For Firefox, make scrollbar less obtrusive */
-    scrollbar-color: #ccc transparent; /* Customize scrollbar color */
+    scrollbar-color: #ffffff transparent; /* Customize scrollbar color */
 }
 
 /* Customize scrollbar for Webkit browsers (Chrome, Edge, Safari) */
@@ -77,7 +78,7 @@
 }
 
 .video-list-container::-webkit-scrollbar-thumb {
-    background-color: #ccc;
+    background-color: #000000;
     border-radius: 10px;
     border: 2px solid transparent;
 }
@@ -87,23 +88,12 @@
     background-color: #999;
 }
 
-
-
-
-/* .video-list-container {
-    flex: 1 1 300px;
-    border-left: 2px solid #eee;
-    background-color: #ffffff;
-    border-radius: 5%;
-    padding: 15px 15px 15px 35px;
-} */
-
 .list {
     display: flex;
     align-items: center;
     gap: 15px;
     padding: 10px;
-    border: 1px solid #eee;
+    border: 1px solid #000000;
     cursor: pointer;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -116,11 +106,11 @@
 
 .list:hover {
     transform: scale(1.03);
-    background-color: #f7e8a3;
+    background-color: #f5cf27;
 }
 
 .list.active {
-    background-color: #ffcc00;
+    background-color: #facd1b;
     transform: scale(1.05);
 }
 

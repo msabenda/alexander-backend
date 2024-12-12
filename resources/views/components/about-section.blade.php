@@ -38,14 +38,14 @@
     <div class="text-box">
       <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
       <small>2020 - 2023</small>
-      <p >University of Dar es Salaam, (UDSM Main Campus)</p>
+      <p >Bachelor's Degree Arts in Economics - University of Dar es Salaam</p>
       <span class="left-container-arrow"></span>
     </div>
   </div>
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/udsm-logo.png') }}" alt="Udsm-Logo">
+<img src="{{ url('images/india.png') }}" alt="India-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">Certificates – GREAT Learning Academy, India 🇮🇳</h2>
       <small>2020 - 2023</small>
@@ -97,11 +97,13 @@
 
 <div class="container-eduex left-container">
 
-<img src="{{ url('images/iii.png') }}" alt="MLIMANI-Logo">
+<img src="{{ url('images/x.png') }}" alt="MLIMANI-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">USCF MLIMANI</h2>
       <small>2023 - 2024</small>
-      <p class="p-eduex">University Student's Christian Fellowship</p>
+      <p class="p-eduex"><li>&#10148; Graphics Design</li>
+        <li>&#10148; Photography and Video Production</li>
+        <li>&#10148; Content creation</li></p>
       <span class="left-container-arrow"></span>
     </div>
   </div>
@@ -114,7 +116,8 @@
     <div class="text-box">
       <h2 class="eduex-h2">MJUE MUNGU CAMPAIGN</h2>
       <small>2023 - 2024</small>
-      <p class="p-eduex">mjue mungu</p>
+      <p class="p-eduex"><li>&#10148; Graphics design</li>
+      <li>&#10148; Content creation</li></p>
       <span class="right-container-arrow"></span>
     </div>
   </div>
@@ -175,11 +178,11 @@
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/vii.png') }}" alt="Udsm-Logo">
+<img src="{{ url('images/i.png') }}" alt="Udsm-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
       <small>2020 - 2023</small>
-      <p class="p-eduex">University of Dar es Salaam, (UDSM Main Campus)</p>
+      <p class="p-eduex">Bachelor's Degree Arts in Economics - University of Dar es Salaam</p>
       <span class="right-container-arrow"></span>
     </div>
   </div>
@@ -192,7 +195,8 @@
     <div class="text-box">
       <h2 class="eduex-h2">UDSE</h2>
       <small>2020 - 2023</small>
-      <p class="p-eduex">UDSE</p>
+      <p class="p-eduex">  <li>&#10148; Graphics design</li>
+        <li>&#10148; Content creation</li></p>
       <span class="left-container-arrow"></span>
     </div>
   </div>

@@ -128,7 +128,7 @@
           "enable": true,
           "distance": 150,
           "color": "#ffff00",
-          "opacity": 0.6,
+          "opacity": 0.4,
           "width": 1
         },
         "move": {

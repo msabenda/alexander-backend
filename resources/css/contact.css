@@ -1,6 +1,6 @@
 /* ------------------****************CONTACT SECTION*******************-------------------- */
 .contact-section {
-    background-image: radial-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.1)), url("../images/contact-2.avif");
+  background-color: rgb(61, 60, 60);
     background-size: cover;
     background-position: center;
     height: 118vh; /* Full height */
