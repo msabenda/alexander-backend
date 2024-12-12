@@ -10,6 +10,20 @@
       z-index:-5;
     }
 
+
+  /* Media query for smaller devices */
+  @media (max-width: 768px) {
+    #particles-js {
+      height: 80vh; /* Reduce height for smaller screens */
+    }
+  }
+
+  @media (max-width: 480px) {
+    #particles-js {
+      height: 70vh; /* Further adjust height for very small screens */
+    }
+  }
+
 </style>
 
   <!-- resources/views/components/home-secphption.blade.php -->

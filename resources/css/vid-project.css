@@ -149,23 +149,43 @@
 }
 
 @media (max-width: 450px) {
-    .video-list-container {
-        border: none !important;
-        padding: 15px !important;
+    .main-video-container {
+        width: 100%; /* Utilize full width on smaller screens */
+        padding: 10px; /* Maintain padding for better layout */
+        border-radius: 5px; /* Adjust border radius for a cleaner look */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center content horizontally */
     }
+
+    .main-video {
+        width: 100%; /* Ensure video spans the full width of the container */
+        max-height: 60vh; /* Adjust height relative to the viewport */
+        margin-bottom: 10px; /* Reduce margin for better spacing */
+    }
+
     .main-vid-title {
-        font-size: 15px;
+        font-size: 14px; /* Smaller font size for better readability on small screens */
         text-align: center;
     }
+
+    .video-list-container {
+        width: 100%; /* Allow the list to occupy the full width */
+        border: none; /* Remove border for a cleaner look */
+        padding: 10px; /* Reduce padding for compactness */
+        overflow-y: auto; /* Keep scrolling for long lists */
+        max-height: 40vh; /* Limit height for better visibility */
+    }
+
     .list {
-        flex-flow: column;
-        gap: 10px;
+        flex-direction: row; /* Stack list items horizontally for better use of space */
+        gap: 10px; /* Smaller gap between items */
     }
+
     .list-video {
-        width: 100%;
+        width: 60px; /* Reduce image size for better alignment */
     }
+
     .list-title {
-        font-size: 15px;
-        text-align: center;
+        font-size: 12px; /* Adjust text size for readability */
     }
 }
