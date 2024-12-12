@@ -28,7 +28,7 @@
           </div>
     
           <div class="right">
-            <h2 style="color: white;">Let's Talk Together</h2>
+            <h2 style="color: white">Let's Talk Together</h2>
             <!-- Submit form using route  -->
             <form action="{{ route('form.submit') }}" method="post">
               

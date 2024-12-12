@@ -3,7 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Xander Creative - A creative design company offering a variety of services." /> <!-- SEO website -->
+    <meta name="description" content="Xander Creative - A creative design company offering a variety of services. Transforming ideas into reality through exceptional designs.">
+    <meta name="keywords" content="Creative Design, Xander Creative, Graphic Design, Web Development, Branding"> 
+    <meta name="author" content="Xander Creative">
+    <meta name="robots" content="index, follow">
+
+     <!-- Favicon Image -->
+     <link rel="shortcut icon" href="{{ asset('images/gold-logo.ico') }}?v=1">
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Xander Creative",
+  "url": "https://xandercreative.co.tz",
+  "logo": "https://xandercreative.co.tz/images/gold-logo.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+255 752 865 523",
+    "contactType": "Customer Service"
+  },
+  "sameAs": [
+    "https://www.facebook.com/XanderCreative",
+    "https://twitter.com/XanderCreative",
+    "https://www.instagram.com/XanderCreative"
+  ]
+}
+</script>
     
     <!-- External CSS Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,9 +39,6 @@
     
     @vite('resources/css/app.css') <!-- Vite css build -->
 
-
-    <!-- Favicon Image -->
-    <link rel="shortcut icon" href="{{ url('images/gold-logo.png') }}" type="image/x-icon">
     <title>Xander Creative</title>
     </head>
   <body>  
@@ -56,7 +79,7 @@
 <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script> -->
-<!-- <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> Auto typing script -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
 
   <!-- Load particles.js library from CDN -->
