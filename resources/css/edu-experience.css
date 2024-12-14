@@ -2,7 +2,7 @@
   position: relative;
   width: auto;
   margin: auto;
-  background-image: url("../images/Blackwall.jpg");
+  background-color: rgb(61, 60, 60);
 }
 
 .edu {
@@ -51,18 +51,6 @@ small {
 
 .right-container img {
   left: -20px;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  height: 100%;
-  background: #ffff00;
-  top: 0;
-  left: 50%;
-  margin-left: -3px;
-  z-index: -1;
 }
 
 .text-box h2 {

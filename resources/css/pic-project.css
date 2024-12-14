@@ -1,8 +1,10 @@
 /* General styling for the Pictures section */
 .portfolio {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: #f4f4f4;
   text-align: center;
+  margin-top: 20px;
+  border-top: 2px solid #000; 
 }
 
 .section-heading {
@@ -23,20 +25,24 @@
   padding: 0 20px;
 }
 
+/* Project styling */
 .project {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  background: #fff;
 }
 
+/* Image styling */
 .project img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
   border-radius: 10px;
+  display: block;
 }
 
 /* Overlay effect */
@@ -74,4 +80,19 @@
 
 .project:hover img {
   transform: scale(1.1);
+}
+
+/* Lazy Load for images */
+.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lazyload[data-src] {
+  opacity: 1;
+}
+
+/* Smooth Image Load on Scroll */
+.lazyload[data-src] {
+  background-image: url('loading-placeholder.jpg'); /* Placeholder image */
 }
