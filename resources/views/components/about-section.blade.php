@@ -65,7 +65,7 @@
 
 <div class="container-eduex left-container">
 
-<img src="{{ url('images/i.jpg') }}" alt="USCF-Logo">
+<img src="{{ url('images/i.png') }}" alt="USCF-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">USCF DAR PWANI MKOA</h2>
       <small>2023 - 2024</small>
@@ -178,7 +178,7 @@
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/i.jpg') }}" alt="Udsm-Logo">
+<img src="{{ url('images/i.png') }}" alt="Udsm-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">USCF DAR PWANI MKOA</h2>
       <small>2020 - 2023</small>

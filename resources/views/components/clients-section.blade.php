@@ -4,7 +4,7 @@
   </h2>
   <div class="logos-container">
     <div class="logos-slide">
-      <img src="{{ url('images/i.jpg') }}" loading="lazy" alt="Client Logo 1" />
+      <img src="{{ url('images/i.png') }}" loading="lazy" alt="Client Logo 1" />
       <img src="{{ url('images/ii.png') }}" loading="lazy" alt="Client Logo 2" />
       <img src="{{ url('images/iii.png') }}" loading="lazy" alt="Client Logo 3" />
       <img src="{{ url('images/iv.png') }}" loading="lazy" alt="Client Logo 4" />
