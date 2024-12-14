@@ -1,6 +1,8 @@
+import Swiper from 'swiper';
 import './swiper-bundle.min.js';
 import './video-section.js';
 import 'intl-tel-input/build/css/intlTelInput.css';
+
 
 // import './jquery.min.js';
 import './typed.umd.js';
@@ -25,11 +27,7 @@ window.addEventListener("load", () => {
   }, 1000);
 });
 
-// Moving Particles on Home page
-/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-// particlesJS.load('particles-js', '/particles.json', function() {
-//   console.log('callback - particles.js config loaded');
-// });
+
 
 // Initialize the input field with the intl-tel-input plugin
 const input = document.querySelector("#phoneInput");

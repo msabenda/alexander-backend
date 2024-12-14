@@ -3,7 +3,7 @@
   <h2 class="section-heading">My <span class="highlight">BLOG</span></h2>
   <div class="blog-container">
     <div class="blog-item">
-      <img src="{{ url('images/Blog1.webp') }}" alt="Visual storytelling blog image">
+      <img src="{{ url('images/Blog1.webp') }}" alt="Visual storytelling blog image" loading="lazy">
       <div class="blog-overlay">
         <h3>The Power of Visual Storytelling</h3>
         <p>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="blog-item">
-      <img src="{{ url('images/Blog2.webp') }}" alt="Social media strategies blog image">
+      <img src="{{ url('images/Blog2.webp') }}" alt="Social media strategies blog image" loading="lazy">
       <div class="blog-overlay">
         <h3>Boosting Your Social Media</h3>
         <p>
@@ -26,7 +26,7 @@
     </div>
 
     <div class="blog-item">
-      <img src="{{ url('images/Blog3.webp') }}" alt="Data analysis blog image">
+      <img src="{{ url('images/Blog3.webp') }}" alt="Data analysis blog image" loading="lazy">
       <div class="blog-overlay">
         <h3>Using Data Analysis for Marketing</h3>
         <p>
