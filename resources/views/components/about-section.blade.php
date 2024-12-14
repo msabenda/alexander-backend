@@ -65,7 +65,7 @@
 
 <div class="container-eduex left-container">
 
-<img src="{{ url('images/i.png') }}" alt="USCF-Logo">
+<img src="{{ url('images/i.jpg') }}" alt="USCF-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">USCF DAR PWANI MKOA</h2>
       <small>2023 - 2024</small>
@@ -178,11 +178,13 @@
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/i.png') }}" alt="Udsm-Logo">
+<img src="{{ url('images/i.jpg') }}" alt="Udsm-Logo">
     <div class="text-box">
-      <h2 class="eduex-h2">University of Dar es Salaam, (UDSM Main Campus)</h2>
+      <h2 class="eduex-h2">USCF DAR PWANI MKOA</h2>
       <small>2020 - 2023</small>
-      <p class="p-eduex">Bachelor's Degree Arts in Economics - University of Dar es Salaam</p>
+      <p class="p-eduex"><li>&#10148; Graphics Design</li>
+                    <li>&#10148; Photography and Video Production</li>
+                    <li>&#10148; Content creation</li></p>
       <span class="right-container-arrow"></span>
     </div>
   </div>
