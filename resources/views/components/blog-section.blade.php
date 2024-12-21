@@ -37,5 +37,5 @@
     </div>
   </div>
 
-  <a href="/blog" class="blog-button">VIEW ALL BLOGS</a>
+  <a href="#blog" class="blog-button">VIEW ALL BLOGS</a>
 </section>

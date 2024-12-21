@@ -123,19 +123,35 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Swiper Initialization
-document.addEventListener('DOMContentLoaded', () => {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+// Initialize Swiper with autoplay
+const swiper = new Swiper('.mySwiper', {
+  loop: true, // Enable looping
+  autoplay: {
+    delay: 3000, // Time between slides (in milliseconds)
+    disableOnInteraction: false, // Allow autoplay to continue even when user interacts
+  },
+  speed: 1000, // Speed of the transition
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true, // Make pagination clickable
+  },
 });
+
+const logosSection = document.querySelector('.logos');
+const logosSlide = document.querySelector('.logos-slide');
+
+// IntersectionObserver to pause/resume animation based on visibility
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        logosSlide.style.animationPlayState = 'running';
+      } else {
+        logosSlide.style.animationPlayState = 'paused';
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+observer.observe(logosSection);

@@ -102,11 +102,6 @@ significantly. A fantastic experience!
         </div> -->
 
       </div>
-
-      <!-- Swiper Navigation -->
-      <div class="swiper-button-next nav-btn"></div>
-      <div class="swiper-button-prev nav-btn"></div>
-      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>

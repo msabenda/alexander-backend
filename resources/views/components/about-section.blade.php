@@ -45,7 +45,7 @@
 
 <div class="container-eduex right-container">
 
-<img src="{{ url('images/udsm-logo.png') }}" alt="India-Logo">
+<img src="{{ url('images/Great-Learning.png') }}" alt="India-Logo">
     <div class="text-box">
       <h2 class="eduex-h2">Certificates – GREAT Learning Academy, India 🇮🇳</h2>
       <small>2020 - 2023</small>

@@ -1,6 +1,6 @@
 /*--------------------*********Styling HEAD SECTION Part*************------------------------------ */
 .header {
-    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/homewallpaper.jpg");
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9)), url("../images/Home-Background.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

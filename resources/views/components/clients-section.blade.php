@@ -18,24 +18,3 @@
     </div>
   </div>
 </section>
-
-<script>
-  const logosSection = document.querySelector('.logos');
-const logosSlide = document.querySelector('.logos-slide');
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        logosSlide.style.animationPlayState = 'running';
-      } else {
-        logosSlide.style.animationPlayState = 'paused';
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
-
-observer.observe(logosSection);
-
-</script>
