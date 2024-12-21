@@ -1,3 +1,4 @@
+{{-- ---------------- video-section.blade.php -------- --}}
 <section id="video-section">
     <header>
         <h2 class="section-heading">

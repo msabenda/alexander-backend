@@ -2,7 +2,6 @@
 <!-- Extends layout from app.blade.php -->
 @extends('layouts.app')
 
-
 <!-- Display the injected content -->
 @section('content')
 

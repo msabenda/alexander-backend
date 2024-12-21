@@ -1,4 +1,4 @@
-<!-- resources/views/components/pictures-projects.blade.php -->
+<!--pictures-projects.blade.php -->
 <!-- --------Pictures-------- -->
 <section class="portfolio">
     <h2 class="section-heading">My <span class="picha">PICTURES</span></h2>

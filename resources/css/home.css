@@ -211,7 +211,14 @@
     text-align: right;
     margin-right: 80px;
   }
+
+  .home-message {
+    color: rgb(255,215,0)
+  }
   
+  .auto-type {
+    color: rgb(255,215,0);
+  }
   .home-paragraphy {
     color: #fff;
     text-align: right;

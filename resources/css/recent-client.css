@@ -1,12 +1,3 @@
-@keyframes infinite-slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
 .logos {
   overflow: hidden;
   padding: 10px 0;
@@ -54,4 +45,13 @@
 .logos-slide::before {
   content: '';
   display: inline-flex;
+}
+
+@keyframes infinite-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

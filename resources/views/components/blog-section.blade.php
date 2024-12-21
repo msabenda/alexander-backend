@@ -1,4 +1,4 @@
-<!-- BLOG/PROJECTS Section -->
+<!-- blog-section.blade.php-->
 <section class="blog-section">
   <h2 class="section-heading">My <span class="highlight">BLOG</span></h2>
   <div class="blog-container">

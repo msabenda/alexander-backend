@@ -64,7 +64,7 @@
   
     </section> <!-- Contact ends here -->
 
-    <script>
+<script>
    window.onload = function() {
     // Check if there's a success message or any validation errors
     @if (session('contactSubmitted') || $errors->any())
