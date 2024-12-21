@@ -22,6 +22,7 @@ class AppServiceProvider extends ServiceProvider
     {
         Blade::component('home-section', \App\View\Components\HomeSection::class);
         Blade::component('about-section', \App\View\Components\AboutSection::class);
+        Blade::component('eduexp-section', \App\View\Components\eduexp::class);
         Blade::component('mission-section', \App\View\Components\MissionSection::class);
         Blade::component('services-section', \App\View\Components\ServicesSection::class);
         Blade::component('professional-skills', \App\View\Components\ProfessionalSkills::class);

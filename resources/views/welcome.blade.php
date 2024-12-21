@@ -10,6 +10,9 @@
 
  <!-- About section component -->
  <x-about-section />
+
+ <!-- Experience section component -->
+ <x-
  
  <!-- Mission section component -->
 <x-mission-section /> 

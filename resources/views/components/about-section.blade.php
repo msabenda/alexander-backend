@@ -25,6 +25,7 @@
 <hr id="line">
 </section>
 
+<section>
 <div class="timeline">
 <h2 class="section-heading"><span class="edu">EDUCATION</span><span class="me">/EXPERIENCE</span></h2>
 
