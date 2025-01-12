@@ -58,7 +58,7 @@
 
         <!-- Feedback 5 -->
         <div class="slide swiper-slide">
-          <img src="{{ url('images/iv-black.png') }}" alt="client5" class="image">
+          <img src="{{ url('images/iv.png') }}" alt="client5" class="image">
           <p>
             The designs you provided truly capture the essence of our ministry’s message. Thanks to your dedicated team, we have a strong and impactful online presence that resonates with our followers. I’m grateful for the collaboration!
           </p>

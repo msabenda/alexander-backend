@@ -209,6 +209,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
 // IntersectionObserver to pause/resume animation based on visibility
 const observer = new IntersectionObserver(
   (entries) => {
