@@ -45,116 +45,6 @@
     }
   }
   
-  /* For Mobile Devices (up to 480px) */
-  @media only screen and (max-width: 480px) {
-    .row-bigger {
-      flex-direction: column; /* Stack the education and experience sections */
-      padding: 10px; /* Reduce padding for smaller screens */
-    }
-    .education, .experience {
-      margin-bottom: 20px; /* Add space between stacked sections */
-    }
-    .title {
-      font-size: 1.5rem; /* Adjust font size */
-    }
-    .timeline {
-      padding-left: 20px; /* Reduce padding */
-    }
-    .timeline-item::before {
-      left: -10px; /* Adjust to align with smaller screen */
-    }
-    .circle-dot {
-      left: -20px; /* Adjust for smaller screen */
-      width: 16px; /* Reduce size for smaller screens */
-      height: 16px; /* Reduce size for smaller screens */
-    }
-  }
-  
-  /* For Tablets (481px - 768px) */
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .row-bigger {
-      flex-direction: column; /* Stack the sections vertically */
-      padding: 15px; /* Adjust padding */
-    }
-    .education, .experience {
-      margin-bottom: 20px; /* Space between stacked sections */
-    }
-    .title {
-      font-size: 1.8rem; /* Adjust font size */
-    }
-    .timeline {
-      padding-left: 30px; /* Adjust padding */
-    }
-    .timeline-item::before {
-      left: -15px; /* Adjust to align with timeline */
-    }
-    .circle-dot {
-      left: -25px; /* Adjust for screen size */
-      width: 20px; /* Slightly smaller dot */
-      height: 20px; /* Slightly smaller dot */
-    }
-  }
-  
-  /* For Small Laptops/Tablets in Landscape (769px - 1024px) */
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .row-bigger {
-      padding: 20px; /* Standard padding */
-    }
-    .title {
-      font-size: 1.9rem; /* Slightly adjust font size */
-    }
-    .timeline {
-      padding-left: 35px; /* Adjust padding */
-    }
-    .timeline-item::before {
-      left: -18px; /* Adjust to align with timeline */
-    }
-    .circle-dot {
-      left: -28px; /* Adjust for screen size */
-    }
-  }
-
-
-  @media screen and (max-width: 600px){
-    .timeline {
-      margin: 50px auto;
-    }
-  
-    .timeline::after {
-      left: 31px;
-    }
-  
-    .container-eduex {
-      width: 100%;
-      padding-left: 80x;
-      padding-right: 25px;
-    }
-  
-    .text-box {
-      font-size: 13px;
-    }
-  
-    .text-box small {
-      margin-bottom:10px ;
-    }
-  
-    .right-container {
-      left: 0;
-    }
-  
-    .left-container img, .right-container img {
-      left: 10px;
-    }
-  
-    .left-container-arrow, .right-container-arrow {
-      border-right: 15px solid rgb(245, 215, 47);
-      border-left: 0;
-      left: -15px;
-    }
-  
-  }
-  
-  
   /* --------------------- Responsive Styling with Media Queries --------------------- */
   
   /* For Mobile Devices (up to 480px) */
@@ -298,72 +188,71 @@
   }
     
   
-  /* Tablets and smaller screens (up to 768px wide) */
-  @media (max-width: 768px) {
-    .main-text {
-      padding: 30px 20px; /* Reduced padding */
-    }
-  
-    .main-text h2 {
-      font-size: 40px; /* Smaller heading font size */
-    }
-  
-    .blog-content {
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjusted grid layout */
-      grid-gap: 15px; /* Reduced gap between items */
-    }
-  
-    .container1, .container2 {
-      padding: 50px 30px; /* Reduced padding */
-    }
-  
-    .layer h3 {
-      font-size: 18px; /* Smaller font size for layer headings */
-    }
-  
-    .layer p {
-      font-size: 0.9rem; /* Smaller font size for paragraph text */
-    }
-  
-    .blog-btn {
-      padding: 0 30px; /* Adjusted button padding */
-      font-size: 16px; /* Smaller font size for button text */
-    }
+ /* Tablets (portrait) */
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 2rem;
   }
-  
-  /* Mobile screens (up to 480px wide) */
-  @media (max-width: 480px) {
-    .main-text {
-      padding: 20px 10px; /* Further reduced padding */
-    }
-  
-    .main-text h2 {
-      font-size: 30px; /* Smaller heading font size */
-    }
-  
-    .blog-content {
-      grid-template-columns: 1fr; /* Single-column layout */
-      grid-gap: 10px; /* Reduced gap between items */
-    }
-  
-    .container1, .container2 {
-      padding: 30px 20px; /* Further reduced padding */
-    }
-  
-    .layer h3 {
-      font-size: 16px; /* Smaller font size for layer headings */
-    }
-  
-    .layer p {
-      font-size: 0.8rem; /* Smaller font size for paragraph text */
-    }
-  
-    .blog-btn {
-      padding: 0 20px; /* Further adjusted button padding */
-      font-size: 14px; /* Smaller font size for button text */
-    }
+
+  .blog-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
   }
-  
+
+  .blog-item {
+    height: auto; /* Adjust height for smaller screens */
+  }
+
+  .blog-overlay h3 {
+    font-size: 1.3rem;
+  }
+
+  .blog-overlay p {
+    font-size: 0.8rem;
+  }
+
+  .read-more {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .blog-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 480px) {
+  .section-heading {
+    font-size: 1.8rem;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+
+  .blog-item {
+    height: auto; /* Ensure height is responsive */
+  }
+
+  .blog-overlay h3 {
+    font-size: 1.2rem;
+  }
+
+  .blog-overlay p {
+    font-size: 0.75rem;
+  }
+
+  .read-more {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .blog-button {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+}
   
   /* -----------------------------BACK TO TOP BUTTON----------------------- */
   .top-btn {

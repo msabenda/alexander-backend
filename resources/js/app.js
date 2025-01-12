@@ -1,16 +1,6 @@
-import Swiper from 'swiper';
-import './swiper-bundle.min.js';
 import './video-section.js';
 import 'intl-tel-input/build/css/intlTelInput.css';
-
-
-// import './jquery.min.js';
 import './typed.umd.js';
-// import './all.min.js';
-// import './particles.min.js';
-// import './jquery.magnific-popup.min.js';
-
-
 import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
@@ -59,7 +49,7 @@ window.addEventListener("load", () => {
         "enable": true,
         "distance": 150,
         "color": "#ffff00",
-        "opacity": 0.4,
+        "opacity": 0.35,
         "width": 1
       },
       "move": {
@@ -87,6 +77,41 @@ window.addEventListener("load", () => {
     },
     "retina_detect": true
   });
+});
+
+
+// Client section rendering view
+document.addEventListener("DOMContentLoaded", () => {
+  const slide = document.querySelector(".logos-slide");
+  const logos = Array.from(slide.children);
+  const visibleCount = 3; // Number of logos visible at a time
+  let currentIndex = 0;
+
+  // Function to update the slide position
+  const updateSlidePosition = () => {
+    const logoWidth = logos[0].offsetWidth + 20; // Logo width + gap
+    const offset = currentIndex * logoWidth;
+
+    // Remove 'center' class from all logos
+    logos.forEach((logo) => logo.classList.remove("center"));
+
+    // Add 'center' class to the middle logo
+    const middleIndex = currentIndex + Math.floor(visibleCount / 2);
+    if (logos[middleIndex]) {
+      logos[middleIndex].classList.add("center");
+    }
+
+    slide.style.transform = `translateX(-${offset}px)`;
+  };
+
+  // Automatically slide logos every 3 seconds
+  setInterval(() => {
+    currentIndex++;
+    if (currentIndex > logos.length - visibleCount) {
+      currentIndex = 0; // Reset to the first set of logos
+    }
+    updateSlidePosition();
+  }, 3000); // 3 seconds
 });
 
 
@@ -183,24 +208,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 });
-
-
-// Initialize Swiper with autoplay
-const swiper = new Swiper('.mySwiper', {
-  loop: true, // Enable looping
-  autoplay: {
-    delay: 3000, // Time between slides (in milliseconds)
-    disableOnInteraction: false, // Allow autoplay to continue even when user interacts
-  },
-  speed: 1000, // Speed of the transition
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true, // Make pagination clickable
-  },
-});
-
-const logosSection = document.querySelector('.logos');
-const logosSlide = document.querySelector('.logos-slide');
 
 // IntersectionObserver to pause/resume animation based on visibility
 const observer = new IntersectionObserver(

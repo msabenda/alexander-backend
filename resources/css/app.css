@@ -1,32 +1,18 @@
 
 @import 'preloader.css';
-/* @import './all.min.css';
-@import './swiper-bundle.min.css';
-@import './magnific-popup.min.css';
-@import './boxicons.min.css'; */
-
 @import 'home.css';
-/* @import 'particles.css'; */
 @import 'about.css';
-@import 'edu-experience.css';
 @import 'mission.css';
 @import 'services.css';
 @import 'recent-client.css';
 @import 'blog.css';
 @import 'pic-project';
 @import 'vid-project.css';
-@import 'swiper-bundle.min.css';
 @import 'testimonial.css';
 @import 'contact.css';
 @import 'footer.css'; 
-
 @import 'screenmedia.css';
-
-/* International number flag */
 @import 'intl-tel-input/build/css/intlTelInput.css';
-
-
-/* ---------- Importing Google Font using API---------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 

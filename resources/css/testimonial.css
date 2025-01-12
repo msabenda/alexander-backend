@@ -1,10 +1,14 @@
 .testimoni {
-  padding-bottom: 2rem;
-  background-color: #ffffff; /* Ensure a consistent background */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+.clieent {
+  color:  rgb(255, 215, 0);
 }
 
 .container {
-  height: auto; /* Allow the container to adjust based on content */
+  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
@@ -24,11 +28,11 @@
   width: 150px;
   object-fit: cover;
   border-radius: 50%;
-  transition: transform 0.3s ease; /* Add hover effect */
+  transition: transform 0.3s ease;
 }
 
 .testimonial .image:hover {
-  transform: scale(1.05); /* Slight enlargement on hover */
+  transform: scale(1.05);
 }
 
 .testimonial .slide {
@@ -43,11 +47,11 @@
 
 .slide p {
   text-align: center;
-  padding: 0 50px; /* Reduced padding for better spacing */
+  padding: 0 50px;
   font-size: 15px;
   font-weight: 400;
   color: #333;
-  line-height: 1.5; /* Improve readability */
+  line-height: 1.5;
 }
 
 .slide .quote-icon {
@@ -73,33 +77,28 @@
   color: #555;
 }
 
-/* Swiper button adjustments */
+/* Swiper buttons */
 .nav-btn {
   height: 40px;
   width: 40px;
   border-radius: 50%;
-  transform: translateY(30px);
   background-color: rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
 }
 
 .nav-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.nav-btn::after,
-.nav-btn::before {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: 20px;
   color: #fff;
-}
-
-.swiper-pagination-bullet {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.swiper-pagination-bullet-active {
-  background-color: rgb(255, 215, 0);
 }
 
 /* Mobile adjustments */
@@ -112,10 +111,6 @@
   .testimonial .image {
     height: 120px;
     width: 120px;
-  }
-
-  .nav-btn {
-    display: none;
   }
 }
 

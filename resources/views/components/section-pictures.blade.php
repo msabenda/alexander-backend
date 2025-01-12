@@ -9,7 +9,7 @@
               alt="Landscape Project 1" 
               class="lazyload"
               data-src="{{ url('images/AA.jpg') }}" 
-              loading="lazy" />
+            />
             <div class="overlay">
                 <div class="info">
                     <h2>Pictures Project</h2>
@@ -22,7 +22,7 @@
               alt="Portrait Project 1" 
               class="lazyload"
               data-src="{{ url('images/BB.jpg') }}" 
-              loading="lazy" />
+              />
             <div class="overlay">
                 <div class="info">
                     <h2>Pictures Project</h2>
@@ -36,7 +36,7 @@
               alt="Portrait Project 1" 
               class="lazyload"
               data-src="{{ url('images/CC.jpg') }}" 
-              loading="lazy" />
+              />
             <div class="overlay">
                 <div class="info">
                     <h2>Pictures Project</h2>
@@ -50,7 +50,7 @@
               alt="Portrait Project 1" 
               class="lazyload"
               data-src="{{ url('images/DD.jpg') }}" 
-              loading="lazy" />
+             />
             <div class="overlay">
                 <div class="info">
                     <h2>Pictures Project</h2>
@@ -64,7 +64,7 @@
               alt="Portrait Project 1" 
               class="lazyload"
               data-src="{{ url('images/BB.jpg') }}" 
-              loading="lazy" />
+               />
             <div class="overlay">
                 <div class="info">
                     <h2>Pictures Project</h2>

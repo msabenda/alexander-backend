@@ -4,7 +4,7 @@
 
   <div class="service-container">
     <div class="service-image">
-      <img src="{{ url('images/graphic-design-icon.png') }}" alt="Graphic Design" loading="lazy">
+      <img src="{{ url('images/graphic-design-icon.png') }}" alt="Graphic Design">
     </div>
     <div class="service-details">
       <h3>Graphic Design</h3>
@@ -17,7 +17,7 @@
 
   <div class="service-container">
     <div class="service-image">
-      <img src="{{ url('images/digital-marketing-icon.png') }}" alt="Digital Marketing" loading="lazy">
+      <img src="{{ url('images/digital-marketing-icon.png') }}" alt="Digital Marketing">
     </div>
     <div class="service-details">
       <h3>Digital Marketing</h3>
@@ -30,7 +30,7 @@
 
   <div class="service-container">
     <div class="service-image">
-      <img src="{{ url('images/data-analysis-icon.png') }}" alt="Data Analysis" loading="lazy">
+      <img src="{{ url('images/data-analysis-icon.png') }}" alt="Data Analysis">
     </div>
     <div class="service-details">
       <h3>Data Analysis</h3>

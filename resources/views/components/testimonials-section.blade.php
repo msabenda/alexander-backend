@@ -6,14 +6,14 @@
         
         <!-- Feedback 1 -->
         <div class="slide swiper-slide">
-          <img src="{{ url('images/customer-1.jpg') }}" alt="client1" class="image">
+          <img src="{{ url('images/x.png') }}" alt="client1" class="image">
           <p>
-            I had a wonderful experience working with Xander Creative. He is so talented, hard working person, he turned my ideas into reality by designing top-notch graphics that exceeded my expectations.
+            We had a wonderful experience working with Xander Creative. He is so talented, hard working person, he turned our ideas into reality by designing top-notch graphics that exceeded our expectations.
           </p>
           <i class="bx bxs-quote-alt-left quote-icon"></i>
           <div class="details">
             <span class="name">Msambili Ndaga</span>
-            <span class="job">Network Engineer</span>
+            <span class="job">Former Chairman of USCF Mlimani</span>
           </div>
         </div>
 
@@ -47,9 +47,7 @@
         <div class="slide swiper-slide">
           <img src="{{ url('images/iii.png') }}" alt="client4" class="image">
           <p>
-          Your creativity and deep understanding of brand messaging brought Jigundue Platform’s vision to life in
-ways we never imagined. The visuals and marketing support exceeded expectations, driving impressive
-engagement and growth.
+            Your creativity and deep understanding of brand messaging brought Jigundue Platform’s vision to life in ways we never imagined. The visuals and marketing support exceeded expectations, driving impressive engagement and growth.
           </p>
           <i class="bx bxs-quote-alt-left quote-icon"></i>
           <div class="details">
@@ -60,11 +58,9 @@ engagement and growth.
 
         <!-- Feedback 5 -->
         <div class="slide swiper-slide">
-          <img src="{{ url('images/iv.png') }}" alt="client5" class="image">
+          <img src="{{ url('images/iv-black.png') }}" alt="client5" class="image">
           <p>
-          The designs you provided truly capture the essence of our ministry’s message. Thanks to your dedicated
-team, we have a strong and impactful online presence that resonates with our followers. I’m grateful for
-the collaboration!
+            The designs you provided truly capture the essence of our ministry’s message. Thanks to your dedicated team, we have a strong and impactful online presence that resonates with our followers. I’m grateful for the collaboration!
           </p>
           <i class="bx bxs-quote-alt-left quote-icon"></i>
           <div class="details">
@@ -77,9 +73,7 @@ the collaboration!
         <div class="slide swiper-slide">
           <img src="{{ url('images/vi.png') }}" alt="client6" class="image">
           <p>
-          Your digital marketing and graphic design expertise has been vital in bringing MY DOCTOR to the
-forefront. The visuals are engaging and clear, and the marketing strategy has amplified our reach
-significantly. A fantastic experience!
+            Your digital marketing and graphic design expertise has been vital in bringing MY DOCTOR to the forefront. The visuals are engaging and clear, and the marketing strategy has amplified our reach significantly. A fantastic experience!
           </p>
           <i class="bx bxs-quote-alt-left quote-icon"></i>
           <div class="details">
@@ -88,20 +82,28 @@ significantly. A fantastic experience!
           </div>
         </div>
 
-        <!-- Feedback 7 -->
-        <!-- <div class="slide swiper-slide">
-          <img src="{{ url('images/customer-7.jpg') }}" alt="client7" class="image">
-          <p>
-            Xander Creative helped us with our social media strategies, and the results were fantastic! The increase in engagement and brand awareness exceeded our expectations.
-          </p>
-          <i class="bx bxs-quote-alt-left quote-icon"></i>
-          <div class="details">
-            <span class="name">David Brown</span>
-            <span class="job">Social Media Manager, FreshCo</span>
-          </div>
-        </div> -->
-
       </div>
+      
+      <!-- Swiper Navigation Buttons -->
+      <div class="swiper-button-prev nav-btn">&#10094;</div>
+      <div class="swiper-button-next nav-btn">&#10095;</div>
     </div>
   </div>
 </section>
+
+<!-- Swiper JS and CSS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.mySwiper', {
+    loop: true, // Infinite loop
+    autoplay: {
+      delay: 3000, // Time between slides (3 seconds)
+      disableOnInteraction: false, // Continue autoplay after user interaction
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
