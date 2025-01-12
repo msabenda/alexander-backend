@@ -210,8 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// IntersectionObserver to pause/resume animation based on visibility
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // Select the logos section and the logos slide container
   const logosSection = document.querySelector('.logos');
   const logosSlide = document.querySelector('.logos-slide');
@@ -220,15 +219,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial animation state to paused
     logosSlide.style.animationPlayState = 'paused';
 
+    // Throttle function to limit execution rate of animation changes
+    let timeout;
+    const throttleChangeState = () => {
+      if (timeout) return; // Prevent if already a timeout is running
+      timeout = setTimeout(() => {
+        // Handle animation play state
+        logosSlide.style.animationPlayState = logosSection.classList.contains('in-view') ? 'running' : 'paused';
+        timeout = null; // Reset the timeout after execution
+      }, 50); // Delay the execution for smoother performance
+    };
+
     // IntersectionObserver to pause/resume animation based on visibility
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            logosSlide.style.animationPlayState = 'running'; // Start animation when the section is in view
+            logosSection.classList.add('in-view'); // Add a class when section is in view
           } else {
-            logosSlide.style.animationPlayState = 'paused'; // Pause animation when the section is out of view
+            logosSection.classList.remove('in-view'); // Remove class when section is out of view
           }
+          throttleChangeState(); // Throttle the changes
         });
       },
       { threshold: 0.1 } // Trigger when at least 10% of the section is in view

@@ -8,7 +8,7 @@
 <!-- Home section component -->
  <x-home-section />
 
- <!-- About section component -->
+<!-- About section component -->
  <x-about-section />
  
  <!-- Mission section component -->
