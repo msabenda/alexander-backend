@@ -91,8 +91,3 @@
 .lazyload[data-src] {
   opacity: 1;
 }
-
-/* Smooth Image Load on Scroll */
-.lazyload[data-src] {
-  background-image: url('loading-placeholder.jpg'); /* Placeholder image */
-}
