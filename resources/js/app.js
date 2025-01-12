@@ -211,17 +211,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // IntersectionObserver to pause/resume animation based on visibility
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        logosSlide.style.animationPlayState = 'running';
-      } else {
-        logosSlide.style.animationPlayState = 'paused';
-      }
-    });
-  },
-  { threshold: 0.1 }
-);
+document.addEventListener('DOMContentLoaded', function() {
+  // Select the logos section and the logos slide container
+  const logosSection = document.querySelector('.logos');
+  const logosSlide = document.querySelector('.logos-slide');
 
-observer.observe(logosSection);
+  if (logosSection && logosSlide) {
+    // Set initial animation state to paused
+    logosSlide.style.animationPlayState = 'paused';
+
+    // IntersectionObserver to pause/resume animation based on visibility
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            logosSlide.style.animationPlayState = 'running'; // Start animation when the section is in view
+          } else {
+            logosSlide.style.animationPlayState = 'paused'; // Pause animation when the section is out of view
+          }
+        });
+      },
+      { threshold: 0.1 } // Trigger when at least 10% of the section is in view
+    );
+
+    // Observe the logos section
+    observer.observe(logosSection);
+  } else {
+    console.error('logosSection or logosSlide not found');
+  }
+});
