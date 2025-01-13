@@ -1,7 +1,5 @@
 import './video-section.js';
 import 'intl-tel-input/build/css/intlTelInput.css';
-import './typed.umd.js';
-import intlTelInput from 'intl-tel-input';
 import 'intl-tel-input/build/css/intlTelInput.css';
 
 // Preloader fade-out effect
@@ -115,14 +113,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-// Initialize the input field with the intl-tel-input plugin
-const input = document.querySelector("#phoneInput");
-intlTelInput(input, {
-  initialCountry: "tz", // Set Tanzania as the default country
-  utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@17.0.8/build/js/utils.js" // load utils script
-});
-
 // Scroll to Top Button
 const topButton = document.querySelector('.top-btn');
 const scrollPercentageText = document.getElementById('scroll-percentage');
@@ -171,14 +161,6 @@ const scrollRevealOption = {
   origin: "bottom",
   duration: 1000,
 };
-
-// --------------------------AUTO TYPING WORDS----------------------
-var typed = new Typed(".auto-type", {
-  strings: ["Graphics Design |", " Data Analysis |", " Digital Marketing"],
-  typeSpeed: 300,
-  backSpeed: 10,
-  loop: true,
-});
 
 // Cursor effect element
 const cursor = document.createElement('div');
