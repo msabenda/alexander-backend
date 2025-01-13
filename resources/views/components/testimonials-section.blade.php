@@ -92,7 +92,7 @@
 </section>
 
 <!-- Swiper JS and CSS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <script>
   const swiper = new Swiper('.mySwiper', {
