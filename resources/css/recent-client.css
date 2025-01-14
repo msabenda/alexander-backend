@@ -12,7 +12,7 @@
 }
 
 .myClient {
-  color: yellow;
+  color: rgb(255, 255, 255);
 }
 
 .clieent {
@@ -24,7 +24,6 @@
   overflow: hidden; /* Hides logos outside the visible area */
   width: 500px; /* Adjust width to fit exactly 3 logos */
   margin: 0 auto;
-  /* background-color: #242424; */
   margin-bottom: 40px;
   padding: 10px 0;
 }
@@ -34,6 +33,7 @@
   display: flex;
   gap: 20px; /* Add space between logos */
   transition: transform 0.5s ease-in-out; /* Smooth sliding */
+  will-change: transform; /* Hint browser for smoother performance */
 }
 
 .logos-slide img {
