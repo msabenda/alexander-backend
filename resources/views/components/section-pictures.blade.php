@@ -1,75 +1,25 @@
-<!--pictures-projects.blade.php -->
+@php
+    $pictures = \App\Models\PictureSection::all(); // Use 'all()' to get all pictures
+@endphp
+
 <!-- --------Pictures-------- -->
 <section class="portfolio">
     <h2 class="section-heading">My <span class="picha">PICTURES</span></h2>
     <div class="gallery">
-        <div class="project landscape">
+        @foreach($pictures as $picture) <!-- Loop through each picture -->
+        <div class="project {{ $picture->orientation }}"> <!-- Assuming 'landscape' or 'portrait' is stored in the database -->
             <img 
-              src="{{ url('images/AA.jpg') }}" 
-              alt="Landscape Project 1" 
+              src="{{ url('storage/' . $picture->image) }}" <!-- Assuming images are stored in 'public/storage' -->
+              alt="{{ $picture->title }}"
               class="lazyload"
-              data-src="{{ url('images/AA.jpg') }}" 
+              data-src="{{ url('storage/' . $picture->image) }}" 
               loading="lazy"/>
             <div class="overlay">
                 <div class="info">
-                    <h2>Pictures Project</h2>
+                    <h2>{{ $picture->title }}</h2>
                 </div>
             </div>
         </div>
-        <div class="project portrait">
-            <img 
-              src="{{ url('images/BB.jpg') }}" 
-              alt="Portrait Project 1" 
-              class="lazyload"
-              data-src="{{ url('images/BB.jpg') }}" 
-              loading="lazy" />
-            <div class="overlay">
-                <div class="info">
-                    <h2>Pictures Project</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="project portrait">
-            <img 
-              src="{{ url('images/CC.jpg') }}" 
-              alt="Portrait Project 1" 
-              class="lazyload"
-              data-src="{{ url('images/CC.jpg') }}" 
-              loading="lazy" />
-            <div class="overlay">
-                <div class="info">
-                    <h2>Pictures Project</h2>
-                </div>
-            </div>
-        </div>
-
-        <div class="project portrait">
-            <img 
-              src="{{ url('images/DD.jpg') }}" 
-              alt="Portrait Project 1" 
-              class="lazyload"
-              data-src="{{ url('images/DD.jpg') }}" 
-              loading="lazy" />
-            <div class="overlay">
-                <div class="info">
-                    <h2>Pictures Project</h2>
-                </div>
-            </div>
-        </div>
-        
-        <div class="project portrait">
-            <img 
-              src="{{ url('images/BB.jpg') }}" 
-              alt="Portrait Project 1" 
-              class="lazyload"
-              data-src="{{ url('images/BB.jpg') }}" 
-              loading="lazy"  />
-            <div class="overlay">
-                <div class="info">
-                    <h2>Pictures Project</h2>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </section>

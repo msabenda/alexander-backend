@@ -1,11 +1,10 @@
-
 <!-- Extends layout from app.blade.php -->
 @extends('layouts.app')
 
 <!-- Display the injected content -->
 @section('content')
 
-<!-- Home section component -->
+<!-- Dashboard section component -->
  <x-home-section />
 
 <!-- About section component -->
@@ -27,7 +26,7 @@
 <x-section-pictures />
 
 <!-- Videos Project Section component -->
-<x-section-videos />
+<!-- <x-section-videos /> -->
 
 <!-- Testimonials Section component -->
 <x-testimonials-section />
