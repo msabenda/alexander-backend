@@ -9,7 +9,7 @@
         @foreach($pictures as $picture) <!-- Loop through each picture -->
         <div class="project {{ $picture->orientation }}"> <!-- Assuming 'landscape' or 'portrait' is stored in the database -->
             <img 
-              src="{{ url('storage/' . $picture->image) }}" <!-- Assuming images are stored in 'public/storage' -->
+              src="{{ url('storage/' . $picture->image) }}"
               alt="{{ $picture->title }}"
               class="lazyload"
               data-src="{{ url('storage/' . $picture->image) }}" 

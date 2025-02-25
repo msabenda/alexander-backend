@@ -7,6 +7,9 @@
   .me {
     color: rgb(255, 215, 0);
   }
+  h2::after {
+    content: none; /* Removes the pseudo-element */
+  }
   
   /* General Styling for the About Section */
   .row {

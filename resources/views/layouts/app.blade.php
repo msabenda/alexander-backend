@@ -10,6 +10,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
     <!-- Vite CSS & JS -->
     @vite('resources/css/app.css') <!-- Vite css build -->
@@ -18,8 +20,7 @@
   </head>
   
   <body>  
-    <!-- Top Anchor -->
-    <div id="top"></div>
+   
 
     <!-- Preloader -->
     <div id="preloader">

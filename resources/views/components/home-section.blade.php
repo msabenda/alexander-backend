@@ -1,8 +1,7 @@
 <!--home-section.blade.php -->
 <header class="header" id="home">
 
-  <!-- Particle container -->
-  <div id="particles-js"></div>
+
 
 <nav class="nav-bar">
   <div class="nav__header">

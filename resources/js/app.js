@@ -13,9 +13,6 @@ window.addEventListener("load", () => {
   }, 1000);
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const slide = document.querySelector(".logos-slide");
   const logos = Array.from(slide.children);
@@ -61,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const clientSection = document.querySelector(".logos");
   observer.observe(clientSection);
 });
-
-
 
 // Cursor effect element
 const cursor = document.createElement('div');
@@ -124,30 +119,3 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  // Get video data from Blade as a JSON object
-  const videos = window.videosData;
-
-  // Handle video switching on click
-  document.querySelectorAll('.video-list-container .list').forEach((vid) => {
-      vid.addEventListener('click', () => {
-          const videoId = vid.dataset.videoId;
-          const mainVideo = document.querySelector('.main-video-container .main-video');
-          const mainTitle = document.querySelector('.main-video-container .main-vid-title');
-          const mainDescription = document.querySelector('.main-video-container .main-vid-description');
-
-          // Find the video by ID
-          const selectedVideo = videos.find(v => v.id == videoId);
-
-          mainVideo.src = selectedVideo.video_url;
-          mainVideo.play();
-          mainTitle.textContent = selectedVideo.title;
-          mainDescription.textContent = selectedVideo.description;
-
-          // Highlight the active video
-          document.querySelectorAll('.video-list-container .list').forEach(item => item.classList.remove('active'));
-          vid.classList.add('active');
-      });
-  });
-});

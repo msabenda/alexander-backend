@@ -101,30 +101,3 @@
   color: #fff;
 }
 
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
-  .slide p {
-    padding: 0 20px;
-    font-size: 14px;
-  }
-
-  .testimonial .image {
-    height: 120px;
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .slide p {
-    padding: 0 15px;
-    font-size: 12px;
-  }
-
-  .details .name {
-    font-size: 14px;
-  }
-
-  .details .job {
-    font-size: 12px;
-  }
-}

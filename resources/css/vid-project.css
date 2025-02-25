@@ -148,23 +148,3 @@
     font-size: 0.9rem;
     color: #ffffff; /* Dark gray text for description */
 }
-
-@media (max-width: 768px) {
-    .container-videos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-video-container, .video-list-container {
-        flex: 1 1 100%;
-    }
-
-    .main-vid-title {
-        font-size: 1.25rem;
-    }
-
-    .list-video {
-        width: 80px; /* Adjust video size for smaller screens */
-        height: 50px;
-    }
-}
